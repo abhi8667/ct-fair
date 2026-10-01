@@ -2800,7 +2800,6 @@ function applyStyle(i){
   document.documentElement.setAttribute('data-style',st.id.toLowerCase());
   const sb=document.getElementById('styleBtn');
   setBtn(sb,st.id);
-  if(started)playMusic(st.aud.music);
   lastStage=-1;playing=true;applyTime(0);
 }
 
@@ -2855,7 +2854,7 @@ function applyTime(tt){
   const frac=Math.min(1,tt/DUR);
   fillEl.style.width=(frac*100)+'%';
   bigNumEl.textContent=Math.round(frac*100);
-  bigPctEl.classList.toggle('done',tt>=DUR-0.001);
+  if(bigPctEl&&bigPctEl.classList&&typeof bigPctEl.classList.toggle==='function')bigPctEl.classList.toggle('done',tt>=DUR-0.001);
   timeEl.textContent=tt.toFixed(2)+' / '+DUR.toFixed(2);
 }
 
