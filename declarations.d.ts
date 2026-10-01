@@ -1,0 +1,65 @@
+declare module 'lucide-react' {
+  export const AlertCircle: any
+  export const AlertTriangle: any
+  export const ArrowLeft: any
+  export const ArrowRight: any
+  export const ArrowUpRight: any
+  export const Award: any
+  export const BarChart3: any
+  export const Bell: any
+  export const Box: any
+  export const Building: any
+  export const Calendar: any
+  export const CalendarDays: any
+  export const CalendarRange: any
+  export const Check: any
+  export const CheckCircle: any
+  export const CheckCircle2: any
+  export const ChevronDown: any
+  export const ClipboardList: any
+  export const Clock: any
+  export const Compass: any
+  export const CreditCard: any
+  export const Download: any
+  export const ExternalLink: any
+  export const Eye: any
+  export const Flag: any
+  export const Globe: any
+  export const Layers: any
+  export const LayoutGrid: any
+  export const Mail: any
+  export const MapPin: any
+  export const Megaphone: any
+  export const Menu: any
+  export const Pencil: any
+  export const Phone: any
+  export const Plus: any
+  export const Printer: any
+  export const QrCode: any
+  export const RefreshCw: any
+  export const ScanLine: any
+  export const Search: any
+  export const Send: any
+  export const Settings: any
+  export const Settings2: any
+  export const Shield: any
+  export const ShieldAlert: any
+  export const ShieldCheck: any
+  export const Sparkles: any
+  export const Tag: any
+  export const Ticket: any
+  export const TicketCheck: any
+  export const TriangleAlert: any
+  export const Trophy: any
+  export const UserCog: any
+  export const UserPlus: any
+  export const Users: any
+  export const X: any
+}
+
+declare module '@base-ui/react/button' {
+  export namespace Button {
+    export type Props = any
+  }
+  export const Button: any
+}

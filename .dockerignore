@@ -1,0 +1,35 @@
+# Dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# Next.js build output
+.next
+out
+
+# Version control
+.git
+.gitignore
+
+# Environment files
+.env*.local
+.env
+
+# Ide and editor files
+.idea
+.vscode
+*.swp
+*.swo
+
+# Project documentation & scripts not needed in image
+*.md
+design-plans
+scripts
+scratch
+.gemini
+.agents
+
+# OS files
+.DS_Store
+Thumbs.db

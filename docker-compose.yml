@@ -1,0 +1,14 @@
+services:
+  ct-fair:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ct-fair:latest
+    container_name: ct-fair-web
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - HOSTNAME=0.0.0.0
