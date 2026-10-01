@@ -85,7 +85,7 @@ export default function TowersPage() {
             <JapaneseTowerLandscape
               country="india"
               weather="storm"
-              time="noon"
+              time="sunset"
               className="w-full h-full"
             />
           </div>

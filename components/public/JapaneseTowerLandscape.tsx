@@ -27,7 +27,7 @@ export function JapaneseTowerLandscape({
   sourceUrl = "/japanese-tower.html",
   country = "india",
   weather = "storm",
-  time = "noon",
+  time = "sunset",
   hero = false,
   sandbox = "allow-scripts allow-same-origin",
   onReady,
