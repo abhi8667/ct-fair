@@ -21,13 +21,13 @@ export function PublicHeader() {
   ]
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#f7f2e7]/95 backdrop-blur-md border-b border-[#d9caa6]/80">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10 h-20 flex items-center justify-between gap-4">
         {/* Left: Brand Lockup & Institutional Crests */}
         <div className="flex items-center gap-4 sm:gap-6 shrink-0">
           {/* Concrete Fair 2026 Brand Lockup */}
           <Link href="/" className="flex items-center gap-3 group focus-visible:outline-2 focus-visible:outline-[#b88e3e]">
-            <div className="size-10 rounded-xl border border-[#d9caa6] bg-white grid place-items-center shadow-xs group-hover:border-[#b88e3e] transition-colors">
+            <div className="size-10 rounded-xl border border-slate-200 bg-white grid place-items-center shadow-xs group-hover:border-[#b88e3e] transition-colors">
               <span className="font-mono font-black text-sm text-[#171717] tracking-tight">CF</span>
             </div>
             <div className="flex flex-col leading-none">
@@ -131,7 +131,7 @@ export function PublicHeader() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div id="mobile-navigation" className="xl:hidden border-b border-[#e5dfd3] bg-[#f7f5f0] px-6 py-6 animate-in slide-in-from-top-2 duration-200">
+        <div id="mobile-navigation" className="xl:hidden border-b border-slate-200 bg-white px-6 py-6 animate-in slide-in-from-top-2 duration-200">
           <nav className="flex flex-col space-y-3">
             {navLinks.map((link) => (
               <Link

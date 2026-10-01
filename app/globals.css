@@ -14,6 +14,8 @@
   --color-slate: var(--slate);
   --color-gold: var(--gold);
   --color-gold-soft: var(--gold-soft);
+  --color-blueprint: var(--blueprint);
+  --color-blueprint-soft: var(--blueprint-soft);
   --color-success: var(--success);
   --color-danger: var(--danger);
 
@@ -59,46 +61,48 @@
 
 :root {
   color-scheme: light;
-  --stone: #f3f0e8;
-  --concrete: #9b9890;
-  --slate: #23272b;
-  --gold: #a4833a;
-  --gold-soft: #e9dfc6;
-  --success: #3f6b4f;
-  --danger: #9a3b30;
+  --stone: #f8f9fa;
+  --concrete: #94a3b8;
+  --slate: #0f172a;
+  --gold: #b88e3e;
+  --gold-soft: #fbf5e6;
+  --blueprint: #1d4ed8;
+  --blueprint-soft: #eff6ff;
+  --success: #15803d;
+  --danger: #b91c1c;
 
-  --background: #f3f0e8;
-  --foreground: #1f2326;
-  --card: #faf8f3;
-  --card-foreground: #1f2326;
-  --popover: #faf8f3;
-  --popover-foreground: #1f2326;
-  --primary: #23272b;
-  --primary-foreground: #f6f3ec;
-  --secondary: #e7e3d9;
-  --secondary-foreground: #23272b;
-  --muted: #e9e5dc;
-  --muted-foreground: #66655f;
-  --accent: #ebe6da;
-  --accent-foreground: #23272b;
-  --destructive: #9a3b30;
-  --border: #d8d3c7;
-  --input: #d8d3c7;
-  --ring: #a4833a;
-  --chart-1: #23272b;
-  --chart-2: #9b9890;
-  --chart-3: #a4833a;
-  --chart-4: #c9c4b8;
-  --chart-5: #5c5f61;
+  --background: #f8f9fa;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+  --primary: #0f172a;
+  --primary-foreground: #f8f9fa;
+  --secondary: #e2e8f0;
+  --secondary-foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #f8fafc;
+  --accent-foreground: #0f172a;
+  --destructive: #b91c1c;
+  --border: #e2e8f0;
+  --input: #cbd5e1;
+  --ring: #b88e3e;
+  --chart-1: #0f172a;
+  --chart-2: #1d4ed8;
+  --chart-3: #b88e3e;
+  --chart-4: #94a3b8;
+  --chart-5: #64748b;
   --radius: 0.25rem;
-  --sidebar: #1f2326;
-  --sidebar-foreground: #d6d2c8;
-  --sidebar-primary: #a4833a;
-  --sidebar-primary-foreground: #1f2326;
-  --sidebar-accent: #2b3034;
-  --sidebar-accent-foreground: #f3f0e8;
-  --sidebar-border: #343a3f;
-  --sidebar-ring: #a4833a;
+  --sidebar: #0f172a;
+  --sidebar-foreground: #f8f9fa;
+  --sidebar-primary: #b88e3e;
+  --sidebar-primary-foreground: #0f172a;
+  --sidebar-accent: #1e293b;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #334155;
+  --sidebar-ring: #b88e3e;
 }
 
 @keyframes scan {
@@ -127,10 +131,10 @@
 @layer utilities {
   .blueprint-grid {
     background-image:
-      linear-gradient(to right, color-mix(in oklab, var(--slate) 6%, transparent) 1px, transparent 1px),
-      linear-gradient(to bottom, color-mix(in oklab, var(--slate) 6%, transparent) 1px, transparent 1px),
-      linear-gradient(to right, color-mix(in oklab, var(--slate) 3%, transparent) 1px, transparent 1px),
-      linear-gradient(to bottom, color-mix(in oklab, var(--slate) 3%, transparent) 1px, transparent 1px);
+      linear-gradient(to right, color-mix(in oklab, var(--blueprint) 8%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in oklab, var(--blueprint) 8%, transparent) 1px, transparent 1px),
+      linear-gradient(to right, color-mix(in oklab, var(--slate) 4%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in oklab, var(--slate) 4%, transparent) 1px, transparent 1px);
     background-size:
       120px 120px,
       120px 120px,
