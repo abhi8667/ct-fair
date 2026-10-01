@@ -24,7 +24,7 @@ import {
   StaggerEntrance,
   FloatingBadge,
 } from '@/components/public/antigravity-fx'
-import AccordionGallery, { AccordionGalleryItem } from './AccordionGallery'
+import AccordionGallery, { AccordionGalleryItem } from '@/components/public/accordion-gallery'
 import StrokeText from '@/components/public/StrokeText'
 import { JapaneseTowerLandscape } from '@/components/public/JapaneseTowerLandscape'
 import '@/src/shaders/japanese-tower/style.css'

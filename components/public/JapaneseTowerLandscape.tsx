@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { TOWER_COUNTRIES, TowerCountry } from "@/src/shaders/japanese-tower/JapaneseTowerLandscape";
 
-export { TOWER_COUNTRIES };
-export type { TowerCountry };
+export const TOWER_COUNTRIES = ["india", "japan"] as const;
+export type TowerCountry = (typeof TOWER_COUNTRIES)[number];
+
 
 const COUNTRY_LABELS: Record<TowerCountry, string> = {
   india: "Indian Temple Monument (Vedic Stone Shikhara)",

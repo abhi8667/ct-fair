@@ -8,7 +8,7 @@ import { PublicHeader } from '@/components/public/public-header'
 import { PublicFooter } from '@/components/public/public-footer'
 import { events } from '@/lib/data'
 import { AntigravityTilt, StaggerEntrance } from '@/components/public/antigravity-fx'
-import AccordionGallery, { AccordionGalleryItem } from './AccordionGallery'
+import AccordionGallery, { AccordionGalleryItem } from '@/components/public/accordion-gallery'
 
 export default function PublicEventsPage() {
   const [search, setSearch] = useState('')

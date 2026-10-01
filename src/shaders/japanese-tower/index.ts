@@ -1,2 +1,2 @@
-export * from "./JapaneseTowerLandscape";
-export * from "./Scene";
+export * from "@/components/public/JapaneseTowerLandscape";
+

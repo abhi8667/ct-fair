@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, Box, Compass, Sparkles, RefreshCw, Eye, Layers } from "lucide-react";
-import { JapaneseTowerLandscape, TOWER_COUNTRIES, TowerCountry } from "@/src/shaders/japanese-tower/JapaneseTowerLandscape";
+import { JapaneseTowerLandscape, TOWER_COUNTRIES, TowerCountry } from "@/components/public/JapaneseTowerLandscape";
 import "@/src/shaders/japanese-tower/style.css";
 
 const COUNTRY_DETAILS: Record<TowerCountry, { name: string; title: string; subtitle: string; era: string; description: string }> = {
