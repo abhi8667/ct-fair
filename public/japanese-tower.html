@@ -8,14 +8,14 @@
 <style>
 :root{
   --k:1;
-  --paper:#ecdcbc; --w0:#fdf1d6; --w1:#f7e5c6; --w2:#ebd9b6;
-  --ink:#2e2515; --ink2:#8b7c5c; --ink3:#3f3520;
-  --accent:#a8621f;
-  --line:#d9caa6; --rule2:#c2b18c; --divider:rgba(62,44,18,.30); --hairline:rgba(58,40,14,.40);
-  --grid:rgba(96,74,32,.07);
-  --pl-a:#fdf8e8; --pl-b:#f0e6cc; --pl-br:#ddceac; --pl-fg:#3f3520;
-  --track:#dccba8; --fillc:#96551b;
-  --btn:#332a17; --btn-fg:#f6eed8;
+  --paper:#141920; --w0:#232b36; --w1:#1a2028; --w2:#12161c;
+  --ink:#f8fafc; --ink2:#94a3b8; --ink3:#cbd5e1;
+  --accent:#b88e3e;
+  --line:#334155; --rule2:#475569; --divider:rgba(255,255,255,.12); --hairline:rgba(255,255,255,.16);
+  --grid:rgba(255,255,255,.05);
+  --pl-a:#1e2530; --pl-b:#141920; --pl-br:#334155; --pl-fg:#f8fafc;
+  --track:#334155; --fillc:#b88e3e;
+  --btn:#0f172a; --btn-fg:#f8fafc;
   --sans:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
   --mincho:"Cormorant Garamond",Georgia,"Hiragino Mincho ProN","Yu Mincho",serif;
 }
@@ -956,7 +956,7 @@ function buildTenshu(){
 
   const templeMat = new T.MeshStandardMaterial({
     map: tex,
-    color: 0xf5ecd7,
+    color: 0xffffff,
     roughness: 0.88,
     metalness: 0.05,
     clippingPlanes: [CLIP],
@@ -2400,9 +2400,9 @@ function buildScaffolds(spec){
 }
 
 /* lights — driven by the time-of-day preset */
-const hemi=new T.HemisphereLight(0xfdf8ec,0xd9cbb0,0.33);scene.add(hemi);
-const amb=new T.AmbientLight(0xfff2df,0.07);scene.add(amb);
-const key=new T.DirectionalLight(0xfff1dc,1.12);
+const hemi=new T.HemisphereLight(0xcbd5e1,0x1e293b,0.32);scene.add(hemi);
+const amb=new T.AmbientLight(0x64748b,0.08);scene.add(amb);
+const key=new T.DirectionalLight(0xd4dce4,1.15);
 key.castShadow=true;
 key.shadow.mapSize.set(3072,3072);
 key.shadow.camera.near=8;key.shadow.camera.far=110;
@@ -2417,19 +2417,19 @@ const rim=new T.DirectionalLight(0xfff6ea,0.09);rim.position.set(4,12,-26);scene
  * ------------------------------------------------------------------ */
 const THEMES=[
  {id:'SUNSET',
-  css:{paper:'#e2a468',w0:'#ffd7a0',w1:'#f3b478',w2:'#dd9455',
-       ink:'#2c1608',ink2:'#8a5730',ink3:'#3d2010',accent:'#b88e3e',
-       line:'#c98e55',rule2:'#b87c46',divider:'rgba(70,28,8,.34)',hairline:'rgba(66,24,6,.42)',grid:'rgba(84,36,8,.09)',
-       'pl-a':'#ffe6c4','pl-b':'#f4cb9c','pl-br':'#d29c62','pl-fg':'#3d2010',
-       track:'#cf9459',fillc:'#b88e3e',btn:'#3a1d0b','btn-fg':'#ffe8cd'},
-  ring:'rgba(84,36,8,.12)',stars:0.10,
-  sky:[0x3c3a72,0x7e4f74,0xc96450,0xff9a3d,0xffc169,0xc8722f],
-  fog:0xef9a52,fogN:60,fogF:560,ground:0xd69c66,grass:0xffdcb2,
-  ridge:[0x6c4630,0x9a6540,0xd08a4e],
-  sun:{az:0.92,el:0.135,color:0xff8a34,int:1.62},
-  hemiC:[0xffb877,0x6a3a22,0.30],ambC:[0xffb27a,0.09],
-  fillC:[0xd9a074,0.10],rimC:[0xffa050,0.20],
-  shadow:0.36,blob:0.60,glow:0.30},
+  css:{paper:'#141920',w0:'#232b36',w1:'#1a2028',w2:'#12161c',
+       ink:'#f8fafc',ink2:'#94a3b8',ink3:'#cbd5e1',accent:'#b88e3e',
+       line:'#334155',rule2:'#475569',divider:'rgba(255,255,255,.12)',hairline:'rgba(255,255,255,.16)',grid:'rgba(255,255,255,.05)',
+       'pl-a':'#1e2530','pl-b':'#141920','pl-br':'#334155','pl-fg':'#f8fafc',
+       track:'#334155',fillc:'#b88e3e',btn:'#0f172a','btn-fg':'#f8fafc'},
+  ring:'rgba(255,255,255,.08)',stars:0.05,
+  sky:[0x1e293b,0x334155,0x475569,0x64748b,0x94a3b8,0xcbd5e1],
+  fog:0x64748b,fogN:60,fogF:560,ground:0x475569,grass:0x64748b,
+  ridge:[0x1e293b,0x334155,0x475569],
+  sun:{az:0.92,el:0.22,color:0xd4dce4,int:1.15},
+  hemiC:[0x94a3b8,0x1e293b,0.32],ambC:[0x64748b,0.10],
+  fillC:[0x94a3b8,0.12],rimC:[0xe2e8f0,0.15],
+  shadow:0.40,blob:0.60,glow:0.05},
  {id:'NOON',
   css:{paper:'#e8ecef',w0:'#ffffff',w1:'#f1f5f9',w2:'#e2e8f0',
        ink:'#0f172a',ink2:'#64748b',ink3:'#1e293b',accent:'#b88e3e',
@@ -2474,8 +2474,8 @@ const THEMES=[
   shadow:0.52,blob:0.42,glow:0.95}
 ];
 const WEATHER=[
- {id:'STORM',fogK:0.38,fogC:0x515a67,fogM:0.72,sunK:0.14,hemiK:1.00,ambK:1.30,
-  skyC:0x4b535f,skyM:0.74,groundC:0x43443e,groundM:0.62,starK:0,
+ {id:'STORM',fogK:0.38,fogC:0x64748b,fogM:0.75,sunK:0.18,hemiK:1.00,ambK:1.30,
+  skyC:0x334155,skyM:0.75,groundC:0x475569,groundM:0.65,starK:0,
   rain:1,rainN:1.00,rainV:1.42,snow:0,snowN:0,wet:1,dust:0,
   amb:'storm_amb',ambV:0.66,bolt:1},
  {id:'CLEAR',fogK:1.00,fogC:null,fogM:0,   sunK:1.00,hemiK:1.00,ambK:1.00,

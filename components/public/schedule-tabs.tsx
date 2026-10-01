@@ -130,7 +130,7 @@ export function ScheduleTabs() {
             role="tab"
             aria-selected={activeDay === 'day1'}
             onClick={() => setActiveDay('day1')}
-            className={`px-5 py-2 font-mono text-[11px] uppercase tracking-wider transition-all focus-visible:outline-2 focus-visible:outline-[#B66A1F] ${
+            className={`px-5 py-2 font-mono text-[11px] uppercase tracking-wider transition-all focus-visible:outline-2 focus-visible:outline-[#b88e3e] ${
               activeDay === 'day1'
                 ? 'bg-foreground text-background font-semibold shadow-sm'
                 : 'text-muted-foreground hover:text-foreground'
@@ -143,7 +143,7 @@ export function ScheduleTabs() {
             role="tab"
             aria-selected={activeDay === 'day2'}
             onClick={() => setActiveDay('day2')}
-            className={`px-5 py-2 font-mono text-[11px] uppercase tracking-wider transition-all focus-visible:outline-2 focus-visible:outline-[#B66A1F] ${
+            className={`px-5 py-2 font-mono text-[11px] uppercase tracking-wider transition-all focus-visible:outline-2 focus-visible:outline-[#b88e3e] ${
               activeDay === 'day2'
                 ? 'bg-foreground text-background font-semibold shadow-sm'
                 : 'text-muted-foreground hover:text-foreground'
@@ -161,7 +161,7 @@ export function ScheduleTabs() {
               type="button"
               aria-pressed={selectedTrack === track}
               onClick={() => setSelectedTrack(track)}
-              className={`px-2.5 py-1 font-mono text-[10px] uppercase transition-colors border focus-visible:outline-2 focus-visible:outline-[#B66A1F] ${
+              className={`px-2.5 py-1 font-mono text-[10px] uppercase transition-colors border focus-visible:outline-2 focus-visible:outline-[#b88e3e] ${
                 selectedTrack === track
                   ? 'border-gold bg-gold/15 text-foreground font-semibold'
                   : 'border-border bg-card text-muted-foreground hover:text-foreground'

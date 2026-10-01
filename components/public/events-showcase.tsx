@@ -118,7 +118,7 @@ export function EventsShowcase() {
                 </div>
                 <Link
                   href={`/register?event=${e.id}`}
-                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-foreground hover:bg-gold text-background hover:text-foreground font-mono text-[10px] uppercase tracking-wider transition-colors focus-visible:outline-2 focus-visible:outline-[#B66A1F]"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-foreground hover:bg-gold text-background hover:text-foreground font-mono text-[10px] uppercase tracking-wider transition-colors focus-visible:outline-2 focus-visible:outline-[#b88e3e]"
                 >
                   <span>Enroll</span>
                   <ArrowRight className="size-3" aria-hidden="true" />

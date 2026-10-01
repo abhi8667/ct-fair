@@ -28,47 +28,47 @@ export function PublicHeader() {
           {/* Concrete Fair 2026 Brand Lockup */}
           <Link href="/" className="flex items-center gap-3 group focus-visible:outline-2 focus-visible:outline-[#b88e3e]">
             <div className="size-10 rounded-xl border border-slate-200 bg-white grid place-items-center shadow-xs group-hover:border-[#b88e3e] transition-colors">
-              <span className="font-mono font-black text-sm text-[#171717] tracking-tight">CF</span>
+              <span className="font-mono font-black text-sm text-slate-900 tracking-tight">CF</span>
             </div>
             <div className="flex flex-col leading-none">
-              <span className="font-sans font-black text-base sm:text-lg tracking-tight text-[#171717] uppercase group-hover:text-[#b88e3e] transition-colors">
+              <span className="font-sans font-black text-base sm:text-lg tracking-tight text-slate-900 uppercase group-hover:text-[#b88e3e] transition-colors">
                 CONCRETE FAIR <span className="text-[#b88e3e]">2026</span>
               </span>
-              <span className="font-mono text-[8px] text-[#8B8170] uppercase mt-1 tracking-wider">
+              <span className="font-mono text-[8px] text-slate-500 uppercase mt-1 tracking-wider">
                 RVCE CIVIL · TRADITION MEETS TOMORROW
               </span>
             </div>
           </Link>
 
-          <span className="hidden md:inline-block h-6 w-px bg-stone-300" />
+          <span className="hidden md:inline-block h-6 w-px bg-slate-200" />
 
           {/* ASCE Student Chapter */}
           <div className="hidden sm:flex items-center gap-2">
             <div className="flex flex-col leading-none">
-              <span className="font-sans text-xs font-black tracking-tight text-[#171717]">
+              <span className="font-sans text-xs font-black tracking-tight text-slate-900">
                 ASCE
               </span>
-              <span className="font-mono text-[7px] text-[#5D574D] uppercase tracking-tighter">
+              <span className="font-mono text-[7px] text-slate-500 uppercase tracking-tighter">
                 STUDENT CHAPTER RVCE
               </span>
             </div>
           </div>
 
-          <span className="hidden lg:inline-block h-6 w-px bg-stone-300" />
+          <span className="hidden lg:inline-block h-6 w-px bg-slate-200" />
 
           {/* Indian Concrete Institute (ICI) */}
           <div className="hidden lg:flex items-center gap-2">
-            <div className="grid grid-cols-2 gap-0.5 size-4 p-0.5 border border-stone-400">
-              <div className="bg-[#171717]" />
+            <div className="grid grid-cols-2 gap-0.5 size-4 p-0.5 border border-slate-300">
+              <div className="bg-slate-900" />
               <div className="bg-[#b88e3e]" />
               <div className="bg-[#b88e3e]" />
-              <div className="bg-[#171717]" />
+              <div className="bg-slate-900" />
             </div>
             <div className="flex flex-col leading-none">
-              <span className="font-mono text-[8px] font-bold text-[#171717] tracking-tight uppercase">
+              <span className="font-mono text-[8px] font-bold text-slate-900 tracking-tight uppercase">
                 INDIAN CONCRETE INSTITUTE
               </span>
-              <span className="font-mono text-[7px] text-[#5D574D] uppercase tracking-tighter">
+              <span className="font-mono text-[7px] text-slate-500 uppercase tracking-tighter">
                 BENGALURU CENTRE
               </span>
             </div>
@@ -87,7 +87,7 @@ export function PublicHeader() {
                   'text-[13px] tracking-wide transition-colors py-1 relative font-medium',
                   active
                     ? 'text-[#b88e3e] font-semibold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-[#b88e3e]'
-                    : 'text-[#5D574D] hover:text-[#171717]',
+                    : 'text-slate-600 hover:text-slate-900',
                 )}
               >
                 {link.label}
@@ -100,7 +100,7 @@ export function PublicHeader() {
         <div className="flex items-center gap-3">
           <Link
             href="/portal"
-            className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium text-[#5D574D] hover:text-[#171717] hover:bg-stone-200/50 transition-colors"
+            className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors"
           >
             <Ticket className="size-3.5 text-[#b88e3e]" />
             <span>My Pass</span>
@@ -109,7 +109,7 @@ export function PublicHeader() {
           {/* Primary CTA button matching mockup */}
           <Link
             href="/register"
-            className="inline-flex items-center gap-1.5 px-5 py-2.5 bg-[#171717] hover:bg-[#b88e3e] text-white hover:text-white rounded-full font-sans text-xs font-semibold tracking-wide transition-all shadow-xs hover:shadow-md"
+            className="inline-flex items-center gap-1.5 px-5 py-2.5 bg-slate-900 hover:bg-[#b88e3e] text-white hover:text-white rounded-full font-sans text-xs font-semibold tracking-wide transition-all shadow-xs hover:shadow-md"
           >
             <span>Get Tickets</span>
             <ArrowUpRight className="size-3.5" />
@@ -119,7 +119,7 @@ export function PublicHeader() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="grid size-9 place-items-center rounded-full border border-stone-300 xl:hidden text-stone-700 hover:bg-stone-200/50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b88e3e]"
+            className="grid size-9 place-items-center rounded-full border border-slate-300 xl:hidden text-slate-700 hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b88e3e]"
             aria-label="Toggle navigation menu"
             aria-expanded={mobileMenuOpen}
             aria-controls="mobile-navigation"

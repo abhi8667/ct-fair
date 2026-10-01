@@ -28,16 +28,16 @@ export function PublicFooter() {
             <span className="label-tech text-foreground block">Conclave Navigation</span>
             <ul className="space-y-1.5 text-xs text-muted-foreground">
               <li className="border-b border-border/30 pb-1.5">
-                <Link href="/" className="hover:text-foreground transition-colors focus-visible:outline-2 focus-visible:outline-[#B66A1F]">Main Blueprint / Home</Link>
+                <Link href="/" className="hover:text-foreground transition-colors focus-visible:outline-2 focus-visible:outline-[#b88e3e]">Main Blueprint / Home</Link>
               </li>
               <li className="border-b border-border/30 pb-1.5">
-                <Link href="/about" className="hover:text-foreground transition-colors focus-visible:outline-2 focus-visible:outline-[#B66A1F]">Institutional History (Est. 1963)</Link>
+                <Link href="/about" className="hover:text-foreground transition-colors focus-visible:outline-2 focus-visible:outline-[#b88e3e]">Institutional History (Est. 1963)</Link>
               </li>
               <li className="border-b border-border/30 pb-1.5">
-                <Link href="/events" className="hover:text-foreground transition-colors focus-visible:outline-2 focus-visible:outline-[#B66A1F]">Competitions &amp; Testing Bays</Link>
+                <Link href="/events" className="hover:text-foreground transition-colors focus-visible:outline-2 focus-visible:outline-[#b88e3e]">Competitions &amp; Testing Bays</Link>
               </li>
               <li className="border-b border-border/30 pb-1.5">
-                <Link href="/schedule" className="hover:text-foreground transition-colors focus-visible:outline-2 focus-visible:outline-[#B66A1F]">Day 01 &amp; 02 Keynote Timeline</Link>
+                <Link href="/schedule" className="hover:text-foreground transition-colors focus-visible:outline-2 focus-visible:outline-[#b88e3e]">Day 01 &amp; 02 Keynote Timeline</Link>
               </li>
             </ul>
           </div>
@@ -61,16 +61,16 @@ export function PublicFooter() {
             <span className="label-tech text-foreground block">Connected Platforms</span>
             <ul className="space-y-1.5 text-xs text-muted-foreground">
               <li className="border-b border-border/30 pb-1.5">
-                <Link href="/register" className="hover:text-gold transition-colors font-medium focus-visible:outline-2 focus-visible:outline-[#B66A1F]">Delegate Pass Registration</Link>
+                <Link href="/register" className="hover:text-gold transition-colors font-medium focus-visible:outline-2 focus-visible:outline-[#b88e3e]">Delegate Pass Registration</Link>
               </li>
               <li className="border-b border-border/30 pb-1.5">
-                <Link href="/portal" className="hover:text-gold transition-colors font-medium focus-visible:outline-2 focus-visible:outline-[#B66A1F]">Participant Portal (Tickets &amp; QR)</Link>
+                <Link href="/portal" className="hover:text-gold transition-colors font-medium focus-visible:outline-2 focus-visible:outline-[#b88e3e]">Participant Portal (Tickets &amp; QR)</Link>
               </li>
               <li className="border-b border-border/30 pb-1.5">
-                <Link href="/faq" className="hover:text-foreground transition-colors focus-visible:outline-2 focus-visible:outline-[#B66A1F]">Testing Safety &amp; PPE Guidelines</Link>
+                <Link href="/faq" className="hover:text-foreground transition-colors focus-visible:outline-2 focus-visible:outline-[#b88e3e]">Testing Safety &amp; PPE Guidelines</Link>
               </li>
               <li className="border-b border-border/30 pb-1.5">
-                <Link href="/admin" className="hover:text-gold transition-colors font-mono text-[11px] focus-visible:outline-2 focus-visible:outline-[#B66A1F]">Control Room (Organizers Only) →</Link>
+                <Link href="/admin" className="hover:text-gold transition-colors font-mono text-[11px] focus-visible:outline-2 focus-visible:outline-[#b88e3e]">Control Room (Organizers Only) →</Link>
               </li>
             </ul>
           </div>
@@ -82,7 +82,7 @@ export function PublicFooter() {
           <div className="flex items-center gap-5">
             <span>Bengaluru, India</span>
             <span>•</span>
-            <Link href="/portal" className="text-gold hover:underline focus-visible:outline-2 focus-visible:outline-[#B66A1F]">Delegate Portal</Link>
+            <Link href="/portal" className="text-gold hover:underline focus-visible:outline-2 focus-visible:outline-[#b88e3e]">Delegate Portal</Link>
           </div>
         </div>
       </div>

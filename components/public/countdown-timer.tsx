@@ -48,26 +48,26 @@ export function CountdownTimer({
     return (
       <div className="flex items-center gap-3 sm:gap-5 text-center tabular-nums" aria-label="Event countdown">
         <div className="flex flex-col items-center min-w-[38px] sm:min-w-[46px]">
-          <span className="font-serif text-2xl sm:text-3xl font-light text-[#171717] leading-none">
+          <span className="font-serif text-2xl sm:text-3xl font-light text-white leading-none">
             {pad(timeLeft.days)}
           </span>
-          <span className="font-mono text-[9px] text-[#8B8170] tracking-wider uppercase mt-1">DAYS</span>
+          <span className="font-mono text-[9px] text-[#94a3b8] tracking-wider uppercase mt-1">DAYS</span>
         </div>
-        <span className="text-[#8B8170]/40 font-light text-xl -mt-3">:</span>
+        <span className="text-[#64748b] font-light text-xl -mt-3">:</span>
         <div className="flex flex-col items-center min-w-[38px] sm:min-w-[46px]">
-          <span className="font-serif text-2xl sm:text-3xl font-light text-[#171717] leading-none">
+          <span className="font-serif text-2xl sm:text-3xl font-light text-white leading-none">
             {pad(timeLeft.hours)}
           </span>
-          <span className="font-mono text-[9px] text-[#8B8170] tracking-wider uppercase mt-1">HRS</span>
+          <span className="font-mono text-[9px] text-[#94a3b8] tracking-wider uppercase mt-1">HRS</span>
         </div>
-        <span className="text-[#8B8170]/40 font-light text-xl -mt-3">:</span>
+        <span className="text-[#64748b] font-light text-xl -mt-3">:</span>
         <div className="flex flex-col items-center min-w-[38px] sm:min-w-[46px]">
-          <span className="font-serif text-2xl sm:text-3xl font-light text-[#171717] leading-none">
+          <span className="font-serif text-2xl sm:text-3xl font-light text-white leading-none">
             {pad(timeLeft.minutes)}
           </span>
-          <span className="font-mono text-[9px] text-[#8B8170] tracking-wider uppercase mt-1">MIN</span>
+          <span className="font-mono text-[9px] text-[#94a3b8] tracking-wider uppercase mt-1">MIN</span>
         </div>
-        <span className="text-[#8B8170]/40 font-light text-xl -mt-3">:</span>
+        <span className="text-[#64748b] font-light text-xl -mt-3">:</span>
         <div className="flex flex-col items-center min-w-[38px] sm:min-w-[46px]">
           <span className="font-serif text-2xl sm:text-3xl font-light text-[#b88e3e] leading-none">
             {pad(timeLeft.seconds)}

@@ -156,8 +156,8 @@ export default function PublicHomePage() {
         {/* =========================================================================
             1. IMMERSIVE FULL-BLEED 3D TOWER HERO (THREE.JS R149 CANVAS STAGE)
             ========================================================================= */}
-        <section className="relative w-full min-h-[90dvh] lg:min-h-[94dvh] flex flex-col justify-between overflow-hidden bg-[#edf1f5] border-b border-[#1e293b]/20 select-none">
-          {/* Background: 3D Indian Temple Architecture (Sunset & Storm) */}
+        <section className="relative w-full min-h-[90dvh] lg:min-h-[94dvh] flex flex-col justify-between overflow-hidden bg-[#0d1117] border-b border-[#334155]/60 select-none">
+          {/* Background: 3D Indian Temple Architecture (Sunset & Storm in Architectural Grey) */}
           <div className="absolute inset-0 z-0 pointer-events-auto">
             <JapaneseTowerLandscape
               country="india"
@@ -168,26 +168,26 @@ export default function PublicHomePage() {
             />
           </div>
 
-          {/* 70/20/10 Rule: Warm sunset stone gradient anchor on the left, open breathing room on the right */}
-          <div className="absolute inset-y-0 left-0 w-full lg:w-[46%] z-1 pointer-events-none bg-gradient-to-r from-[#edf1f5]/92 via-[#edf1f5]/75 to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 h-28 z-1 pointer-events-none bg-gradient-to-t from-[#f8f9fa] via-[#edf1f5]/50 to-transparent" />
+          {/* 70/20/10 Rule: Atmospheric slate concrete gradient anchor on the left, open breathing room on the right */}
+          <div className="absolute inset-y-0 left-0 w-full lg:w-[48%] z-1 pointer-events-none bg-gradient-to-r from-[#0d1117]/95 via-[#0d1117]/65 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-28 z-1 pointer-events-none bg-gradient-to-t from-[#f8f9fa] via-[#0d1117]/25 to-transparent" />
 
           {/* Top Sub-Bar HUD (Minimal & Focused) */}
           <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-4 flex items-center justify-between pointer-events-none">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#ffffff]/90 backdrop-blur-md border border-[#e2e8f0]/80 shadow-2xs pointer-events-auto font-mono text-[10px] sm:text-[11px] font-bold tracking-widest uppercase text-[#475569]">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#141920]/90 backdrop-blur-md border border-[#334155]/80 shadow-2xs pointer-events-auto font-mono text-[10px] sm:text-[11px] font-bold tracking-widest uppercase text-[#94a3b8]">
               <span className="size-2 rounded-full bg-[#b88e3e] animate-pulse" aria-hidden="true" />
-              <span className="text-[#0f172a]">RVCE CIVIL</span>
+              <span className="text-white">RVCE CIVIL</span>
               <span className="text-[#64748b]">·</span>
-              <span>EST. 1963</span>
+              <span className="text-[#cbd5e1]">EST. 1963</span>
             </div>
 
             <div className="flex items-center gap-2.5 pointer-events-auto">
-              <span className="font-mono text-[10px] tracking-wider uppercase text-[#64748b] hidden md:inline">
+              <span className="font-mono text-[10px] tracking-wider uppercase text-[#94a3b8] hidden md:inline">
                 DRAG TO EXPLORE
               </span>
               <Link
                 href="/towers"
-                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0f172a] hover:bg-[#b88e3e] text-white font-mono text-[10px] font-semibold tracking-wider uppercase transition-all shadow-2xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b88e3e]"
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1e293b] hover:bg-[#b88e3e] text-white border border-[#334155] font-mono text-[10px] font-semibold tracking-wider uppercase transition-all shadow-2xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b88e3e]"
               >
                 <span>3D Structure</span>
                 <ArrowUpRight className="size-3 text-[#b88e3e]" aria-hidden="true" />
@@ -198,7 +198,7 @@ export default function PublicHomePage() {
           {/* Central Architectural Card (Compact ~18% reduction, Left-Docked, Strict Hierarchy) */}
           <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 my-auto py-6 sm:py-8 flex flex-col items-start pointer-events-none">
             <div className="pointer-events-auto w-full max-w-lg lg:max-w-[470px]">
-              <div className="bg-[#ffffff]/94 backdrop-blur-md p-6 sm:p-7 rounded-3xl border border-[#e2e8f0]/90 shadow-[0_20px_50px_-15px_rgba(46,37,21,0.16)] space-y-4 hover:bg-[#ffffff]/98 transition-all duration-300">
+              <div className="bg-[#141920]/95 backdrop-blur-md p-6 sm:p-7 rounded-3xl border border-[#334155] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.5)] space-y-4 hover:border-[#475569] transition-all duration-300">
                 
                 {/* 1. Institutional Eyebrow */}
                 <div className="flex items-center gap-2">
@@ -209,7 +209,7 @@ export default function PublicHomePage() {
                 </div>
 
                 {/* 2. Primary Event Headline */}
-                <h1 className="font-black text-4xl sm:text-5xl lg:text-[50px] tracking-tight text-[#0f172a] leading-[0.9] uppercase text-balance">
+                <h1 className="font-black text-4xl sm:text-5xl lg:text-[50px] tracking-tight text-white leading-[0.9] uppercase text-balance">
                   CONCRETE<br />
                   FAIR <span className="text-[#b88e3e]">2026</span>
                 </h1>
@@ -219,27 +219,27 @@ export default function PublicHomePage() {
                   <div className="font-mono text-[11px] tracking-[0.18em] text-[#b88e3e] uppercase font-bold">
                     // TRADITION MEETS TOMORROW //
                   </div>
-                  <p className="text-xs sm:text-[13px] font-serif italic text-[#0f172a] leading-snug text-pretty">
+                  <p className="text-xs sm:text-[13px] font-serif italic text-[#e2e8f0] leading-snug text-pretty">
                     Where material heritage, structural ingenuity, and the next generation of civil engineers meet.
                   </p>
-                  <p className="text-xs text-[#475569] leading-relaxed font-sans text-pretty">
+                  <p className="text-xs text-[#94a3b8] leading-relaxed font-sans text-pretty">
                     From ancient cyclopean stonecraft to self-healing bacterial concrete — exploring how the engineering ideas of yesterday shape tomorrow&rsquo;s built environment.
                   </p>
                 </div>
 
                 {/* 4. Date & Location */}
-                <div className="flex items-center gap-2 text-xs font-mono text-[#0f172a] font-semibold pt-1">
+                <div className="flex items-center gap-2 text-xs font-mono text-white font-semibold pt-1">
                   <Calendar className="size-3.5 text-[#b88e3e] shrink-0" aria-hidden="true" />
                   <span>30 NOV — 01 DEC 2026</span>
                   <span className="text-[#64748b]">·</span>
-                  <span className="text-[#475569]">RVCE CAMPUS, BENGALURU</span>
+                  <span className="text-[#94a3b8]">RVCE CAMPUS, BENGALURU</span>
                 </div>
 
                 {/* 5. Primary CTAs */}
                 <div className="flex flex-wrap items-center gap-3 pt-1">
                   <Link
                     href="/register"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#0f172a] hover:bg-[#b88e3e] text-white rounded-full font-sans text-xs font-semibold tracking-wide transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b88e3e]"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#b88e3e] hover:bg-[#a67c2e] text-white rounded-full font-sans text-xs font-semibold tracking-wide transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b88e3e]"
                   >
                     <span>Get Tickets</span>
                     <ArrowUpRight className="size-3.5" aria-hidden="true" />
@@ -247,28 +247,28 @@ export default function PublicHomePage() {
 
                   <Link
                     href="/events"
-                    className="inline-flex items-center gap-2 px-5 py-3 bg-[#f8f9fa] hover:bg-white text-[#0f172a] border border-[#e2e8f0] rounded-full font-sans text-xs font-medium tracking-wide transition-all duration-200 shadow-2xs hover:shadow-xs cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b88e3e]"
+                    className="inline-flex items-center gap-2 px-5 py-3 bg-[#1e293b] hover:bg-[#334155] text-white border border-[#475569] rounded-full font-sans text-xs font-medium tracking-wide transition-all duration-200 shadow-2xs hover:shadow-xs cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b88e3e]"
                   >
                     <span>Explore Events</span>
                   </Link>
                 </div>
 
                 {/* 6. Three Equally Weighted Event Highlights */}
-                <div className="grid grid-cols-3 gap-2 pt-4 border-t border-[#e2e8f0]/80 text-center">
+                <div className="grid grid-cols-3 gap-2 pt-4 border-t border-[#334155]/80 text-center">
                   <div className="space-y-0.5">
-                    <span className="block font-black text-xl sm:text-2xl text-[#0f172a] leading-none tabular-nums">
+                    <span className="block font-black text-xl sm:text-2xl text-white leading-none tabular-nums">
                       11
                     </span>
-                    <span className="block font-mono text-[9px] text-[#64748b] tracking-wider uppercase font-bold">
+                    <span className="block font-mono text-[9px] text-[#94a3b8] tracking-wider uppercase font-bold">
                       CHALLENGES
                     </span>
                   </div>
 
-                  <div className="space-y-0.5 border-x border-[#e2e8f0]/60">
-                    <span className="block font-black text-xl sm:text-2xl text-[#0f172a] leading-none tabular-nums">
+                  <div className="space-y-0.5 border-x border-[#334155]/60">
+                    <span className="block font-black text-xl sm:text-2xl text-white leading-none tabular-nums">
                       06
                     </span>
-                    <span className="block font-mono text-[9px] text-[#64748b] tracking-wider uppercase font-bold">
+                    <span className="block font-mono text-[9px] text-[#94a3b8] tracking-wider uppercase font-bold">
                       WORKSHOPS
                     </span>
                   </div>
@@ -277,7 +277,7 @@ export default function PublicHomePage() {
                     <span className="block font-black text-xl sm:text-2xl text-[#b88e3e] leading-none">
                       TBA
                     </span>
-                    <span className="block font-mono text-[9px] text-[#64748b] tracking-wider uppercase font-bold">
+                    <span className="block font-mono text-[9px] text-[#94a3b8] tracking-wider uppercase font-bold">
                       PRIZE POOL
                     </span>
                   </div>
@@ -290,20 +290,20 @@ export default function PublicHomePage() {
           {/* Bottom Integrated Hero Bar: Countdown, Location, and Structure Hint (Point 14 & 16) */}
           <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pb-4 pt-2 flex flex-col md:flex-row items-center justify-between gap-3 pointer-events-none">
             {/* Left: Location Pin Marker */}
-            <div className="pointer-events-auto flex items-center gap-2 font-mono text-[11px] text-[#475569] bg-[#ffffff]/85 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-[#e2e8f0]/70 shadow-2xs">
+            <div className="pointer-events-auto flex items-center gap-2 font-mono text-[11px] text-[#94a3b8] bg-[#141920]/90 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-[#334155]/80 shadow-2xs">
               <span className="size-1.5 rounded-full bg-[#b88e3e]" />
-              <span className="font-bold text-[#0f172a]">RVCE CAMPUS</span>
+              <span className="font-bold text-white">RVCE CAMPUS</span>
               <span className="text-[#64748b]">·</span>
-              <span>BENGALURU, INDIA</span>
+              <span className="text-[#cbd5e1]">BENGALURU, INDIA</span>
             </div>
 
             {/* Center: The Fair Begins In Event Countdown */}
-            <div className="pointer-events-auto flex items-center gap-3 sm:gap-5 bg-[#ffffff]/95 backdrop-blur-md border border-[#e2e8f0] px-4 sm:px-5 py-2 rounded-2xl shadow-xs">
-              <div className="hidden sm:block text-right border-r border-[#e2e8f0]/60 pr-3 sm:pr-4">
-                <span className="block font-mono text-[9px] uppercase tracking-wider text-[#64748b] font-bold">
+            <div className="pointer-events-auto flex items-center gap-3 sm:gap-5 bg-[#141920]/95 backdrop-blur-md border border-[#334155] px-4 sm:px-5 py-2 rounded-2xl shadow-md text-white">
+              <div className="hidden sm:block text-right border-r border-[#334155]/80 pr-3 sm:pr-4">
+                <span className="block font-mono text-[9px] uppercase tracking-wider text-[#94a3b8] font-bold">
                   THE FAIR BEGINS IN
                 </span>
-                <span className="block font-mono text-[10px] text-[#0f172a] font-semibold">
+                <span className="block font-mono text-[10px] text-white font-semibold">
                   30 NOV 2026 · 09:00 IST
                 </span>
               </div>
@@ -311,7 +311,7 @@ export default function PublicHomePage() {
             </div>
 
             {/* Right: Structure Exploration Hint */}
-            <div className="pointer-events-auto flex items-center gap-2 bg-[#ffffff]/85 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-[#e2e8f0]/70 shadow-2xs font-mono text-[10px] text-[#475569]">
+            <div className="pointer-events-auto flex items-center gap-2 bg-[#141920]/90 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-[#334155]/80 shadow-2xs font-mono text-[10px] text-[#cbd5e1]">
               <Link
                 href="/towers"
                 className="hover:text-[#b88e3e] font-semibold transition-colors flex items-center gap-1"
