@@ -84,6 +84,8 @@ export default function TowersPage() {
           <div className="shader-frame w-full h-full absolute inset-0">
             <JapaneseTowerLandscape
               country="india"
+              weather="storm"
+              time="noon"
               className="w-full h-full"
             />
           </div>

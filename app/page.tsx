@@ -157,10 +157,12 @@ export default function PublicHomePage() {
             1. IMMERSIVE FULL-BLEED 3D TOWER HERO (THREE.JS R149 CANVAS STAGE)
             ========================================================================= */}
         <section className="relative w-full min-h-[90dvh] lg:min-h-[94dvh] flex flex-col justify-between overflow-hidden bg-[#edf1f5] border-b border-[#1e293b]/20 select-none">
-          {/* Background: 3D Indian Temple Architecture at Sunset */}
+          {/* Background: 3D Indian Temple Architecture (Noon & Storm) */}
           <div className="absolute inset-0 z-0 pointer-events-auto">
             <JapaneseTowerLandscape
               country="india"
+              weather="storm"
+              time="noon"
               hero={true}
               className="w-full h-full"
             />

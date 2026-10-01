@@ -15,6 +15,8 @@ export type JapaneseTowerLandscapeProps = {
   className?: string;
   sourceUrl?: string;
   country?: TowerCountry;
+  weather?: string;
+  time?: string;
   hero?: boolean;
   sandbox?: string;
   onReady?: () => void;
@@ -23,7 +25,9 @@ export type JapaneseTowerLandscapeProps = {
 export function JapaneseTowerLandscape({
   className = "",
   sourceUrl = "/japanese-tower.html",
-  country = "japan",
+  country = "india",
+  weather = "storm",
+  time = "noon",
   hero = false,
   sandbox = "allow-scripts allow-same-origin",
   onReady,
@@ -36,9 +40,11 @@ export function JapaneseTowerLandscape({
     const [pathPart, queryPart] = base.split("?");
     const params = new URLSearchParams(queryPart || "");
     if (!params.has("country")) params.set("country", country);
+    if (!params.has("weather") && weather) params.set("weather", weather);
+    if (!params.has("time") && time) params.set("time", time);
     if (hero && !params.has("hero")) params.set("hero", "true");
     return `${pathPart}?${params.toString()}${hash}`;
-  }, [country, sourceUrl, hero]);
+  }, [country, sourceUrl, hero, weather, time]);
 
   useEffect(() => setReady(false), [frameSource]);
 

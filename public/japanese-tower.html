@@ -249,7 +249,7 @@ body.hero-mode footer {
     <div class="top-mid">RVCE&nbsp;CIVIL&nbsp;ENGINEERING&nbsp;CONCLAVE&nbsp;·&nbsp;2026</div>
     <div class="top-right">
       <div class="tbtn" id="styleBtn" style="pointer-events:none;opacity:0.95"><b>ARCHETYPE</b><span>INDIA</span></div>
-      <button class="tbtn" id="wxBtn" aria-label="WEATHER: CLEAR"><b>WEATHER</b><span>CLEAR</span></button>
+      <button class="tbtn" id="wxBtn" aria-label="WEATHER: STORM"><b>WEATHER</b><span>STORM</span></button>
       <button class="tbtn" id="timeBtn" aria-label="TIME: NOON"><b>TIME</b><span>NOON</span></button>
       <button class="tbtn" id="rebuildBtn">↻ REBUILD</button>
     </div>
@@ -2474,6 +2474,10 @@ const THEMES=[
   shadow:0.52,blob:0.42,glow:0.95}
 ];
 const WEATHER=[
+ {id:'STORM',fogK:0.38,fogC:0x515a67,fogM:0.72,sunK:0.14,hemiK:1.00,ambK:1.30,
+  skyC:0x4b535f,skyM:0.74,groundC:0x43443e,groundM:0.62,starK:0,
+  rain:1,rainN:1.00,rainV:1.42,snow:0,snowN:0,wet:1,dust:0,
+  amb:'storm_amb',ambV:0.66,bolt:1},
  {id:'CLEAR',fogK:1.00,fogC:null,fogM:0,   sunK:1.00,hemiK:1.00,ambK:1.00,
   skyC:null,skyM:0,   groundC:null,groundM:0, starK:1.00,
   rain:0,rainN:0,rainV:1,snow:0,snowN:0,wet:0,dust:0,
@@ -2482,12 +2486,6 @@ const WEATHER=[
   skyC:0x717c88,skyM:0.52,groundC:0x59594e,groundM:0.52,starK:0,
   rain:1,rainN:0.60,rainV:1.00,snow:0,snowN:0,wet:1,dust:0,
   amb:'rain_amb',ambV:0.46,bolt:0},
- /* the storm is the rain pushed past comfort: sun almost gone, fog pulled in
-    close, the whole pool of drops in the air and falling harder */
- {id:'STORM',fogK:0.38,fogC:0x515a67,fogM:0.72,sunK:0.14,hemiK:1.00,ambK:1.30,
-  skyC:0x4b535f,skyM:0.74,groundC:0x43443e,groundM:0.62,starK:0,
-  rain:1,rainN:1.00,rainV:1.42,snow:0,snowN:0,wet:1,dust:0,
-  amb:'storm_amb',ambV:0.66,bolt:1},
  {id:'SNOW' ,fogK:0.58,fogC:0xdfe4ea,fogM:0.60,sunK:0.52,hemiK:1.30,ambK:1.45,
   skyC:0xc9d2dc,skyM:0.46,groundC:0xf4f8fc,groundM:0.40,starK:0.30,
   rain:0,rainN:0,rainV:1,snow:1,snowN:0.52,wet:0,dust:1,
@@ -2977,9 +2975,24 @@ try {
     if (foundIdx !== -1) initialStyle = foundIdx;
   }
 } catch(_) {}
+let initialWeather = 0;
+let initialTheme = 0;
+try {
+  const p = new URLSearchParams(window.location.search);
+  const weatherParam = (p.get('weather') || p.get('wx') || '').toUpperCase();
+  if (weatherParam) {
+    const wIdx = WEATHER.findIndex(w => w.id === weatherParam);
+    if (wIdx !== -1) initialWeather = wIdx;
+  }
+  const themeParam = (p.get('theme') || p.get('time') || '').toUpperCase();
+  if (themeParam) {
+    const tIdx = THEMES.findIndex(th => th.id === themeParam);
+    if (tIdx !== -1) initialTheme = tIdx;
+  }
+} catch(_) {}
 applyStyle(initialStyle);
-applyWeather(0,true);
-applyTheme(0,true);
+applyWeather(initialWeather,true);
+applyTheme(initialTheme,true);
 layout();
 applyTime(0);
 
