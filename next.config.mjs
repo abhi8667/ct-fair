@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  output: process.env.NEXT_OUTPUT_STANDALONE ? 'standalone' : 'export',
   typescript: {
     ignoreBuildErrors: true,
   },

@@ -30,6 +30,7 @@ COPY . .
 # Set environment variables for production build
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NODE_ENV=production
+ENV NEXT_OUTPUT_STANDALONE=1
 
 # Build the Next.js standalone output
 RUN \
