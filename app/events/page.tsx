@@ -16,16 +16,21 @@ export default function PublicEventsPage() {
 
   const categories = [
     'ALL',
-    'Heavy Engineering',
-    'Structural Design',
+    'Technical',
+    'Non-Technical',
     'Material Innovation',
+    'Structural Design',
     'Computational BIM',
-    'Symposium & Lecture',
+    'Field',
     'Quizzes & Cultural',
+    'Symposium & Lecture',
   ]
 
   const filtered = events.filter((e) => {
-    const matchCat = selectedCategory === 'ALL' || e.category === selectedCategory
+    const matchCat =
+      selectedCategory === 'ALL' ||
+      e.category === selectedCategory ||
+      e.eventType === selectedCategory
     const matchSearch =
       e.name.toLowerCase().includes(search.toLowerCase()) ||
       e.code.toLowerCase().includes(search.toLowerCase()) ||
@@ -36,68 +41,68 @@ export default function PublicEventsPage() {
   const flagshipEvents: AccordionGalleryItem[] = [
     {
       image: '/images/card-cubes.jpg',
-      label: 'Mix Design Challenge',
-      link: '/register?event=concrete-cube',
-      category: 'Material Innovation',
-      code: 'CF-06',
-      description: 'Target precise M60 high-performance mix ratios. 28-day water-cured specimens undergo crushing in the calibrated 2,000 kN UTM.',
-      date: '01 Dec 2026',
-      time: 'TBA',
-      venue: 'TBA',
-      prizes: 'TBA',
-      badge: 'Flagship Bay',
-    },
-    {
-      image: '/images/event-concrete.png',
-      label: 'Canoe-X Floatation Challenge',
-      link: '/register?event=canoe-x',
-      category: 'Heavy Engineering',
+      label: 'CONmix: Mix Design Challenge',
+      link: '/register?event=conmix',
+      category: 'Technical',
       code: 'CF-01',
-      description: 'Design, cast, and paddle a 4.5-meter buoyant lightweight concrete canoe on the campus aqua-dock.',
+      description: 'Can you design the perfect concrete mix and prove its performance? Test slump and workability, cast specimens, and undergo 20-hour UTM compressive strength challenge.',
       date: '30 Nov 2026',
-      time: 'TBA',
-      venue: 'TBA',
+      time: '09:30 AM',
+      venue: 'Concrete Lab',
       prizes: 'TBA',
-      badge: 'Aqua Dock',
+      badge: 'Flagship UTM',
     },
     {
       image: '/images/event-bridge.png',
-      label: 'Bridge It — Model Challenge',
-      link: '/register?event=bridge-build',
-      category: 'Structural Design',
-      code: 'CF-04',
-      description: 'Fabricate an efficient truss bridge using restricted balsa and composite binders. Evaluated for maximum load-to-weight ratio.',
+      label: 'CONarch: Arch Design & Build',
+      link: '/register?event=conarch',
+      category: 'Technical',
+      code: 'CF-02',
+      description: 'Design with purpose. Build with precision. Draft structural arch or bridge on paper and construct miniature load-bearing model.',
       date: '30 Nov 2026',
-      time: 'TBA',
-      venue: 'TBA',
+      time: '11:00 AM',
+      venue: 'Structural Yard',
       prizes: 'TBA',
-      badge: 'High Stakes',
+      badge: 'Structural Build',
+    },
+    {
+      image: '/images/event-blueprint.png',
+      label: 'CONzine: Smart City Designing',
+      link: '/register?event=conzine',
+      category: 'Technical',
+      code: 'CF-03',
+      description: 'Imagine the cities of tomorrow and design a smarter future. Technical crossword challenge followed by town-planning drafting and presentation.',
+      date: '30 Nov 2026',
+      time: '02:00 PM',
+      venue: 'CAD & GIS Studio',
+      prizes: 'TBA',
+      badge: 'Urban Planning',
     },
     {
       image: '/images/card-sprout.jpg',
-      label: 'Bio-Concrete Workshop',
-      link: '/register?event=bio-concrete',
-      category: 'Material Innovation',
-      code: 'CF-03',
-      description: 'Hands-on culture of Bacillus pseudofirmus bacteria inside calcium lactate capsules to autonomously heal micro-fissures.',
+      label: 'CONmake: Model Making',
+      link: '/register?event=conmake',
+      category: 'Technical',
+      code: 'CF-04',
+      description: 'Dimension estimation by visual observation without measuring instruments, followed by miniature house construction using cement mortar and bricks.',
       date: '30 Nov 2026',
-      time: 'TBA',
-      venue: 'TBA',
+      time: '03:30 PM',
+      venue: 'Masonry Workshop',
       prizes: 'TBA',
-      badge: 'Hands-on Bay',
+      badge: 'Miniature Craft',
     },
     {
-      image: '/images/event-column.png',
-      label: 'Seismic Integrity Shake-Table',
-      link: '/register?event=seismic-shake',
-      category: 'Structural Design',
-      code: 'CF-02',
-      description: 'Fabricate multi-story scaled shear frames subjected to progressive lateral base excitation wave pulses.',
-      date: '30 Nov 2026',
-      time: 'TBA',
-      venue: 'TBA',
+      image: '/images/event-survey.png',
+      label: 'CONscape: Surveying & Escape Room',
+      link: '/register?event=conscape',
+      category: 'Technical',
+      code: 'CF-06',
+      description: 'Follow the clues, explore the campus with optical surveying instruments, and unlock the final destination in the engineering escape room.',
+      date: '01 Dec 2026',
+      time: '11:30 AM',
+      venue: 'Campus Grounds & Lab',
       prizes: 'TBA',
-      badge: 'Live UTM',
+      badge: 'Escape Room',
     },
   ]
 
@@ -109,14 +114,14 @@ export default function PublicEventsPage() {
         <div className="max-w-7xl mx-auto space-y-12">
           {/* Header */}
           <div className="border-b border-border pb-8">
-            <span className="label-tech text-gold uppercase tracking-widest block">
-              CONCRETE FAIR 2026 // 11 COMPETITIONS &amp; SYMPOSIA
+            <span className="label-tech text-gold uppercase tracking-widest block font-bold">
+              CONCRETE FAIR 2026 // EIGHT EVENT EXPERIENCES · ONE CONNECTED COMMUNITY
             </span>
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-foreground font-normal tracking-tight mt-2 uppercase text-balance">
-              Events, Competitions &amp; Masterclasses
+              Official Events, Challenges &amp; Contests
             </h1>
             <p className="font-serif text-xl sm:text-2xl italic text-muted-foreground mt-2 max-w-3xl font-light text-pretty">
-              Explore 11 rigorous technical challenges, testing bay verifications, and masterclasses across two intensive days.
+              Combining hands-on civil engineering challenges with creative and communication-led events across Day 1 and Day 2.
             </p>
           </div>
 

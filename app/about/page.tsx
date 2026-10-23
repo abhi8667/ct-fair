@@ -47,8 +47,8 @@ export default function AboutPage() {
                 </div>
                 <div className="bg-card border border-border p-4">
                   <span className="label-tech text-gold block">CONCLAVE EDITION</span>
-                  <span className="font-serif text-xl text-foreground font-medium mt-1 block">Edition XIV (2026)</span>
-                  <p className="text-[11px] text-muted-foreground mt-1">Held biennially since 1998</p>
+                  <span className="font-serif text-xl text-foreground font-medium mt-1 block">13th Edition (2026)</span>
+                  <p className="text-[11px] text-muted-foreground mt-1">Continuing a legacy of excellence</p>
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@ export default function AboutPage() {
 
               <div className="space-y-3">
                 <span className="label-tech text-muted-foreground">LABORATORY SPECIFICATION</span>
-                <h3 className="font-serif text-xl text-foreground font-medium">14 Specialized Testing Bays</h3>
+                <h3 className="font-serif text-xl text-foreground font-medium">Specialized Testing Facilities</h3>
                 <ul className="space-y-2 text-xs text-muted-foreground font-mono">
                   <li className="flex items-center gap-2">
                     <span className="size-1.5 bg-gold" />
@@ -74,47 +74,54 @@ export default function AboutPage() {
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="size-1.5 bg-gold" />
-                    <span>Hydraulic Aqua Flume Buoyancy Dock</span>
+                    <span>Optical Surveying &amp; Geodetics Bay</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="size-1.5 bg-gold" />
-                    <span>Servo-controlled Seismic Shake-Table</span>
+                    <span>Structural Model Fabrication Yard</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="size-1.5 bg-gold" />
-                    <span>LOD-400 BIM &amp; CAD Computational Lab</span>
+                    <span>CAD &amp; Smart City Computational Studio</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
 
-          {/* Core Philosophy Section */}
+          {/* Core Philosophy Section matching Slide 4 */}
           <div className="bg-card border border-border p-8 md:p-12 space-y-6">
-            <span className="label-tech text-gold">OUR PILLARS</span>
-            <h2 className="font-serif text-3xl text-foreground font-normal uppercase tracking-tight">
-              Tradition Meets Tomorrow
+            <span className="label-tech text-gold font-bold">04 • WHAT MAKES US DIFFERENT</span>
+            <h2 className="font-sans font-black text-3xl text-foreground uppercase tracking-tight">
+              Four Pillars of Technical Excellence
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
-              <div className="space-y-2">
-                <span className="font-serif text-3xl text-gold font-light">01</span>
-                <h4 className="font-serif text-lg text-foreground font-medium">Rigorous Physical Testing</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
+              <div className="space-y-2 p-4 rounded-2xl bg-muted/40 border border-border">
+                <span className="font-mono text-xs uppercase text-gold font-bold">VALUE 01</span>
+                <h4 className="font-sans font-bold text-lg text-foreground">Code to Concrete</h4>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  No simulations can replace real crushing load. Every entry is physically tested to yield failure in public view.
+                  Move beyond theory through mix-design, concrete testing and code-based challenges.
                 </p>
               </div>
-              <div className="space-y-2">
-                <span className="font-serif text-3xl text-gold font-light">02</span>
-                <h4 className="font-serif text-lg text-foreground font-medium">Decarbonized Aggregates</h4>
+              <div className="space-y-2 p-4 rounded-2xl bg-muted/40 border border-border">
+                <span className="font-mono text-xs uppercase text-gold font-bold">VALUE 02</span>
+                <h4 className="font-sans font-bold text-lg text-foreground">Design to Delivery</h4>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Promoting geopolymers, calcined clays (LC3), and recycled concrete aggregates to slash embodied carbon by 50%.
+                  Translate ideas into drawings, models, structures and town-planning concepts.
                 </p>
               </div>
-              <div className="space-y-2">
-                <span className="font-serif text-3xl text-gold font-light">03</span>
-                <h4 className="font-serif text-lg text-foreground font-medium">Industry Integration</h4>
+              <div className="space-y-2 p-4 rounded-2xl bg-muted/40 border border-border">
+                <span className="font-mono text-xs uppercase text-gold font-bold">VALUE 03</span>
+                <h4 className="font-sans font-bold text-lg text-foreground">Field to Problem-Solving</h4>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Direct mentorship from titans including L&amp;T Infrastructure, UltraTech Cement, Afcons, and ICI fellows.
+                  Bring surveying, escape-room logic and real-world case studies into learning.
+                </p>
+              </div>
+              <div className="space-y-2 p-4 rounded-2xl bg-muted/40 border border-border">
+                <span className="font-mono text-xs uppercase text-gold font-bold">VALUE 04</span>
+                <h4 className="font-sans font-bold text-lg text-foreground">Technical + Creative</h4>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Balance engineering knowledge with debate, short films, quizzes and teamwork.
                 </p>
               </div>
             </div>

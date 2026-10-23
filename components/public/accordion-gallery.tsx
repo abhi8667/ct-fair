@@ -54,7 +54,7 @@ export default function AccordionGallery({
 
   return (
     <div
-      className={`w-full relative select-none rounded-2xl sm:rounded-3xl overflow-hidden border border-[#ded8c8] bg-[#14181b] shadow-[0_25px_50px_-12px_rgba(28,32,36,0.18)] ${height} ${className}`}
+      className={`w-full relative select-none rounded-2xl sm:rounded-3xl overflow-hidden border border-[#d8c2ab]/40 bg-[#1d0411] shadow-[0_25px_60px_-15px_rgba(42,5,25,0.3)] ${height} ${className}`}
       role="region"
       aria-label="Events Accordion Gallery"
     >
@@ -77,7 +77,7 @@ export default function AccordionGallery({
                 flex: `${flexValue} ${flexValue} 0%`,
                 transition: 'flex 0.55s cubic-bezier(0.16, 1, 0.3, 1)',
               }}
-              className="relative overflow-hidden group outline-none border-b md:border-b-0 md:border-r border-white/10 last:border-b-0 last:border-r-0 will-change-[flex]"
+              className="relative overflow-hidden group outline-none border-b md:border-b-0 md:border-r border-[#75435c]/40 last:border-b-0 last:border-r-0 will-change-[flex]"
             >
               {/* Background Image with smooth zoom */}
               <div className="absolute inset-0 w-full h-full">
@@ -94,18 +94,18 @@ export default function AccordionGallery({
                   }`}
                 />
 
-                {/* Layered cinematic gradient overlays */}
+                {/* Layered cinematic gradient overlays with deep wine undertone */}
                 <div
                   className={`absolute inset-0 transition-opacity duration-500 ${
                     isExpanded
-                      ? 'bg-gradient-to-t from-[#101416]/95 via-[#101416]/40 to-black/20'
-                      : 'bg-black/55 group-hover:bg-black/40'
+                      ? 'bg-gradient-to-t from-[#1d0411]/95 via-[#2a0519]/55 to-black/25'
+                      : 'bg-[#1d0411]/65 group-hover:bg-[#1d0411]/45'
                   }`}
                 />
 
-                {/* Subtle gold accent border on expanded panel */}
+                {/* Subtle sand/gold accent border on expanded panel */}
                 {isExpanded && (
-                  <div className="absolute inset-0 border-2 border-[#b88e3e]/40 pointer-events-none z-20" />
+                  <div className="absolute inset-0 border-2 border-[#d8c2ab]/50 pointer-events-none z-20" />
                 )}
               </div>
 
@@ -113,7 +113,7 @@ export default function AccordionGallery({
               <div
                 className={`absolute top-4 left-4 z-20 font-serif font-light transition-all duration-500 pointer-events-none tabular-nums ${
                   isExpanded
-                    ? 'text-4xl sm:text-5xl text-[#b88e3e] opacity-90'
+                    ? 'text-4xl sm:text-5xl text-[#d8c2ab] opacity-90'
                     : 'text-2xl sm:text-3xl text-white/50 group-hover:text-white/80'
                 }`}
               >
@@ -127,7 +127,7 @@ export default function AccordionGallery({
                     isExpanded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 md:opacity-0'
                   }`}
                 >
-                  <span className="glass-panel-dark px-3 py-1 rounded-full font-mono text-[9px] text-[#b88e3e] uppercase tracking-widest border border-[#b88e3e]/40 shadow-md">
+                  <span className="bg-[#3b0924]/90 backdrop-blur-md px-3 py-1 rounded-full font-mono text-[9px] text-[#d8c2ab] uppercase tracking-widest border border-[#75435c] shadow-md">
                     {item.code ? `${item.code} · ` : ''}
                     {item.category}
                   </span>
@@ -142,21 +142,21 @@ export default function AccordionGallery({
                 aria-expanded={isExpanded}
                 aria-controls={`accordion-content-${index}`}
                 aria-label={`Expand ${item.label} specifications`}
-                className={`absolute inset-0 z-20 w-full h-full text-left bg-transparent border-none p-0 cursor-pointer focus-visible:ring-2 focus-visible:ring-[#b88e3e] focus-visible:ring-inset transition-opacity duration-300 ${
+                className={`absolute inset-0 z-20 w-full h-full text-left bg-transparent border-none p-0 cursor-pointer focus-visible:ring-2 focus-visible:ring-[#d8c2ab] focus-visible:ring-inset transition-opacity duration-300 ${
                   isExpanded ? 'pointer-events-none opacity-0' : 'pointer-events-auto opacity-100'
                 }`}
               >
                 {/* Desktop: Vertical rotated text */}
                 <div className="hidden md:flex flex-col justify-end p-5 h-full">
                   <div className="flex items-center gap-3 [writing-mode:vertical-rl] rotate-180 origin-center text-white/90">
-                    <span className="font-mono text-[10px] tracking-[0.25em] text-[#b88e3e] uppercase font-semibold">
+                    <span className="font-mono text-[10px] tracking-[0.25em] text-[#d8c2ab] uppercase font-semibold">
                       {item.category || 'EVENT'}
                     </span>
                     <span className="font-serif text-lg font-medium tracking-tight whitespace-nowrap">
                       {item.label}
                     </span>
                   </div>
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#b88e3e] mt-4 self-center" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#d8c2ab] mt-4 self-center" />
                 </div>
 
                 {/* Mobile: Horizontal bar */}
@@ -166,7 +166,7 @@ export default function AccordionGallery({
                       {item.label}
                     </span>
                     {item.category && (
-                      <span className="font-mono text-[9px] text-[#b88e3e] uppercase">
+                      <span className="font-mono text-[9px] text-[#d8c2ab] uppercase">
                         [{item.category}]
                       </span>
                     )}
@@ -187,11 +187,11 @@ export default function AccordionGallery({
                 <div className="space-y-4 max-w-xl">
                   {/* Category & Tag row */}
                   <div className="flex items-center gap-2 flex-wrap">
-                    <span className="font-mono text-[10px] tracking-[0.2em] text-[#b88e3e] uppercase font-semibold">
+                    <span className="font-mono text-[10px] tracking-[0.2em] text-[#d8c2ab] uppercase font-semibold">
                       {item.code ? `// ${item.code} //` : '// FLAGSHIP EVENT //'}
                     </span>
                     {item.badge && (
-                      <span className="px-2 py-0.5 rounded-full bg-[#b88e3e]/20 text-[#b88e3e] border border-[#b88e3e]/40 font-mono text-[9px] uppercase tracking-wider">
+                      <span className="px-2.5 py-0.5 rounded-full bg-[#521331] text-[#eadfd4] border border-[#75435c] font-mono text-[9px] uppercase tracking-wider">
                         {item.badge}
                       </span>
                     )}
@@ -207,47 +207,47 @@ export default function AccordionGallery({
 
                   {/* Description */}
                   {item.description && (
-                    <p className="text-xs sm:text-sm text-stone-300 leading-relaxed font-sans line-clamp-3 text-pretty">
+                    <p className="text-xs sm:text-sm text-[#eadfd4] leading-relaxed font-sans line-clamp-3 text-pretty">
                       {item.description}
                     </p>
                   )}
 
                   {/* Specifications & Highlights Row */}
-                  <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2 text-xs font-mono text-stone-300">
+                  <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2 text-xs font-mono text-[#eadfd4]">
                     {item.prizes && (
-                      <div className="flex items-center gap-1.5 text-[#b88e3e]">
+                      <div className="flex items-center gap-1.5 text-[#d8c2ab]">
                         <Trophy className="size-3.5 shrink-0" aria-hidden="true" />
                         <span className="font-semibold tabular-nums">{item.prizes}</span>
                       </div>
                     )}
                     {item.venue && (
-                      <div className="flex items-center gap-1.5 text-stone-300">
-                        <MapPin className="size-3.5 text-[#b88e3e] shrink-0" aria-hidden="true" />
+                      <div className="flex items-center gap-1.5 text-[#eadfd4]">
+                        <MapPin className="size-3.5 text-[#d8c2ab] shrink-0" aria-hidden="true" />
                         <span className="truncate max-w-[200px]">{item.venue}</span>
                       </div>
                     )}
                     {(item.date || item.time) && (
-                      <div className="flex items-center gap-1.5 text-stone-400">
-                        <Clock className="size-3.5 text-[#b88e3e] shrink-0" aria-hidden="true" />
+                      <div className="flex items-center gap-1.5 text-[#eadfd4]/90">
+                        <Clock className="size-3.5 text-[#d8c2ab] shrink-0" aria-hidden="true" />
                         <span className="tabular-nums">{[item.date, item.time].filter(Boolean).join(' · ')}</span>
                       </div>
                     )}
                   </div>
 
-                  {/* Action Link & Registration Button */}
+                  {/* Action Link & Registration Button (Wine Burgundy Theme) */}
                   <div className="flex items-center gap-3 pt-3">
                     <Link
                       href={item.link || '/register'}
-                      className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#b88e3e] hover:bg-white text-white hover:text-[#121619] font-sans text-xs font-semibold tracking-wide transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                      className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#521331] hover:bg-[#75435c] text-[#fff8ef] hover:text-white border border-[#d8c2ab]/40 font-sans text-xs font-semibold tracking-wide transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d8c2ab]"
                     >
                       <span>Register For Event</span>
-                      <ArrowUpRight className="size-3.5" aria-hidden="true" />
+                      <ArrowUpRight className="size-3.5 text-[#d8c2ab]" aria-hidden="true" />
                     </Link>
 
                     {item.link && (
                       <Link
                         href={item.link}
-                        className="inline-flex items-center gap-1.5 px-5 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-sans text-xs font-medium tracking-wide transition-colors border border-white/20"
+                        className="inline-flex items-center gap-1.5 px-5 py-3 rounded-full bg-[#2a0519]/80 hover:bg-[#3b0924] text-white font-sans text-xs font-medium tracking-wide transition-colors border border-[#75435c] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d8c2ab]"
                       >
                         <span>Specifications</span>
                       </Link>

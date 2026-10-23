@@ -63,12 +63,12 @@ export function FAQAccordion() {
               type="button"
               id={`faq-header-${faq.id}`}
               onClick={() => toggle(faq.id)}
-              className="w-full text-left p-5 flex items-center justify-between gap-4 cursor-pointer hover:bg-muted/30 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b88e3e]"
+              className="w-full text-left p-5 flex items-center justify-between gap-4 cursor-pointer hover:bg-muted/30 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d8c2ab]"
               aria-expanded={isOpen}
               aria-controls={`faq-panel-${faq.id}`}
             >
               <div className="flex items-center gap-3">
-                <span className="font-mono text-xs text-gold font-semibold">{faq.code} //</span>
+                <span className="font-mono text-xs text-[#3b0924] font-semibold">{faq.code} //</span>
                 <span className="font-serif text-lg md:text-xl text-foreground font-medium text-balance">
                   {faq.question}
                 </span>

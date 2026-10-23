@@ -16,12 +16,7 @@
   width: 100%;
   height: 100%;
   border: 0;
-  background: #141920;
-  opacity: 0;
-  transition: opacity 0.35s ease-out;
-}
-
-.japanese-tower-landscape__frame.is-ready {
+  background: transparent;
   opacity: 1;
 }
 

@@ -27,6 +27,7 @@ public/models/temples/temple_geo.json
 # Scratch / temp
 scratch/
 .agents/
+design theme/
 
 # Logs
 npm-debug.log*

@@ -14,98 +14,107 @@ type ScheduleItem = {
 }
 
 const scheduleItems: ScheduleItem[] = [
-  // Day 1
+  // Day 1: Design, test, plan and build (30 Nov 2026)
   {
     day: 'day1',
-    time: 'TBA',
-    track: 'KEYNOTE',
-    title: 'Inaugural Keynote: Geopolymers & Low-Carbon Clinker',
-    venue: 'TBA',
-    description: 'Examining low-carbon clinker replacements across mega-viaducts, high-speed rail corridors, and sustainable infrastructure.',
-    speaker: 'TBA',
+    time: '09:00 AM',
+    track: 'CEREMONY',
+    title: 'Inaugural Ceremony: 13th Edition Concrete Fair 2026',
+    venue: 'RVCE Civil Auditorium',
+    description: 'Official opening ceremony by the Department of Civil Engineering, RV College of Engineering, and Indian Concrete Institute (ICI) dignitaries.',
+    speaker: 'Faculty & ICI Leadership',
   },
   {
     day: 'day1',
-    time: 'TBA',
+    time: '09:30 AM',
     track: 'TESTING ARENA',
-    title: 'Canoe-X: Hull Flotation Trials & Mix Verifications',
-    venue: 'TBA',
-    description: 'Live loading of university buoyant concrete canoe entries. Technical judges measure wet/dry density ratios, righting moment, and hydrodynamic stability.',
-    speaker: 'TBA',
+    title: 'CONmix: Mix Design Challenge (Quiz & Casting)',
+    venue: 'Concrete & Materials Testing Lab',
+    description: 'Round 1 Technical Quiz on mix-design & IS codes. Round 2 Mix Design Challenge: prepare mix, conduct slump/workability tests, cast concrete specimens for 20-hour UTM strength test.',
+    speaker: 'Team Size: 3 participants',
   },
   {
     day: 'day1',
-    time: 'TBA',
-    track: 'TESTING ARENA',
-    title: 'Bridge It — Structural Truss Loading Challenge',
-    venue: 'TBA',
-    description: 'Balsa and composite micro-trusses undergo progressive center-point vertical deflection tests until structural yield failure.',
-    speaker: 'TBA',
-  },
-  {
-    day: 'day1',
-    time: 'TBA',
+    time: '11:00 AM',
     track: 'WORKSHOP',
-    title: 'Bio-Concrete Inoculation & Bacterial Healing Workshop',
-    venue: 'TBA',
-    description: 'Registered delegates prepare biological healing agents using Bacillus pseudofirmus and cast test prism specimens for accelerated moisture curing cycles.',
-    speaker: 'TBA',
+    title: 'CONarch: Arch Design & Build',
+    venue: 'Structural Fabrication Yard',
+    description: 'Design with purpose. Build with precision. Round 1: Design an arch or bridge on paper. Round 2: Build the designed arch/bridge using provided structural materials.',
+    speaker: 'Team Size: 4 participants',
   },
   {
     day: 'day1',
-    time: 'TBA',
+    time: '02:00 PM',
     track: 'COMPUTATIONAL',
-    title: 'Truss & Torsion: National Civil Engineering Quiz',
-    venue: 'TBA',
-    description: 'Fast-paced buzzer rounds on structural mechanics, concrete history, monumental mega-structures, IS code trivia, and geotechnical failures.',
-    speaker: 'TBA',
+    title: 'CONzine: Smart City Designing',
+    venue: 'CAD & GIS Modeling Studio',
+    description: 'Imagine the cities of tomorrow and design a smarter future. Round 1: Technical crossword challenge. Round 2: Town-planning drafting and presentation.',
+    speaker: 'Team Size: 4–5 participants',
+  },
+  {
+    day: 'day1',
+    time: '03:30 PM',
+    track: 'TESTING ARENA',
+    title: 'CONmake: Model Making',
+    venue: 'Masonry & Model Workshop',
+    description: 'Visualize, create and build — transform raw materials into miniature masterpieces! Round 1: Dimension Estimation by visual sight. Round 2: Miniature model with cement mortar & bricks.',
+    speaker: 'Team Size: 3 participants',
   },
 
-  // Day 2
+  // Day 2: Explore, escape, express and excel (01 Dec 2026)
   {
     day: 'day2',
-    time: 'TBA',
+    time: '09:30 AM',
     track: 'TESTING ARENA',
-    title: 'The 2,000 kN Ultimate UTM Destructive Finals (Cube Strength)',
-    venue: 'TBA',
-    description: 'Full-scale axial compression testing of student-designed ultra-high-strength cylinder and cube specimens until yield points in the calibrated UTM.',
-    speaker: 'TBA',
+    title: 'CONmix: UTM Destructive Compressive Strength Finals',
+    venue: 'Universal Testing Machine (UTM) Bay',
+    description: 'After 20 hours of hydration, student-cast specimens are tested under a calibrated UTM to determine compressive strength and champion mix performance.',
+    speaker: 'UTM Testing Bay Faculty',
   },
   {
     day: 'day2',
-    time: 'TBA',
+    time: '10:00 AM',
     track: 'COMPUTATIONAL',
-    title: 'AutoCAD & Revit Rapid Model-Athon (LOD-400 BIM Sprint)',
-    venue: 'TBA',
-    description: '6-hour live computational sprint. Turn unstructured architectural sketches into fully coordinated LOD-400 structural BIM models with automated rebar clash detection.',
-    speaker: 'TBA',
+    title: 'CONquest: Civil Engineering Quiz',
+    venue: 'Civil Seminar Hall',
+    description: 'Challenge your knowledge. Beat the buzzer. Claim the victory! Round 1: Technical MCQ Quiz. Round 2: Stage Buzzer Battle on structures, mechanics & mega-projects.',
+    speaker: 'Team Size: 4 participants',
   },
   {
     day: 'day2',
-    time: 'TBA',
+    time: '11:30 AM',
     track: 'TESTING ARENA',
-    title: 'Shake-Table Seismic Defense & Jury Cross-Examination',
-    venue: 'TBA',
-    description: 'Multi-story shear frames subjected to progressive lateral base excitation waves while delegates defend their framing schemes in front of the jury panel.',
-    speaker: 'TBA',
+    title: 'CONscape: Surveying Treasure Hunt & Escape Room',
+    venue: 'Campus Grounds & Riddle Lab',
+    description: 'Follow the clues. Explore the campus. Unlock the mystery! Round 1: Surveying Treasure Hunt with clues & teamwork. Round 2: Civil engineering puzzle Escape Room.',
+    speaker: 'Team Size: 3–4 participants',
   },
   {
     day: 'day2',
-    time: 'TBA',
+    time: '02:00 PM',
     track: 'KEYNOTE',
-    title: 'Infrastructure Conclave: Modern Possibilities & Clinker Replacements',
-    venue: 'TBA',
-    description: 'Titan infrastructure conclave with industry leaders exploring LC3 calcined clays, pre-cast metro viaducts, and algorithmic topology optimization.',
-    speaker: 'TBA',
+    title: 'CONflix: Short Film Screening',
+    venue: 'Audio Visual Auditorium',
+    description: 'Lights. Camera. Creativity! Tell a story that leaves an impact. Teams create and present a 5-minute short film inspired by sponsor products and infrastructure.',
+    speaker: 'Team Size: 6–7 participants',
   },
   {
     day: 'day2',
-    time: 'TBA',
+    time: '03:30 PM',
+    track: 'WORKSHOP',
+    title: 'CONfight: Debate Challenge',
+    venue: 'Professors Council Chamber',
+    description: 'Think critically. Speak confidently. Defend your ideas. Round 1: Pick and Speak (2–3 mins). Round 2: Timed debate defending real-world infrastructure solutions before professors.',
+    speaker: 'Team Size: 3 participants',
+  },
+  {
+    day: 'day2',
+    time: '05:00 PM',
     track: 'CEREMONY',
-    title: 'Valedictory, RVCE Civil Medals & Institutional Trophies',
-    venue: 'TBA',
-    description: 'Presentation of the Golden Trowel Rolling Trophy, cash prizes (TBA), student research fellowships, and certificates.',
-    speaker: 'TBA',
+    title: 'Valedictory & Awards Ceremony',
+    venue: 'RVCE Main Auditorium',
+    description: 'Honoring champions of all 8 technical and non-technical events. Certification distribution in association with Indian Concrete Institute (ICI).',
+    speaker: 'Department of Civil Engineering & ICI',
   },
 ]
 
@@ -124,16 +133,16 @@ export function ScheduleTabs() {
       {/* Day switcher & filter toolbar */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-border pb-4">
         {/* Day Switcher */}
-        <div className="flex bg-muted/60 p-1 border border-border" role="tablist" aria-label="Schedule Day Switcher">
+        <div className="flex bg-[#f4e9dc] p-1 border border-[#d8c2ab]/60 rounded-full" role="tablist" aria-label="Schedule Day Switcher">
           <button
             type="button"
             role="tab"
             aria-selected={activeDay === 'day1'}
             onClick={() => setActiveDay('day1')}
-            className={`px-5 py-2 font-mono text-[11px] uppercase tracking-wider transition-all focus-visible:outline-2 focus-visible:outline-[#b88e3e] ${
+            className={`px-5 py-2 rounded-full font-mono text-[11px] uppercase tracking-wider transition-all focus-visible:outline-2 focus-visible:outline-[#d8c2ab] ${
               activeDay === 'day1'
-                ? 'bg-foreground text-background font-semibold shadow-sm'
-                : 'text-muted-foreground hover:text-foreground'
+                ? 'bg-[#3b0924] text-white font-semibold shadow-sm'
+                : 'text-[#77666a] hover:text-[#3b0924]'
             }`}
           >
             DAY 01 // 30 NOV: GENESIS &amp; TRIAL
@@ -143,10 +152,10 @@ export function ScheduleTabs() {
             role="tab"
             aria-selected={activeDay === 'day2'}
             onClick={() => setActiveDay('day2')}
-            className={`px-5 py-2 font-mono text-[11px] uppercase tracking-wider transition-all focus-visible:outline-2 focus-visible:outline-[#b88e3e] ${
+            className={`px-5 py-2 rounded-full font-mono text-[11px] uppercase tracking-wider transition-all focus-visible:outline-2 focus-visible:outline-[#d8c2ab] ${
               activeDay === 'day2'
-                ? 'bg-foreground text-background font-semibold shadow-sm'
-                : 'text-muted-foreground hover:text-foreground'
+                ? 'bg-[#3b0924] text-white font-semibold shadow-sm'
+                : 'text-[#77666a] hover:text-[#3b0924]'
             }`}
           >
             DAY 02 // 01 DEC: SYNTHESIS &amp; PODIUM
@@ -161,10 +170,10 @@ export function ScheduleTabs() {
               type="button"
               aria-pressed={selectedTrack === track}
               onClick={() => setSelectedTrack(track)}
-              className={`px-2.5 py-1 font-mono text-[10px] uppercase transition-colors border focus-visible:outline-2 focus-visible:outline-[#b88e3e] ${
+              className={`px-2.5 py-1 rounded-full font-mono text-[10px] uppercase transition-colors border focus-visible:outline-2 focus-visible:outline-[#d8c2ab] ${
                 selectedTrack === track
-                  ? 'border-gold bg-gold/15 text-foreground font-semibold'
-                  : 'border-border bg-card text-muted-foreground hover:text-foreground'
+                  ? 'border-[#3b0924] bg-[#3b0924] text-white font-semibold'
+                  : 'border-[#d8c2ab]/60 bg-white text-[#77666a] hover:text-[#3b0924]'
               }`}
             >
               {track}

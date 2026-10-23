@@ -9,6 +9,17 @@
   --font-serif: var(--font-cormorant), ui-serif, Georgia, serif;
   --font-mono: var(--font-jetbrains), ui-monospace, monospace;
 
+  --color-wine: var(--wine);
+  --color-wine-dark: var(--wine-dark);
+  --color-wine-light: var(--wine-light);
+  --color-wine-soft: var(--wine-soft);
+  --color-cream: var(--cream);
+  --color-cream-warm: var(--cream-warm);
+  --color-sand: var(--sand);
+  --color-sand-dark: var(--sand-dark);
+  --color-espresso: var(--espresso);
+  --color-espresso-muted: var(--espresso-muted);
+
   --color-stone: var(--stone);
   --color-concrete: var(--concrete);
   --color-slate: var(--slate);
@@ -61,48 +72,59 @@
 
 :root {
   color-scheme: light;
-  --stone: #f8f9fa;
-  --concrete: #94a3b8;
-  --slate: #0f172a;
-  --gold: #b88e3e;
-  --gold-soft: #fbf5e6;
-  --blueprint: #1d4ed8;
-  --blueprint-soft: #eff6ff;
+  --wine: #3b0924;
+  --wine-dark: #2a0519;
+  --wine-light: #521331;
+  --wine-soft: #75435c;
+  --cream: #fff8ef;
+  --cream-warm: #f4e9dc;
+  --sand: #d8c2ab;
+  --sand-dark: #a98b78;
+  --espresso: #34252b;
+  --espresso-muted: #77666a;
+
+  --stone: #fff8ef;
+  --concrete: #d8c2ab;
+  --slate: #3b0924;
+  --gold: #d8c2ab;
+  --gold-soft: #f4e9dc;
+  --blueprint: #521331;
+  --blueprint-soft: #fff8ef;
   --success: #15803d;
   --danger: #b91c1c;
 
-  --background: #f8f9fa;
-  --foreground: #0f172a;
+  --background: #fff8ef;
+  --foreground: #34252b;
   --card: #ffffff;
-  --card-foreground: #0f172a;
+  --card-foreground: #34252b;
   --popover: #ffffff;
-  --popover-foreground: #0f172a;
-  --primary: #0f172a;
-  --primary-foreground: #f8f9fa;
-  --secondary: #e2e8f0;
-  --secondary-foreground: #0f172a;
-  --muted: #f1f5f9;
-  --muted-foreground: #64748b;
-  --accent: #f8fafc;
-  --accent-foreground: #0f172a;
+  --popover-foreground: #34252b;
+  --primary: #3b0924;
+  --primary-foreground: #fff8ef;
+  --secondary: #f4e9dc;
+  --secondary-foreground: #3b0924;
+  --muted: #f4e9dc;
+  --muted-foreground: #77666a;
+  --accent: #f4e9dc;
+  --accent-foreground: #3b0924;
   --destructive: #b91c1c;
-  --border: #e2e8f0;
-  --input: #cbd5e1;
-  --ring: #b88e3e;
-  --chart-1: #0f172a;
-  --chart-2: #1d4ed8;
+  --border: #eadfd4;
+  --input: #d8c2ab;
+  --ring: #3b0924;
+  --chart-1: #3b0924;
+  --chart-2: #75435c;
   --chart-3: #b88e3e;
-  --chart-4: #94a3b8;
-  --chart-5: #64748b;
-  --radius: 0.25rem;
-  --sidebar: #0f172a;
-  --sidebar-foreground: #f8f9fa;
-  --sidebar-primary: #b88e3e;
-  --sidebar-primary-foreground: #0f172a;
-  --sidebar-accent: #1e293b;
+  --chart-4: #d8c2ab;
+  --chart-5: #77666a;
+  --radius: 0.75rem;
+  --sidebar: #3b0924;
+  --sidebar-foreground: #fff8ef;
+  --sidebar-primary: #d8c2ab;
+  --sidebar-primary-foreground: #3b0924;
+  --sidebar-accent: #521331;
   --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #334155;
-  --sidebar-ring: #b88e3e;
+  --sidebar-border: #75435c;
+  --sidebar-ring: #d8c2ab;
 }
 
 @keyframes scan {
@@ -160,8 +182,15 @@
   .hatch {
     background-image: repeating-linear-gradient(
       135deg,
-      color-mix(in oklab, var(--slate) 10%, transparent) 0 1px,
-      transparent 1px 6px
+      color-mix(in oklab, var(--wine) 10%, transparent) 0 1px,
+      transparent 1px 8px
+    );
+  }
+  .hatch-wine {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      rgba(216, 194, 171, 0.15) 0 1px,
+      transparent 1px 16px
     );
   }
   .animate-scan {
@@ -171,21 +200,40 @@
     @apply font-mono text-[10px] uppercase tracking-[0.16em];
   }
 
+  /* PPT Design Theme Containers */
+  .card-wine {
+    background: #3b0924;
+    color: #fff8ef;
+    border: 1px solid rgba(216, 194, 171, 0.25);
+  }
+
+  .card-cream {
+    background: #fff8ef;
+    color: #34252b;
+    border: 1px solid #eadfd4;
+    box-shadow: 0 12px 28px -8px rgba(59, 9, 36, 0.08);
+  }
+
+  .architectural-divider {
+    height: 1px;
+    background: linear-gradient(90deg, #d8c2ab 0%, rgba(216, 194, 171, 0.3) 100%);
+  }
+
   /* Antigravity Design System — Spatial Depth & Weightlessness */
   .glass-panel {
-    background: rgba(255, 255, 255, 0.76);
+    background: rgba(255, 248, 239, 0.85);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    box-shadow: 0 20px 40px -15px rgba(28, 32, 36, 0.05), 0 0 0 1px rgba(222, 216, 200, 0.5);
+    border: 1px solid rgba(216, 194, 171, 0.5);
+    box-shadow: 0 20px 40px -15px rgba(59, 9, 36, 0.06), 0 0 0 1px rgba(234, 223, 212, 0.6);
   }
 
   .glass-panel-dark {
-    background: rgba(18, 22, 25, 0.88);
+    background: rgba(59, 9, 36, 0.92);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(216, 194, 171, 0.22);
+    box-shadow: 0 24px 48px -12px rgba(42, 5, 25, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
 
   .perspective-1000 {

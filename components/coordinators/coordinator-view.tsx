@@ -9,17 +9,19 @@ import { Meter, Panel, StatusBadge } from '@/components/system/primitives'
 import { cn } from '@/lib/utils'
 
 export function CoordinatorView() {
-  const [coordId, setCoordId] = useState(coordinators[0].id)
-  const coord = coordinators.find((c) => c.id === coordId)!
-  const myEvents = events.filter((e) => e.coordinator === coord.name)
-  const [eventId, setEventId] = useState(myEvents[0].id)
-  const active = myEvents.find((e) => e.id === eventId) ?? myEvents[0]
-  const participants = registrations.filter((r) => r.eventId === active.id)
-  const crew = volunteers.filter((v) => v.eventId === active.id)
+  const [coordId, setCoordId] = useState(coordinators[0]?.id ?? 'c1')
+  const coord = coordinators.find((c) => c.id === coordId) ?? coordinators[0]
+  const matchedEvents = events.filter((e) => e.coordinator === coord?.name)
+  const myEvents = matchedEvents.length > 0 ? matchedEvents : events
+  const [eventId, setEventId] = useState(myEvents[0]?.id ?? events[0]?.id)
+  const active = myEvents.find((e) => e.id === eventId) ?? myEvents[0] ?? events[0]
+  const participants = registrations.filter((r) => r.eventId === active?.id)
+  const crew = volunteers.filter((v) => v.eventId === active?.id)
 
   function selectCoord(id: string) {
     setCoordId(id)
-    const first = events.find((e) => e.coordinator === coordinators.find((c) => c.id === id)!.name)
+    const targetCoord = coordinators.find((c) => c.id === id)
+    const first = events.find((e) => e.coordinator === targetCoord?.name) ?? events[0]
     if (first) setEventId(first.id)
   }
 

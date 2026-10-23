@@ -69,10 +69,10 @@ export function CountdownTimer({
         </div>
         <span className="text-[#64748b] font-light text-xl -mt-3">:</span>
         <div className="flex flex-col items-center min-w-[38px] sm:min-w-[46px]">
-          <span className="font-serif text-2xl sm:text-3xl font-light text-[#b88e3e] leading-none">
+          <span className="font-serif text-2xl sm:text-3xl font-light text-[#d8c2ab] leading-none">
             {pad(timeLeft.seconds)}
           </span>
-          <span className="font-mono text-[9px] text-[#b88e3e] tracking-wider uppercase mt-1">SEC</span>
+          <span className="font-mono text-[9px] text-[#d8c2ab] tracking-wider uppercase mt-1">SEC</span>
         </div>
       </div>
     )
@@ -100,10 +100,10 @@ export function CountdownTimer({
           <span className="font-mono text-[8px] text-stone-400 uppercase mt-0.5 block">MINS</span>
         </div>
         <div>
-          <span className="font-serif text-2xl font-light leading-none block text-[#b88e3e] tabular-nums">
+          <span className="font-serif text-2xl font-light leading-none block text-[#d8c2ab] tabular-nums">
             {pad(timeLeft.seconds)}
           </span>
-          <span className="font-mono text-[8px] text-[#b88e3e] uppercase mt-0.5 block">SECS</span>
+          <span className="font-mono text-[8px] text-[#d8c2ab] uppercase mt-0.5 block">SECS</span>
         </div>
       </div>
     )

@@ -35,8 +35,8 @@ const DEFAULT_TEXT = 'CONCRETE FAIR'
 
 export const StrokeText: React.FC<StrokeTextProps> = ({
   text = DEFAULT_TEXT,
-  strokeColor = '#b88e3e',
-  fillColor = '#14181b',
+  strokeColor = '#d8c2ab',
+  fillColor = '#3b0924',
   strokeWidth = 1.4,
   drawDuration = 1.6,
   fillDelay = 0.2,

@@ -32,7 +32,7 @@ export function JapaneseTowerLandscape({
   sandbox = "allow-scripts allow-same-origin",
   onReady,
 }: JapaneseTowerLandscapeProps) {
-  const [ready, setReady] = useState(false);
+  const [ready, setReady] = useState(true);
   const frameSource = useMemo(() => {
     const hashIndex = sourceUrl.indexOf("#");
     const base = hashIndex >= 0 ? sourceUrl.slice(0, hashIndex) : sourceUrl;
@@ -45,8 +45,6 @@ export function JapaneseTowerLandscape({
     if (hero && !params.has("hero")) params.set("hero", "true");
     return `${pathPart}?${params.toString()}${hash}`;
   }, [country, sourceUrl, hero, weather, time]);
-
-  useEffect(() => setReady(false), [frameSource]);
 
   return (
     <div
