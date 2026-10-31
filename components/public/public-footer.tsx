@@ -18,7 +18,7 @@ export function PublicFooter() {
               LET’S BUILD WHAT’S NEXT.
             </h3>
             <p className="text-sm text-[#77666a] max-w-xl font-medium">
-              Partner with Concrete Fair 2026 and help shape the next generation of civil engineering talent.
+              Join Concrete Fair 2026 and showcase your engineering talent across 8 national-level events.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-3 shrink-0">
@@ -26,7 +26,7 @@ export function PublicFooter() {
               href="mailto:ici@rvce.edu.in"
               className="px-6 py-3 bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] rounded-full font-sans text-xs font-semibold tracking-wide transition-all shadow-md hover:-translate-y-0.5"
             >
-              Partner With Us
+              Contact Coordinators
             </Link>
             <Link
               href="/register"

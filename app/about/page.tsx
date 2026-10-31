@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowRight, ArrowUpRight, Award, Building, CheckCircle, Mail, Phone, Users } from 'lucide-react'
+import { ArrowRight, ArrowUpRight } from 'lucide-react'
 import { PublicHeader } from '@/components/public/public-header'
 import { PublicFooter } from '@/components/public/public-footer'
 import { conclaveInfo } from '@/lib/data'
@@ -161,80 +161,6 @@ export default function AboutPage() {
                   </p>
                 </div>
               ))}
-            </div>
-          </div>
-
-          {/* Sponsorship Section from Proposal & Brochure */}
-          <div id="sponsorship" className="space-y-8 pt-4">
-            <div className="border-b border-[#eadfd4] pb-6 space-y-2">
-              <span className="font-mono text-xs uppercase tracking-wider text-[#a98b78] font-bold block">
-                PARTNER WITH CONCRETE FAIR 2026 // SPONSORSHIP PACKAGES
-              </span>
-              <h2 className="font-serif text-3xl sm:text-4xl text-[#34252b] font-medium tracking-tight">
-                Let’s Build Something Solid Together
-              </h2>
-              <p className="text-sm text-[#77666a] max-w-3xl leading-relaxed">
-                Connect with 800+ participants and 5,000+ aspiring civil engineers from institutions across the country, showcase your products, and recruit emerging engineering talent.
-              </p>
-            </div>
-
-            {/* Packages Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {conclaveInfo.sponsorshipPackages.map((pkg) => (
-                <div
-                  key={pkg.name}
-                  className="bg-white border border-[#eadfd4] p-6 rounded-3xl flex flex-col justify-between space-y-6 shadow-2xs hover:border-[#3b0924]/60 transition-all"
-                >
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between">
-                      <span className="font-mono text-xs font-bold text-[#3b0924] uppercase">
-                        {pkg.name}
-                      </span>
-                      <span className="text-[10px] font-mono text-[#a98b78] bg-[#f4e9dc] px-2 py-0.5 rounded-full font-bold">
-                        {pkg.slots}
-                      </span>
-                    </div>
-
-                    <div className="font-serif text-3xl font-black text-[#34252b]">
-                      {pkg.price}
-                    </div>
-
-                    <ul className="space-y-2 text-xs text-[#77666a] font-sans pt-2 border-t border-[#eadfd4]">
-                      {pkg.benefits.map((b) => (
-                        <li key={b} className="flex items-start gap-2">
-                          <CheckCircle className="size-3.5 text-[#3b0924] shrink-0 mt-0.5" />
-                          <span>{b}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <a
-                    href={`mailto:${conclaveInfo.email}?subject=Concrete Fair 2026 Sponsorship - ${pkg.name} Package`}
-                    className="w-full text-center py-2.5 bg-[#f4e9dc] hover:bg-[#3b0924] text-[#3b0924] hover:text-white rounded-full font-sans text-xs font-semibold tracking-wide transition-all"
-                  >
-                    Partner as {pkg.name}
-                  </a>
-                </div>
-              ))}
-            </div>
-
-            {/* Build your own package table */}
-            <div className="bg-white border border-[#eadfd4] p-6 sm:p-8 rounded-3xl space-y-4 shadow-2xs">
-              <h3 className="font-serif text-xl text-[#34252b] font-bold">
-                Build Your Own Package
-              </h3>
-              <p className="text-xs text-[#77666a]">
-                Pick individual incentives to suit your organization&apos;s goals and budget:
-              </p>
-              <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 pt-2">
-                {conclaveInfo.customSponsorship.map((item) => (
-                  <div key={item.item} className="p-3 bg-[#fff8ef] rounded-xl border border-[#eadfd4] text-center">
-                    <span className="block text-xs font-medium text-[#34252b]">{item.item}</span>
-                    <span className="block font-serif text-lg font-bold text-[#3b0924] mt-1">{item.price}</span>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
 

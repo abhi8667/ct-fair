@@ -48,10 +48,10 @@ const faqs: FAQItem[] = [
   },
   {
     id: 'f6',
-    code: 'SPONSORSHIP',
-    question: 'How can companies sponsor or partner with Concrete Fair 2026?',
+    code: 'QUERIES',
+    question: 'Who can I contact for queries regarding events?',
     answer:
-      'Organizations can partner across Silver (₹75,000), Gold (₹1,50,000), Platinum (₹2,50,000), Title (₹3,50,000), or build customized sponsorship packages (branding posters, stalls, product exhibition, social media promotion). Contact us at ici@rvce.edu.in for the formal sponsorship proposal.',
+      'You can reach out to our student coordinators Dakshak Pradeep (+91 91085 73889) or Prachi Singh (+91 80036 22469), or email us directly at ici@rvce.edu.in.',
   },
 ]
 

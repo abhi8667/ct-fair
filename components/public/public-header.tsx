@@ -15,7 +15,6 @@ export function PublicHeader() {
     { href: '/about', label: 'About' },
     { href: '/events', label: 'Events' },
     { href: '/schedule', label: 'Schedule' },
-    { href: '/about#sponsorship', label: 'Sponsorship' },
     { href: '/faq', label: 'FAQs' },
   ]
 

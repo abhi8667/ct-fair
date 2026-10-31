@@ -762,7 +762,7 @@ export default function PublicHomePage() {
               LET’S BUILD WHAT’S NEXT. REGISTER YOUR TEAM.
             </h2>
             <p className="text-sm md:text-base text-[#eadfd4] max-w-2xl leading-relaxed text-pretty">
-              Partner with Concrete Fair 2026 and help shape the next generation of civil engineering talent. Submit your registration through our central Google Form today.
+              Join Concrete Fair 2026 and showcase your engineering talent across 8 national-level challenges. Submit your team registration through our central Google Form today.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 pt-2 w-full sm:w-auto">

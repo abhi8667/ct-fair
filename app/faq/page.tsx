@@ -26,7 +26,7 @@ export default function PublicFAQPage() {
               Frequently Asked Questions
             </h1>
             <p className="font-serif text-xl sm:text-2xl italic text-[#77666a] mt-2 max-w-2xl font-light text-pretty">
-              Find answers regarding event schedules, team compositions, registration via Google Form, and sponsorship.
+              Find answers regarding event schedules, team compositions, coordinator contacts, and registration via Google Form.
             </p>
           </div>
 
