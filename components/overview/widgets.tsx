@@ -126,8 +126,8 @@ export function ActivityFeed() {
   return (
     <ol className="relative flex flex-col">
       <span className="absolute top-2 bottom-2 left-[15px] w-px bg-border" aria-hidden="true" />
-      {activity.map((a, i) => {
-        const Icon = kindIcon[a.kind]
+      {activity.map((a: any, i: number) => {
+        const Icon = (kindIcon as Record<string, any>)[a.kind] || kindIcon.checkin
         return (
           <li key={i} className="relative flex gap-4 py-2.5">
             <span className="relative z-10 grid size-8 shrink-0 place-items-center border border-border bg-card">

@@ -1,4 +1,4 @@
-declare module 'lucide-react' {
+  declare module 'lucide-react' {
   export const AlertCircle: any
   export const AlertTriangle: any
   export const ArrowLeft: any
@@ -16,6 +16,7 @@ declare module 'lucide-react' {
   export const CheckCircle: any
   export const CheckCircle2: any
   export const ChevronDown: any
+  export const CircleHelp: any
   export const ClipboardList: any
   export const Clock: any
   export const Compass: any
@@ -25,6 +26,8 @@ declare module 'lucide-react' {
   export const Eye: any
   export const Flag: any
   export const Globe: any
+  export const HelpCircle: any
+  export const Info: any
   export const Layers: any
   export const LayoutGrid: any
   export const Mail: any

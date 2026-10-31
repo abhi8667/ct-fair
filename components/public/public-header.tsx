@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { ArrowUpRight, Menu, ShieldAlert, Ticket, X } from 'lucide-react'
+import { ArrowUpRight, Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 export function PublicHeader() {
@@ -15,8 +15,7 @@ export function PublicHeader() {
     { href: '/about', label: 'About' },
     { href: '/events', label: 'Events' },
     { href: '/schedule', label: 'Schedule' },
-    { href: '/about#gallery', label: 'Gallery' },
-    { href: '/about#sponsors', label: 'Sponsors' },
+    { href: '/about#sponsorship', label: 'Sponsorship' },
     { href: '/faq', label: 'FAQs' },
   ]
 
@@ -71,7 +70,7 @@ export function PublicHeader() {
             </div>
             <div className="flex flex-col leading-none">
               <span className="font-mono text-[8px] font-bold text-[#34252b] tracking-tight uppercase">
-                ICI STUDENT CHAPTER
+                ICI CHAPTER
               </span>
               <span className="font-mono text-[7px] text-[#77666a] uppercase tracking-tighter">
                 BENGALURU CENTRE
@@ -101,67 +100,54 @@ export function PublicHeader() {
           })}
         </nav>
 
-        {/* Right Action: My Pass + Get Tickets */}
+        {/* Right Action: Register Button */}
         <div className="flex items-center gap-3">
           <Link
-            href="/portal"
-            className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-[#77666a] hover:text-[#3b0924] hover:bg-[#f4e9dc] transition-colors"
-          >
-            <Ticket className="size-3.5 text-[#3b0924]" />
-            <span>My Pass</span>
-          </Link>
-
-          {/* Primary CTA button matching PPT theme */}
-          <Link
             href="/register"
-            className="inline-flex items-center gap-1.5 px-5 py-2.5 bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] hover:text-white rounded-full font-sans text-xs font-semibold tracking-wide transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5"
+            className="inline-flex items-center gap-1.5 px-5 py-2.5 bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] hover:text-white rounded-full font-sans text-xs font-semibold tracking-wide transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 cursor-pointer focus-visible:outline-2 focus-visible:outline-[#3b0924]"
           >
             <span>Register Now</span>
             <ArrowUpRight className="size-3.5" />
           </Link>
 
-          {/* Mobile menu trigger */}
+          {/* Mobile hamburger button */}
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="grid size-9 place-items-center rounded-full border border-[#eadfd4] xl:hidden text-[#34252b] hover:bg-[#f4e9dc] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3b0924]"
+            className="lg:hidden p-2 rounded-xl text-[#34252b] hover:bg-[#f4e9dc] transition-colors cursor-pointer"
             aria-label="Toggle navigation menu"
-            aria-expanded={mobileMenuOpen}
-            aria-controls="mobile-navigation"
           >
-            {mobileMenuOpen ? <X className="size-4" aria-hidden="true" /> : <Menu className="size-4" aria-hidden="true" />}
+            {mobileMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
         </div>
       </div>
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div id="mobile-navigation" className="xl:hidden border-b border-slate-200 bg-white px-6 py-6 animate-in slide-in-from-top-2 duration-200">
-          <nav className="flex flex-col space-y-3">
+        <div className="lg:hidden bg-[#fff8ef] border-b border-[#eadfd4] px-6 py-5 space-y-4">
+          <nav className="flex flex-col space-y-3 font-sans text-sm">
             {navLinks.map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-sm font-medium text-[#34252b] hover:text-[#3b0924] py-1 border-b border-stone-200/60"
+                className="text-[#34252b] hover:text-[#3b0924] font-medium py-1"
               >
                 {link.label}
               </Link>
             ))}
-            <div className="pt-3 flex flex-col gap-2 font-mono text-xs">
-              <Link
-                href="/portal"
-                onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-between py-2 text-[#34252b] hover:text-[#3b0924]"
-              >
-                <span className="flex items-center gap-2">
-                  <Ticket className="size-3.5 text-[#3b0924]" />
-                  <span>Participant Portal &amp; QR Tickets</span>
-                </span>
-                <span>→</span>
-              </Link>
-            </div>
           </nav>
+
+          <div className="pt-3 border-t border-[#eadfd4]">
+            <Link
+              href="/register"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center justify-center gap-2 w-full py-3 bg-[#3b0924] text-[#fff8ef] rounded-full text-xs font-semibold"
+            >
+              <span>Register Now (Google Form)</span>
+              <ArrowUpRight className="size-3.5" />
+            </Link>
+          </div>
         </div>
       )}
     </header>

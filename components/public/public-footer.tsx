@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { conclaveInfo } from '@/lib/data'
 
 export function PublicFooter() {
   return (
@@ -7,7 +8,7 @@ export function PublicFooter() {
       <div className="absolute inset-0 hatch-wine pointer-events-none opacity-40" aria-hidden="true" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10 space-y-12">
-        {/* Top Prominent Banner matching Slide 8 */}
+        {/* Top Prominent Banner from Slide 8 */}
         <div className="p-8 sm:p-10 rounded-3xl bg-[#fff8ef] text-[#34252b] border border-[#d8c2ab] shadow-xl flex flex-col lg:flex-row lg:items-center justify-between gap-6">
           <div className="space-y-2">
             <span className="font-mono text-[10px] text-[#75435c] uppercase tracking-widest font-bold">
@@ -31,12 +32,12 @@ export function PublicFooter() {
               href="/register"
               className="px-6 py-3 bg-[#f4e9dc] hover:bg-[#eadfd4] text-[#3b0924] border border-[#d8c2ab] rounded-full font-sans text-xs font-semibold tracking-wide transition-all"
             >
-              Register for Events
+              Register via Google Form
             </Link>
           </div>
         </div>
 
-        {/* 4 Columns from Slide 8 */}
+        {/* 4 Official Columns from Slide 8 & Brochure */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 border-b border-[#75435c]/60">
           {/* Col 1: Contact */}
           <div className="space-y-3">
@@ -44,32 +45,35 @@ export function PublicFooter() {
               CONTACT
             </span>
             <Link
-              href="mailto:ici@rvce.edu.in"
+              href={`mailto:${conclaveInfo.email}`}
               className="text-base font-semibold text-white hover:text-[#d8c2ab] transition-colors block"
             >
-              ici@rvce.edu.in
+              {conclaveInfo.email}
             </Link>
-            <div className="font-mono text-xs text-[#eadfd4]/90 space-y-1 pt-1">
-              <div>Phone: +91 91085 73889</div>
-              <div>Phone: +91 80036 22469</div>
+            <div className="text-xs text-[#eadfd4]/90 space-y-1 font-sans">
+              {conclaveInfo.contacts.map((c) => (
+                <div key={c.name}>
+                  <span className="text-[#d8c2ab] font-medium">{c.name}:</span> {c.phone}
+                </div>
+              ))}
             </div>
           </div>
 
-          {/* Col 2: Instagram & Socials */}
+          {/* Col 2: Instagram */}
           <div className="space-y-3">
             <span className="font-mono text-[10px] uppercase tracking-widest text-[#d8c2ab] font-bold block">
               INSTAGRAM
             </span>
             <Link
-              href="https://instagram.com/icirvce"
+              href={conclaveInfo.instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="text-base font-semibold text-white hover:text-[#d8c2ab] transition-colors block"
             >
-              @icirvce
+              {conclaveInfo.instagram}
             </Link>
             <p className="text-xs text-[#eadfd4]/80 leading-relaxed">
-              Follow for event alerts, rulebooks, testing bay teasers, and schedule updates.
+              Follow @icirvce on Instagram for official updates and announcements.
             </p>
           </div>
 
@@ -83,7 +87,7 @@ export function PublicFooter() {
               RV College of Engineering
             </p>
             <p className="font-mono text-[10px] text-[#eadfd4]/80">
-              Mysore Road, Bengaluru, Karnataka 560059
+              {conclaveInfo.address}
             </p>
           </div>
 
@@ -93,13 +97,13 @@ export function PublicFooter() {
               CONCLAVE DATES
             </span>
             <div className="text-base font-semibold text-white">
-              30 NOV &amp; 01 DEC 2026
+              {conclaveInfo.dates}
             </div>
             <p className="font-serif italic text-xs text-[#eadfd4]">
-              &ldquo;Where Concrete Meets Creativity&rdquo;
+              &ldquo;{conclaveInfo.tagline}&rdquo;
             </p>
             <div className="font-mono text-[10px] text-[#d8c2ab] pt-1">
-              13TH EDITION · 800+ PARTICIPANTS
+              {conclaveInfo.edition} · {conclaveInfo.participantsExpected} PARTICIPANTS
             </div>
           </div>
         </div>
@@ -110,11 +114,13 @@ export function PublicFooter() {
           <div className="flex items-center gap-5">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>•</span>
+            <Link href="/about" className="hover:text-white transition-colors">About</Link>
+            <span>•</span>
             <Link href="/events" className="hover:text-white transition-colors">Events</Link>
             <span>•</span>
             <Link href="/schedule" className="hover:text-white transition-colors">Schedule</Link>
             <span>•</span>
-            <Link href="/register" className="text-[#d8c2ab] hover:text-white transition-colors font-bold">Register</Link>
+            <Link href="/register" className="text-[#d8c2ab] hover:text-white transition-colors font-bold">Register (Google Form)</Link>
           </div>
         </div>
       </div>

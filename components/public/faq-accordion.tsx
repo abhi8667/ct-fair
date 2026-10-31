@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
+import { conclaveInfo } from '@/lib/data'
 
 interface FAQItem {
   id: string
@@ -13,33 +14,44 @@ interface FAQItem {
 const faqs: FAQItem[] = [
   {
     id: 'f1',
-    code: 'SPEC_01',
-    question: 'Accommodation & Campus Lodging for Outstation Delegations',
-    answer: 'Subsidized hostel dormitory accommodation is reserved on the RVCE campus for accredited outstation university contingents from 29 November to 02 December. Private twin-sharing quarters are available for faculty mentors and industry delegates upon early request during registration. Campus dining halls serve all meals during the conclave.',
+    code: 'ABOUT',
+    question: 'What is Concrete Fair 2026 and who is organizing it?',
+    answer:
+      'Concrete Fair 2026 is a national-level technical fest organized by the Department of Civil Engineering at RV College of Engineering, Bengaluru, in association with the Indian Concrete Institute (ICI) Chapter. Continuing a legacy of technical excellence, this 13th edition brings together 800+ participants from across India.',
   },
   {
     id: 'f2',
-    code: 'SPEC_02',
-    question: 'Team Eligibility & Inter-Disciplinary / Inter-College Collaboration',
-    answer: 'All enrolled undergraduate and postgraduate students from Civil, Architecture, Mechanical, Structural, and Materials Science faculties are eligible. Inter-college teams are expressly encouraged for both Canoe-X and the Rapid Model-Athon, provided a single primary institution acts as the official liaison contact.',
+    code: 'DATES & VENUE',
+    question: 'When and where will the fest take place?',
+    answer: `Concrete Fair 2026 takes place on 30 November & 01 December 2026 at the Department of Civil Engineering, RV College of Engineering, ${conclaveInfo.address}.`,
   },
   {
     id: 'f3',
-    code: 'SPEC_03',
-    question: 'Equipment & Laboratory Testing Protocols (Mandatory PPE Guidelines)',
-    answer: 'Steel-toed safety boots and safety goggles are strictly mandatory within Heavy Testing Bay A, the Structures Lab, and the Materials Testing Yard. RVCE Civil Labs will supply all test jigs, standardized silica sand, cementitious binders, and digital strain measurement calibration certificates. Safety glasses and ear protection can also be rented at Safety Counter 2.',
+    code: 'EVENTS',
+    question: 'What events are conducted during the 2-day fest?',
+    answer:
+      'The fest features eight competitive events: 6 Technical challenges (CONmix Mix-design, CONarch Arch design & build, CONzine Smart city designing, CONmake Model making, CONquest Civil engineering quiz, CONscape Surveying treasure hunt & escape room) and 2 Non-Technical events (CONflix Short film, CONfight Debate challenge).',
   },
   {
     id: 'f4',
-    code: 'SPEC_04',
-    question: 'Certification & Continuing Professional Education (CPE) Credits',
-    answer: 'All registered delegates receive a cryptographically signed Certificate of Technical Participation issued jointly by the Indian Concrete Institute (ICI) and RVCE Department of Civil Engineering. Practicing structural engineers and faculty delegates are awarded 12 certified Continuing Professional Education (CPE) units.',
+    code: 'REGISTRATION',
+    question: 'How do participants register for events?',
+    answer:
+      'All registrations are handled centrally via the official Google Form embedded on our Registration page. Teams can submit their details directly online without any ticket booking fees.',
   },
   {
     id: 'f5',
-    code: 'SPEC_05',
-    question: 'Registration Deadlines & Capacity Limits for Testing Bays',
-    answer: 'Due to hydraulic pump cycle constraints and flume bay testing times, slots for Canoe-X (28 boats max), Seismic Shake-Table (50 models max), and Bio-Concrete Lab (60 seats) close strictly upon reaching saturation. Early registration is advised to secure physical specimen curing slots.',
+    code: 'TEAM SIZES',
+    question: 'What are the team size requirements for each event?',
+    answer:
+      'Team sizes: CONmix (3 participants), CONarch (4 participants), CONzine (4–5 participants), CONmake (3 participants), CONquest (4 participants), CONscape (3–4 participants), CONflix (6–7 participants), and CONfight (3 participants).',
+  },
+  {
+    id: 'f6',
+    code: 'SPONSORSHIP',
+    question: 'How can companies sponsor or partner with Concrete Fair 2026?',
+    answer:
+      'Organizations can partner across Silver (₹75,000), Gold (₹1,50,000), Platinum (₹2,50,000), Title (₹3,50,000), or build customized sponsorship packages (branding posters, stalls, product exhibition, social media promotion). Contact us at ici@rvce.edu.in for the formal sponsorship proposal.',
   },
 ]
 
@@ -57,25 +69,25 @@ export function FAQAccordion() {
         return (
           <div
             key={faq.id}
-            className="bg-card border border-border/80 transition-all duration-200 overflow-hidden"
+            className="bg-white border border-[#eadfd4] rounded-2xl transition-all duration-200 overflow-hidden shadow-2xs"
           >
             <button
               type="button"
               id={`faq-header-${faq.id}`}
               onClick={() => toggle(faq.id)}
-              className="w-full text-left p-5 flex items-center justify-between gap-4 cursor-pointer hover:bg-muted/30 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d8c2ab]"
+              className="w-full text-left p-5 flex items-center justify-between gap-4 cursor-pointer hover:bg-[#fff8ef] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3b0924]"
               aria-expanded={isOpen}
               aria-controls={`faq-panel-${faq.id}`}
             >
               <div className="flex items-center gap-3">
-                <span className="font-mono text-xs text-[#3b0924] font-semibold">{faq.code} //</span>
-                <span className="font-serif text-lg md:text-xl text-foreground font-medium text-balance">
+                <span className="font-mono text-xs text-[#3b0924] font-bold">{faq.code} //</span>
+                <span className="font-serif text-base sm:text-lg text-[#34252b] font-medium text-balance">
                   {faq.question}
                 </span>
               </div>
               <ChevronDown
-                className={`size-4 text-muted-foreground transition-transform duration-200 shrink-0 ${
-                  isOpen ? 'rotate-180 text-gold' : ''
+                className={`size-4 text-[#77666a] transition-transform duration-200 shrink-0 ${
+                  isOpen ? 'rotate-180 text-[#3b0924]' : ''
                 }`}
                 aria-hidden="true"
               />
@@ -85,7 +97,7 @@ export function FAQAccordion() {
                 id={`faq-panel-${faq.id}`}
                 role="region"
                 aria-labelledby={`faq-header-${faq.id}`}
-                className="px-5 pb-5 pt-1 border-t border-border/40 text-xs md:text-sm text-muted-foreground leading-relaxed animate-in fade-in-50 duration-200 text-pretty"
+                className="px-5 pb-5 pt-1 border-t border-[#eadfd4] text-xs sm:text-sm text-[#77666a] leading-relaxed animate-in fade-in-50 duration-200 text-pretty"
               >
                 {faq.answer}
               </div>
