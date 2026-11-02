@@ -24,7 +24,7 @@ export type JapaneseTowerLandscapeProps = {
 
 export function JapaneseTowerLandscape({
   className = "",
-  sourceUrl = "/japanese-tower.html",
+  sourceUrl = "/japanese-tower",
   country = "india",
   weather = "storm",
   time = "sunset",
