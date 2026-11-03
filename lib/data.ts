@@ -320,7 +320,7 @@ export const events: FairEvent[] = [
 // Official Department and Conclave Details
 export const conclaveInfo = {
   name: 'Concrete Fair 2026',
-  tagline: 'Where Concrete meets creativity',
+  tagline: 'Where Concrete Meets Creativity',
   promise: 'Learn by doing. Compete with purpose. Connect with industry.',
   edition: '13th Edition',
   totalPrizePool: '₹ 1,30,000',
