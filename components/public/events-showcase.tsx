@@ -93,9 +93,17 @@ export function EventsShowcase() {
                   <div className="flex items-center justify-between text-[#77666a]">
                     <span className="flex items-center gap-1.5">
                       <Trophy className="size-3.5 text-[#a98b78]" aria-hidden="true" />
-                      <span>Prize:</span>
+                      <span>Prize Pool:</span>
                     </span>
                     <span className="text-[#3b0924] font-bold">{e.prizes}</span>
+                  </div>
+                )}
+                {e.prizeBreakdown && (
+                  <div className="flex items-center justify-between text-[#77666a] text-[10px] pt-0.5">
+                    <span>1st / 2nd / 3rd:</span>
+                    <span className="font-semibold text-[#3b0924]">
+                      {e.prizeBreakdown.first} · {e.prizeBreakdown.second} · {e.prizeBreakdown.third}
+                    </span>
                   </div>
                 )}
               </div>

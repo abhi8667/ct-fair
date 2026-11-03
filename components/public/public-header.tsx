@@ -24,9 +24,16 @@ export function PublicHeader() {
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10 h-20 flex items-center justify-between gap-4">
         {/* Left: Brand Lockup & Institutional Crests */}
         <div className="flex items-center gap-3 sm:gap-5 shrink-0">
-          {/* RVCE Logo & Brand Lockup */}
-          <Link href="/" className="flex items-center gap-3 group focus-visible:outline-2 focus-visible:outline-[#3b0924]">
-            <div className="size-10 rounded-xl border border-[#eadfd4] bg-white grid place-items-center shadow-xs overflow-hidden group-hover:border-[#3b0924] transition-colors p-1">
+          {/* Official Concrete Fair & RVCE Brand Lockup */}
+          <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group focus-visible:outline-2 focus-visible:outline-[#3b0924]">
+            <div className="size-10 sm:size-11 rounded-xl border border-[#eadfd4] bg-white grid place-items-center shadow-xs overflow-hidden group-hover:border-[#3b0924] transition-colors p-1 shrink-0">
+              <img
+                src="/theme/concrete-fair-logo.png"
+                alt="Concrete Fair 2026 Official Logo"
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <div className="size-10 sm:size-11 rounded-xl border border-[#eadfd4] bg-white grid place-items-center shadow-xs overflow-hidden group-hover:border-[#3b0924] transition-colors p-1 shrink-0 hidden sm:grid">
               <img
                 src="/theme/rvce-logo.png"
                 alt="RVCE Crest"

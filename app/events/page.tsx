@@ -35,7 +35,7 @@ export default function PublicEventsPage() {
       date: '30 Nov 2026',
       time: '09:30 AM',
       venue: 'Concrete & Materials Testing Lab, RVCE',
-      prizes: '₹ X,XX,XXX',
+      prizes: '₹ 18,000 (1st: ₹10k · 2nd: ₹5k · 3rd: ₹3k)',
       badge: 'Mix Design',
     },
     {
@@ -48,7 +48,7 @@ export default function PublicEventsPage() {
       date: '30 Nov 2026',
       time: '11:00 AM',
       venue: 'Structural Fabrication Yard, RVCE',
-      prizes: '₹ X,XX,XXX',
+      prizes: '₹ 18,000 (1st: ₹10k · 2nd: ₹5k · 3rd: ₹3k)',
       badge: 'Arch Build',
     },
     {
@@ -61,7 +61,7 @@ export default function PublicEventsPage() {
       date: '30 Nov 2026',
       time: '02:00 PM',
       venue: 'CAD & GIS Modeling Studio, RVCE',
-      prizes: '₹ X,XX,XXX',
+      prizes: '₹ 18,000 (1st: ₹10k · 2nd: ₹5k · 3rd: ₹3k)',
       badge: 'Smart City',
     },
     {
@@ -74,7 +74,7 @@ export default function PublicEventsPage() {
       date: '30 Nov 2026',
       time: '03:30 PM',
       venue: 'Masonry & Model Workshop, RVCE',
-      prizes: '₹ X,XX,XXX',
+      prizes: '₹ 18,000 (1st: ₹10k · 2nd: ₹5k · 3rd: ₹3k)',
       badge: 'Model Making',
     },
     {
@@ -87,7 +87,7 @@ export default function PublicEventsPage() {
       date: '01 Dec 2026',
       time: '11:30 AM',
       venue: 'Campus Surveying Ground & Lab, RVCE',
-      prizes: '₹ X,XX,XXX',
+      prizes: '₹ 18,000 (1st: ₹10k · 2nd: ₹5k · 3rd: ₹3k)',
       badge: 'Survey & Escape',
     },
   ]
@@ -99,19 +99,31 @@ export default function PublicEventsPage() {
       <main className="flex-1 w-full pt-32 pb-24 px-4 sm:px-6 lg:px-12">
         <div className="max-w-7xl mx-auto space-y-12">
           {/* Header */}
-          <div className="border-b border-[#eadfd4] pb-8 space-y-2">
-            <div className="flex items-center gap-2">
-              <span className="w-5 h-0.5 bg-[#3b0924]" aria-hidden="true" />
-              <span className="font-mono text-xs uppercase tracking-widest text-[#a98b78] font-bold">
-                05 • CONCRETE FAIR 2026 // EIGHT EVENT EXPERIENCES · ONE CONNECTED COMMUNITY
-              </span>
+          <div className="border-b border-[#eadfd4] pb-8 flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div className="space-y-2">
+              <div className="flex items-center gap-2">
+                <span className="w-5 h-0.5 bg-[#3b0924]" aria-hidden="true" />
+                <span className="font-mono text-xs uppercase tracking-widest text-[#a98b78] font-bold">
+                  05 • CONCRETE FAIR 2026 // EIGHT EVENT EXPERIENCES · ONE CONNECTED COMMUNITY
+                </span>
+              </div>
+              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#34252b] font-normal tracking-tight uppercase text-balance">
+                Official Events &amp; Challenges
+              </h1>
+              <p className="font-serif text-xl sm:text-2xl italic text-[#77666a] mt-2 max-w-3xl font-light text-pretty">
+                {conclaveInfo.tagline} — Six technical challenges and two non-technical events across Day 1 and Day 2.
+              </p>
             </div>
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#34252b] font-normal tracking-tight uppercase text-balance">
-              Official Events &amp; Challenges
-            </h1>
-            <p className="font-serif text-xl sm:text-2xl italic text-[#77666a] mt-2 max-w-3xl font-light text-pretty">
-              {conclaveInfo.tagline} — Six technical challenges and two non-technical events across Day 1 and Day 2.
-            </p>
+
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 shrink-0">
+              <div className="px-5 py-3 rounded-2xl bg-[#3b0924] text-white border border-[#75435c] shadow-sm flex items-center gap-3">
+                <Trophy className="size-5 text-[#d8c2ab]" />
+                <div>
+                  <div className="font-mono text-[9px] uppercase tracking-wider text-[#eadfd4]">TOTAL PRIZE POOL</div>
+                  <div className="font-sans font-black text-xl leading-none text-white">{conclaveInfo.totalPrizeAmount}</div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Interactive Accordion Gallery Spotlight */}
@@ -133,6 +145,72 @@ export default function PublicEventsPage() {
               trigger="hover"
             />
           </div>
+
+          {/* =========================================================================
+              OFFICIAL EVENT LIST & PRIZE DISTRIBUTION TABLE (SLIDE ARCHETYPE)
+              ========================================================================= */}
+          <section className="rounded-3xl overflow-hidden border border-[#d8c2ab] shadow-sm bg-white">
+            {/* Dark Navy / Wine Table Header */}
+            <div className="bg-[#101f33] text-white px-6 py-5 text-center space-y-1">
+              <h2 className="font-sans font-black text-2xl sm:text-3xl tracking-wider uppercase text-white">
+                EVENT LIST
+              </h2>
+              <p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-widest text-[#a8b8cc]">
+                COMPETITION CATEGORIES | TEAM SIZES | PRIZE DISTRIBUTION
+              </p>
+            </div>
+
+            {/* Table Container */}
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-xs font-sans">
+                <thead>
+                  <tr className="bg-[#176d7e] text-white font-mono text-[11px] uppercase tracking-wider">
+                    <th className="py-3.5 px-4 text-center w-16">NO.</th>
+                    <th className="py-3.5 px-5">EVENT</th>
+                    <th className="py-3.5 px-5 text-center">TEAM SIZE</th>
+                    <th className="py-3.5 px-5 text-center">1ST PRIZE</th>
+                    <th className="py-3.5 px-5 text-center">2ND PRIZE</th>
+                    <th className="py-3.5 px-5 text-center">3RD PRIZE</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[#eadfd4]">
+                  {[
+                    { no: '01', name: 'CONMIX', size: '3–4', p1: '₹ 10,000', p2: '₹ 5,000', p3: '₹ 3,000' },
+                    { no: '02', name: 'CONARCH', size: '4–5', p1: '₹ 10,000', p2: '₹ 5,000', p3: '₹ 3,000' },
+                    { no: '03', name: 'CONMAKE', size: '3–4', p1: '₹ 10,000', p2: '₹ 5,000', p3: '₹ 3,000' },
+                    { no: '04', name: 'CONZINE', size: '4–5', p1: '₹ 10,000', p2: '₹ 5,000', p3: '₹ 3,000' },
+                    { no: '05', name: 'CONSCAPE', size: '4–5', p1: '₹ 10,000', p2: '₹ 5,000', p3: '₹ 3,000' },
+                    { no: '06', name: 'CONFIGHT', size: '3', p1: '₹ 7,000', p2: '₹ 4,000', p3: '₹ 2,000' },
+                    { no: '07', name: 'CONQUEST', size: '4', p1: '₹ 7,000', p2: '₹ 4,000', p3: '₹ 2,000' },
+                    { no: '08', name: 'CONFLIX', size: '6–7', p1: '₹ 7,000', p2: '₹ 4,000', p3: '₹ 2,000' },
+                  ].map((row, idx) => (
+                    <tr
+                      key={row.no}
+                      className={`hover:bg-[#f4e9dc]/40 transition-colors ${idx % 2 === 1 ? 'bg-[#fcfaf7]' : 'bg-white'}`}
+                    >
+                      <td className="py-3.5 px-4 text-center font-mono text-[11px] text-[#77666a]">{row.no}</td>
+                      <td className="py-3.5 px-5 font-sans font-bold text-[#34252b] tracking-wide">{row.name}</td>
+                      <td className="py-3.5 px-5 text-center font-mono text-[#34252b] font-medium">{row.size}</td>
+                      <td className="py-3.5 px-5 text-center font-mono font-bold text-[#176d7e]">{row.p1}</td>
+                      <td className="py-3.5 px-5 text-center font-mono font-semibold text-[#3b0924]">{row.p2}</td>
+                      <td className="py-3.5 px-5 text-center font-mono font-semibold text-[#77666a]">{row.p3}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            {/* Total Prize Amount Footer Banner */}
+            <div className="bg-[#101f33] text-white px-6 py-4 flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
+              <span className="font-mono text-xs sm:text-sm uppercase tracking-widest text-[#a8b8cc] font-semibold">
+                TOTAL PRIZE AMOUNT
+              </span>
+              <span className="h-4 w-px bg-white/20 hidden sm:inline-block" aria-hidden="true" />
+              <span className="font-sans font-black text-2xl sm:text-3xl text-white tracking-tight">
+                ₹ 1,30,000
+              </span>
+            </div>
+          </section>
 
           {/* Search & Filter Bar */}
           <div className="flex flex-col md:flex-row gap-4 justify-between items-stretch md:items-center bg-white border border-[#eadfd4] p-4 rounded-2xl shadow-2xs">
@@ -235,29 +313,42 @@ export default function PublicEventsPage() {
                       </div>
 
                       {/* Specs tags & Register CTA */}
-                      <div className="pt-4 border-t border-[#eadfd4] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                        <div className="flex flex-wrap items-center gap-4 font-mono text-xs text-[#34252b]">
-                          <div className="flex items-center gap-1.5">
+                      <div className="pt-4 border-t border-[#eadfd4] space-y-3">
+                        {e.prizeBreakdown && (
+                          <div className="p-3 rounded-2xl bg-[#fff8ef] border border-[#eadfd4] flex flex-wrap items-center justify-between gap-2 font-mono text-[11px]">
+                            <div className="flex items-center gap-1.5 text-[#3b0924] font-bold">
+                              <Trophy className="size-3.5 text-[#a98b78]" />
+                              <span>Prize Pool: {e.prizePool || e.prizes}</span>
+                            </div>
+                            <div className="flex items-center gap-1.5 text-[10px]">
+                              <span className="px-2 py-0.5 rounded-full bg-[#f4e9dc] text-[#34252b]">
+                                1st: <strong className="text-[#3b0924]">{e.prizeBreakdown.first}</strong>
+                              </span>
+                              <span className="px-2 py-0.5 rounded-full bg-[#f4e9dc] text-[#34252b]">
+                                2nd: <strong className="text-[#3b0924]">{e.prizeBreakdown.second}</strong>
+                              </span>
+                              <span className="px-2 py-0.5 rounded-full bg-[#f4e9dc] text-[#34252b]">
+                                3rd: <strong className="text-[#3b0924]">{e.prizeBreakdown.third}</strong>
+                              </span>
+                            </div>
+                          </div>
+                        )}
+
+                        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                          <div className="flex items-center gap-2 font-mono text-xs text-[#34252b]">
                             <Users className="size-4 text-[#3b0924]" />
                             <span className="font-bold">Team:</span>
                             <span className="text-[#77666a]">{e.teamSize}</span>
                           </div>
-                          {e.prizes && (
-                            <div className="flex items-center gap-1.5">
-                              <Trophy className="size-4 text-[#a98b78]" />
-                              <span className="font-bold text-[#3b0924]">Prize:</span>
-                              <span className="font-bold text-[#3b0924]">{e.prizes}</span>
-                            </div>
-                          )}
-                        </div>
 
-                        <Link
-                          href="/register"
-                          className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] rounded-full font-sans text-xs font-semibold tracking-wide transition-all shadow-2xs hover:shadow-sm"
-                        >
-                          <span>Register via Form</span>
-                          <ArrowRight className="size-3.5" />
-                        </Link>
+                          <Link
+                            href="/register"
+                            className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] rounded-full font-sans text-xs font-semibold tracking-wide transition-all shadow-2xs hover:shadow-sm"
+                          >
+                            <span>Register via Form</span>
+                            <ArrowRight className="size-3.5" />
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>

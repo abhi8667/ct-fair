@@ -5,6 +5,13 @@ export const GOOGLE_FORM_EMBED_URL = 'https://docs.google.com/forms/d/e/1FAIpQLS
 
 export type EventStatus = 'OPEN' | 'UPCOMING' | 'COMPLETED'
 
+export type PrizeBreakdown = {
+  first: string
+  second: string
+  third: string
+  total: string
+}
+
 export type FairEvent = {
   id: string
   code: string
@@ -28,6 +35,8 @@ export type FairEvent = {
   fee: number
   coordinator: string
   prizes?: string
+  prizePool?: string
+  prizeBreakdown?: PrizeBreakdown
 }
 
 export const events: FairEvent[] = [
@@ -48,9 +57,11 @@ export const events: FairEvent[] = [
     status: 'OPEN',
     image: '/images/card-cubes.jpg',
     description: 'Can you design the perfect concrete mix and prove its performance? Prepare a target mix, conduct slump and workability tests, and cast concrete specimens. After 20 hours, the specimens will be tested under a UTM for compressive strength to determine the best-performing mix.',
-    teamSize: '3 participants',
+    teamSize: '3–4 participants',
     coordinator: 'Department of Civil Engineering, RVCE',
-    prizes: '₹ X,XX,XXX',
+    prizes: '₹ 18,000',
+    prizePool: '₹ 18,000',
+    prizeBreakdown: { first: '₹ 10,000', second: '₹ 5,000', third: '₹ 3,000', total: '₹ 18,000' },
     registered: 0,
     capacity: 60,
     checkedIn: 0,
@@ -80,9 +91,11 @@ export const events: FairEvent[] = [
     status: 'OPEN',
     image: '/images/event-bridge.png',
     description: 'Transform structural concepts into reality through a challenge that combines design creativity and construction skills.',
-    teamSize: '4 participants',
+    teamSize: '4–5 participants',
     coordinator: 'Department of Civil Engineering, RVCE',
-    prizes: '₹ X,XX,XXX',
+    prizes: '₹ 18,000',
+    prizePool: '₹ 18,000',
+    prizeBreakdown: { first: '₹ 10,000', second: '₹ 5,000', third: '₹ 3,000', total: '₹ 18,000' },
     registered: 0,
     capacity: 48,
     checkedIn: 0,
@@ -114,7 +127,9 @@ export const events: FairEvent[] = [
     description: 'Put your technical knowledge and urban-planning creativity to work to develop a vision for a well-planned city.',
     teamSize: '4–5 participants',
     coordinator: 'Department of Civil Engineering, RVCE',
-    prizes: '₹ X,XX,XXX',
+    prizes: '₹ 18,000',
+    prizePool: '₹ 18,000',
+    prizeBreakdown: { first: '₹ 10,000', second: '₹ 5,000', third: '₹ 3,000', total: '₹ 18,000' },
     registered: 0,
     capacity: 40,
     checkedIn: 0,
@@ -144,9 +159,11 @@ export const events: FairEvent[] = [
     status: 'OPEN',
     image: '/images/card-sprout.jpg',
     description: 'Visualize, create and build — transform raw materials into miniature masterpieces! Put your observation and craft skills to the test.',
-    teamSize: '3 participants',
+    teamSize: '3–4 participants',
     coordinator: 'Department of Civil Engineering, RVCE',
-    prizes: '₹ X,XX,XXX',
+    prizes: '₹ 18,000',
+    prizePool: '₹ 18,000',
+    prizeBreakdown: { first: '₹ 10,000', second: '₹ 5,000', third: '₹ 3,000', total: '₹ 18,000' },
     registered: 0,
     capacity: 45,
     checkedIn: 0,
@@ -182,7 +199,9 @@ export const events: FairEvent[] = [
     description: 'Challenge your knowledge. Beat the buzzer. Claim the victory! Put your civil engineering fundamentals to the test.',
     teamSize: '4 participants',
     coordinator: 'Department of Civil Engineering, RVCE',
-    prizes: '₹ X,XX,XXX',
+    prizes: '₹ 13,000',
+    prizePool: '₹ 13,000',
+    prizeBreakdown: { first: '₹ 7,000', second: '₹ 4,000', third: '₹ 2,000', total: '₹ 13,000' },
     registered: 0,
     capacity: 64,
     checkedIn: 0,
@@ -212,9 +231,11 @@ export const events: FairEvent[] = [
     status: 'OPEN',
     image: '/images/event-survey.png',
     description: 'Follow the clues. Explore the campus. Unlock the mystery! Combine field surveying navigation with escape room puzzle-solving.',
-    teamSize: '3–4 participants',
+    teamSize: '4–5 participants',
     coordinator: 'Department of Civil Engineering, RVCE',
-    prizes: '₹ X,XX,XXX',
+    prizes: '₹ 18,000',
+    prizePool: '₹ 18,000',
+    prizeBreakdown: { first: '₹ 10,000', second: '₹ 5,000', third: '₹ 3,000', total: '₹ 18,000' },
     registered: 0,
     capacity: 40,
     checkedIn: 0,
@@ -246,7 +267,9 @@ export const events: FairEvent[] = [
     description: 'Bring your storytelling and filmmaking skills together to create an engaging short film inspired by products associated with the event\'s sponsors.',
     teamSize: '6–7 participants · Duration: 5 minutes',
     coordinator: 'Department of Civil Engineering, RVCE',
-    prizes: '₹ X,XX,XXX',
+    prizes: '₹ 13,000',
+    prizePool: '₹ 13,000',
+    prizeBreakdown: { first: '₹ 7,000', second: '₹ 4,000', third: '₹ 2,000', total: '₹ 13,000' },
     registered: 0,
     capacity: 35,
     checkedIn: 0,
@@ -274,7 +297,9 @@ export const events: FairEvent[] = [
     description: 'Think critically. Speak confidently. Defend your ideas in a timed debate demonstrating logical reasoning and persuasive communication.',
     teamSize: '3 participants · Panel: 2–3 professors',
     coordinator: 'Department of Civil Engineering, RVCE',
-    prizes: '₹ X,XX,XXX',
+    prizes: '₹ 13,000',
+    prizePool: '₹ 13,000',
+    prizeBreakdown: { first: '₹ 7,000', second: '₹ 4,000', third: '₹ 2,000', total: '₹ 13,000' },
     registered: 0,
     capacity: 30,
     checkedIn: 0,
@@ -298,6 +323,8 @@ export const conclaveInfo = {
   tagline: 'Where Concrete meets creativity',
   promise: 'Learn by doing. Compete with purpose. Connect with industry.',
   edition: '13th Edition',
+  totalPrizePool: '₹ 1,30,000',
+  totalPrizeAmount: '₹ 1,30,000',
   participantsExpected: '600+',
   participantsLegacy: '5,000+',
   dates: '30 NOV & 1 DEC 2026',

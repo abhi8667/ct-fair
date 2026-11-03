@@ -36,7 +36,7 @@ const scheduleItems: ScheduleItem[] = [
     title: 'CONmix: Mix Design (Round 1 & Round 2 Casting)',
     venue: 'Concrete & Materials Testing Lab, RVCE',
     description: 'Can you design the perfect concrete mix and prove its performance? Round 1: Technical Quiz on IS codes. Round 2: Mix Design Challenge — slump & workability tests, casting specimens for UTM testing.',
-    teamSize: '3 participants',
+    teamSize: '3–4 participants',
     rounds: 'Round 1 (Quiz) + Round 2 (Casting)',
   },
   {
@@ -47,7 +47,7 @@ const scheduleItems: ScheduleItem[] = [
     title: 'CONarch: Arch Design & Build',
     venue: 'Structural Fabrication Yard, RVCE',
     description: 'Design with purpose. Build with precision. Transform structural concepts into reality through paper drafting and physical arch construction.',
-    teamSize: '4 participants',
+    teamSize: '4–5 participants',
     rounds: 'Round 1 (Drafting on paper) + Round 2 (Build arch/bridge)',
   },
   {
@@ -69,7 +69,7 @@ const scheduleItems: ScheduleItem[] = [
     title: 'CONmake: Model Making',
     venue: 'Masonry & Model Workshop, RVCE',
     description: 'Visualize, create and build — transform raw materials into miniature masterpieces! Dimension estimation without measuring tools, followed by miniature house making.',
-    teamSize: '3 participants',
+    teamSize: '3–4 participants',
     rounds: 'Round 1 (Dimension estimation) + Round 2 (Miniature brick & mortar model)',
   },
 
@@ -82,7 +82,7 @@ const scheduleItems: ScheduleItem[] = [
     title: 'CONmix: UTM Compressive Strength Testing (Round 2 Finale)',
     venue: 'Concrete & Materials Testing Lab, RVCE',
     description: 'After 20 hours, the concrete specimens prepared on Day 1 will be tested under a Universal Testing Machine (UTM) for compressive strength to determine the champion mix.',
-    teamSize: '3 participants',
+    teamSize: '3–4 participants',
     rounds: 'UTM Compressive Strength Testing',
   },
   {
@@ -104,7 +104,7 @@ const scheduleItems: ScheduleItem[] = [
     title: 'CONscape: Surveying Treasure Hunt & Escape Room',
     venue: 'Campus Surveying Ground & Lab, RVCE',
     description: 'Follow the clues. Explore the campus. Unlock the mystery! Campus surveying challenge leading into a timed puzzle escape room.',
-    teamSize: '3–4 participants',
+    teamSize: '4–5 participants',
     rounds: 'Round 1 (Surveying Hunt) + Round 2 (Escape Room)',
   },
   {

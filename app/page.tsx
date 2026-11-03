@@ -47,7 +47,7 @@ export default function PublicHomePage() {
       description: 'Can you design the perfect concrete mix and prove its performance? Prepare a target mix, conduct slump and workability tests, and cast concrete specimens for 20-hour UTM compressive strength testing.',
       date: '30 Nov 2026',
       venue: 'Concrete & Materials Testing Lab, RVCE',
-      prizes: '₹ X,XX,XXX',
+      prizes: '₹ 18,000 (1st: ₹10k · 2nd: ₹5k · 3rd: ₹3k)',
       badge: 'Mix Design',
     },
     {
@@ -59,7 +59,7 @@ export default function PublicHomePage() {
       description: 'Design with purpose. Build with precision. Transform structural concepts into reality through paper drafting and physical arch construction.',
       date: '30 Nov 2026',
       venue: 'Structural Fabrication Yard, RVCE',
-      prizes: '₹ X,XX,XXX',
+      prizes: '₹ 18,000 (1st: ₹10k · 2nd: ₹5k · 3rd: ₹3k)',
       badge: 'Arch Build',
     },
     {
@@ -71,7 +71,7 @@ export default function PublicHomePage() {
       description: 'Imagine the cities of tomorrow and design a smarter future. Technical crossword challenge followed by town-planning drafting and presentation.',
       date: '30 Nov 2026',
       venue: 'CAD & GIS Modeling Studio, RVCE',
-      prizes: '₹ X,XX,XXX',
+      prizes: '₹ 18,000 (1st: ₹10k · 2nd: ₹5k · 3rd: ₹3k)',
       badge: 'Smart City',
     },
     {
@@ -83,7 +83,7 @@ export default function PublicHomePage() {
       description: 'Visualize, create and build — transform raw materials into miniature masterpieces! Visual dimension estimation followed by miniature brick and mortar house construction.',
       date: '30 Nov 2026',
       venue: 'Masonry & Model Workshop, RVCE',
-      prizes: '₹ X,XX,XXX',
+      prizes: '₹ 18,000 (1st: ₹10k · 2nd: ₹5k · 3rd: ₹3k)',
       badge: 'Model Making',
     },
     {
@@ -95,7 +95,7 @@ export default function PublicHomePage() {
       description: 'Follow the clues. Explore the campus. Unlock the mystery! Campus surveying challenge leading into a timed engineering escape room.',
       date: '01 Dec 2026',
       venue: 'Campus Surveying Ground & Lab, RVCE',
-      prizes: '₹ X,XX,XXX',
+      prizes: '₹ 18,000 (1st: ₹10k · 2nd: ₹5k · 3rd: ₹3k)',
       badge: 'Survey & Escape',
     },
   ]
@@ -204,32 +204,41 @@ export default function PublicHomePage() {
                   </Link>
                 </div>
 
-                {/* 3 Highlights from PPT Slide 3 */}
-                <div className="grid grid-cols-3 gap-2 pt-4 border-t border-[#75435c]/80 text-center">
+                {/* 4 Key Conclave Highlights */}
+                <div className="grid grid-cols-4 gap-2 pt-4 border-t border-[#75435c]/80 text-center">
                   <div className="space-y-0.5">
-                    <span className="block font-black text-xl sm:text-2xl text-white leading-none tabular-nums">
+                    <span className="block font-black text-lg sm:text-2xl text-white leading-none tabular-nums">
                       13th
                     </span>
-                    <span className="block font-mono text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
+                    <span className="block font-mono text-[8px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
                       EDITION
                     </span>
                   </div>
 
-                  <div className="space-y-0.5 border-x border-[#75435c]/60">
-                    <span className="block font-black text-xl sm:text-2xl text-white leading-none tabular-nums">
+                  <div className="space-y-0.5 border-l border-[#75435c]/60">
+                    <span className="block font-black text-lg sm:text-2xl text-white leading-none tabular-nums">
                       {conclaveInfo.participantsExpected}
                     </span>
-                    <span className="block font-mono text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
-                      PARTICIPANTS
+                    <span className="block font-mono text-[8px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
+                      DELEGATES
                     </span>
                   </div>
 
-                  <div className="space-y-0.5">
-                    <span className="block font-black text-xl sm:text-2xl text-[#d8c2ab] leading-none">
+                  <div className="space-y-0.5 border-l border-[#75435c]/60">
+                    <span className="block font-black text-lg sm:text-2xl text-white leading-none">
                       08
                     </span>
-                    <span className="block font-mono text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
+                    <span className="block font-mono text-[8px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
                       EVENTS
+                    </span>
+                  </div>
+
+                  <div className="space-y-0.5 border-l border-[#75435c]/60">
+                    <span className="block font-black text-lg sm:text-2xl text-[#d8c2ab] leading-none">
+                      ₹1.3L
+                    </span>
+                    <span className="block font-mono text-[8px] sm:text-[9px] text-[#d8c2ab] tracking-wider uppercase font-bold">
+                      PRIZES
                     </span>
                   </div>
                 </div>

@@ -60,11 +60,11 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              {/* 3 Metric Stats from Slide 3 */}
-              <div className="grid grid-cols-3 gap-4 pt-2">
+              {/* 4 Metric Stats */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
                 <div className="bg-white border border-[#eadfd4] p-4 rounded-2xl shadow-2xs text-center">
                   <span className="font-mono text-[9px] text-[#77666a] uppercase font-bold block">EDITION</span>
-                  <span className="font-sans font-black text-2xl sm:text-3xl text-[#3b0924] mt-1 block">
+                  <span className="font-sans font-black text-2xl text-[#3b0924] mt-1 block">
                     {conclaveInfo.edition}
                   </span>
                   <span className="text-[10px] text-[#77666a] mt-0.5 block">Continuing Legacy</span>
@@ -72,15 +72,23 @@ export default function AboutPage() {
 
                 <div className="bg-white border border-[#eadfd4] p-4 rounded-2xl shadow-2xs text-center">
                   <span className="font-mono text-[9px] text-[#77666a] uppercase font-bold block">PARTICIPANTS</span>
-                  <span className="font-sans font-black text-2xl sm:text-3xl text-[#3b0924] mt-1 block">
+                  <span className="font-sans font-black text-2xl text-[#3b0924] mt-1 block">
                     {conclaveInfo.participantsExpected}
                   </span>
                   <span className="text-[10px] text-[#77666a] mt-0.5 block">Expected (Current)</span>
                 </div>
 
                 <div className="bg-white border border-[#eadfd4] p-4 rounded-2xl shadow-2xs text-center">
+                  <span className="font-mono text-[9px] text-[#77666a] uppercase font-bold block">PRIZE POOL</span>
+                  <span className="font-sans font-black text-2xl text-[#176d7e] mt-1 block">
+                    ₹ 1.30 L
+                  </span>
+                  <span className="text-[10px] text-[#77666a] mt-0.5 block">Cash Awards</span>
+                </div>
+
+                <div className="bg-white border border-[#eadfd4] p-4 rounded-2xl shadow-2xs text-center">
                   <span className="font-mono text-[9px] text-[#77666a] uppercase font-bold block">PAST REACH</span>
-                  <span className="font-sans font-black text-2xl sm:text-3xl text-[#a98b78] mt-1 block">
+                  <span className="font-sans font-black text-2xl text-[#a98b78] mt-1 block">
                     {conclaveInfo.participantsLegacy}
                   </span>
                   <span className="text-[10px] text-[#77666a] mt-0.5 block">Across Editions</span>
