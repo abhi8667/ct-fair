@@ -1,7 +1,7 @@
 // Central configuration for Concrete Fair 2026
 // Official Google Form Links
-export const GOOGLE_FORM_URL = 'https://forms.gle/FkteK37CSk6koLpKA'
-export const GOOGLE_FORM_EMBED_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdxHqyaZB-pz85XaH3d09m2HMqqb3gQTwCOz1epjRFBtAmUhw/viewform?embedded=true'
+export const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfvQjkUzBgonTGpUZXeU4GRZzcRMVUwwoHECPXGngugxsza2g/viewform'
+export const GOOGLE_FORM_EMBED_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfvQjkUzBgonTGpUZXeU4GRZzcRMVUwwoHECPXGngugxsza2g/viewform?embedded=true'
 
 export type EventStatus = 'OPEN' | 'UPCOMING' | 'COMPLETED'
 
