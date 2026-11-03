@@ -14,6 +14,7 @@ export function PublicHeader() {
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
     { href: '/events', label: 'Events' },
+    { href: '/towers', label: 'Conclave' },
     { href: '/schedule', label: 'Schedule' },
     { href: '/faq', label: 'FAQs' },
   ]
@@ -68,11 +69,11 @@ export function PublicHeader() {
               />
             </div>
             <div className="flex flex-col leading-none">
-              <span className="font-mono text-[8px] font-bold text-[#34252b] tracking-tight uppercase">
-                ICI CHAPTER
+              <span className="font-mono text-[8px] font-bold text-[#3b0924] tracking-tight uppercase">
+                ICI STUDENT CHAPTER
               </span>
               <span className="font-mono text-[7px] text-[#77666a] uppercase tracking-tighter">
-                BENGALURU CENTRE
+                RVCE
               </span>
             </div>
           </div>
@@ -100,20 +101,21 @@ export function PublicHeader() {
         </nav>
 
         {/* Right Action: Register Button */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <Link
             href="/register"
-            className="inline-flex items-center gap-1.5 px-5 py-2.5 bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] hover:text-white rounded-full font-sans text-xs font-semibold tracking-wide transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 cursor-pointer focus-visible:outline-2 focus-visible:outline-[#3b0924]"
+            className="inline-flex items-center gap-1 sm:gap-1.5 px-3 sm:px-5 py-2 sm:py-2.5 bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] hover:text-white rounded-full font-sans text-xs font-semibold tracking-wide transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 cursor-pointer focus-visible:outline-2 focus-visible:outline-[#3b0924] whitespace-nowrap"
           >
-            <span>Register Now</span>
-            <ArrowUpRight className="size-3.5" />
+            <span className="hidden sm:inline">Register Now</span>
+            <span className="sm:hidden">Register</span>
+            <ArrowUpRight className="size-3 sm:size-3.5" />
           </Link>
 
           {/* Mobile hamburger button */}
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 rounded-xl text-[#34252b] hover:bg-[#f4e9dc] transition-colors cursor-pointer"
+            className="lg:hidden shrink-0 flex items-center justify-center size-9 sm:size-10 rounded-xl bg-[#f4e9dc] text-[#3b0924] border border-[#d8c2ab] hover:bg-[#eadfd4] active:scale-95 transition-all cursor-pointer shadow-2xs"
             aria-label="Toggle navigation menu"
           >
             {mobileMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}

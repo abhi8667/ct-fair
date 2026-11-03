@@ -10,14 +10,14 @@ const COUNTRY_DETAILS: Record<TowerCountry, { name: string; title: string; subti
   india: {
     name: "Indian Temple Monument",
     title: "Vedic Stone Shikhara",
-    subtitle: "Monolithic Cyclopean Masonry & Interlocking Stone Joints (RVCE · 2026)",
+    subtitle: "Where Concrete meets creativity · Dept. of Civil Engg, RVCE",
     era: "Classical Indian Temple Architecture (Nagara & Dravidian Tradition)",
     description: "Monolithic cyclopean stonecraft featuring a soaring Shikhara tower rising over a stepped adhisthana plinth. Engineered with dry-friction interlocking stone masonry, sanctum garbhagriha pillars, and crowning amalaka finials.",
   },
   japan: {
     name: "Indian Temple Monument",
     title: "Vedic Stone Shikhara",
-    subtitle: "Monolithic Cyclopean Masonry & Interlocking Stone Joints (RVCE · 2026)",
+    subtitle: "Where Concrete meets creativity · Dept. of Civil Engg, RVCE",
     era: "Classical Indian Temple Architecture (Nagara & Dravidian Tradition)",
     description: "Monolithic cyclopean stonecraft featuring a soaring Shikhara tower rising over a stepped adhisthana plinth. Engineered with dry-friction interlocking stone masonry, sanctum garbhagriha pillars, and crowning amalaka finials.",
   },

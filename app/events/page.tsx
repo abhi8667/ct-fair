@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, MapPin, Search, Users, Sparkles, Calendar } from 'lucide-react'
+import { ArrowRight, MapPin, Search, Users, Sparkles, Calendar, Trophy } from 'lucide-react'
 import { PublicHeader } from '@/components/public/public-header'
 import { PublicFooter } from '@/components/public/public-footer'
 import { events, conclaveInfo } from '@/lib/data'
@@ -28,66 +28,66 @@ export default function PublicEventsPage() {
     {
       image: '/images/card-cubes.jpg',
       label: 'CONmix: Mix Design',
-      link: '/register',
+      link: '/events',
       category: 'Technical',
       code: 'CF-01',
       description: 'Can you design the perfect concrete mix and prove its performance? Test slump and workability, cast specimens, and undergo 20-hour UTM compressive strength testing.',
       date: '30 Nov 2026',
       time: '09:30 AM',
-      venue: 'Civil Department Labs, RVCE',
-      prizes: 'Official Merit Certificates & Awards',
+      venue: 'Concrete & Materials Testing Lab, RVCE',
+      prizes: '₹ X,XX,XXX',
       badge: 'Mix Design',
     },
     {
       image: '/images/event-bridge.png',
       label: 'CONarch: Arch Design & Build',
-      link: '/register',
+      link: '/events',
       category: 'Technical',
       code: 'CF-02',
       description: 'Design with purpose. Build with precision. Transform structural concepts into reality through paper drafting and physical arch construction.',
       date: '30 Nov 2026',
       time: '11:00 AM',
-      venue: 'Department of Civil Engineering, RVCE',
-      prizes: 'Official Merit Certificates & Awards',
+      venue: 'Structural Fabrication Yard, RVCE',
+      prizes: '₹ X,XX,XXX',
       badge: 'Arch Build',
     },
     {
       image: '/images/event-blueprint.png',
       label: 'CONzine: Smart City Designing',
-      link: '/register',
+      link: '/events',
       category: 'Technical',
       code: 'CF-03',
       description: 'Imagine the cities of tomorrow and design a smarter future. Technical crossword challenge followed by town-planning drafting and presentation.',
       date: '30 Nov 2026',
       time: '02:00 PM',
-      venue: 'Department of Civil Engineering, RVCE',
-      prizes: 'Official Merit Certificates & Awards',
+      venue: 'CAD & GIS Modeling Studio, RVCE',
+      prizes: '₹ X,XX,XXX',
       badge: 'Smart City',
     },
     {
       image: '/images/card-sprout.jpg',
       label: 'CONmake: Model Making',
-      link: '/register',
+      link: '/events',
       category: 'Technical',
       code: 'CF-04',
       description: 'Visualize, create and build — transform raw materials into miniature masterpieces! Dimension estimation followed by miniature model making with cement mortar & bricks.',
       date: '30 Nov 2026',
       time: '03:30 PM',
-      venue: 'Department of Civil Engineering, RVCE',
-      prizes: 'Official Merit Certificates & Awards',
+      venue: 'Masonry & Model Workshop, RVCE',
+      prizes: '₹ X,XX,XXX',
       badge: 'Model Making',
     },
     {
       image: '/images/event-survey.png',
       label: 'CONscape: Surveying & Escape Room',
-      link: '/register',
+      link: '/events',
       category: 'Technical',
       code: 'CF-06',
       description: 'Follow the clues, explore the campus through field surveying, and unlock the mystery in the timed engineering escape room.',
       date: '01 Dec 2026',
       time: '11:30 AM',
-      venue: 'RVCE Campus Grounds',
-      prizes: 'Official Merit Certificates & Awards',
+      venue: 'Campus Surveying Ground & Lab, RVCE',
+      prizes: '₹ X,XX,XXX',
       badge: 'Survey & Escape',
     },
   ]
@@ -236,10 +236,19 @@ export default function PublicEventsPage() {
 
                       {/* Specs tags & Register CTA */}
                       <div className="pt-4 border-t border-[#eadfd4] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                        <div className="flex items-center gap-2 font-mono text-xs text-[#34252b]">
-                          <Users className="size-4 text-[#3b0924]" />
-                          <span className="font-bold">Team:</span>
-                          <span className="text-[#77666a]">{e.teamSize}</span>
+                        <div className="flex flex-wrap items-center gap-4 font-mono text-xs text-[#34252b]">
+                          <div className="flex items-center gap-1.5">
+                            <Users className="size-4 text-[#3b0924]" />
+                            <span className="font-bold">Team:</span>
+                            <span className="text-[#77666a]">{e.teamSize}</span>
+                          </div>
+                          {e.prizes && (
+                            <div className="flex items-center gap-1.5">
+                              <Trophy className="size-4 text-[#a98b78]" />
+                              <span className="font-bold text-[#3b0924]">Prize:</span>
+                              <span className="font-bold text-[#3b0924]">{e.prizes}</span>
+                            </div>
+                          )}
                         </div>
 
                         <Link

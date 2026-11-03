@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, Users, MapPin } from 'lucide-react'
+import { ArrowRight, Users, MapPin, Trophy } from 'lucide-react'
 import { events } from '@/lib/data'
 
 export function EventsShowcase() {
@@ -89,6 +89,15 @@ export function EventsShowcase() {
                   </span>
                   <span className="text-[#34252b] font-bold">{e.teamSize}</span>
                 </div>
+                {e.prizes && (
+                  <div className="flex items-center justify-between text-[#77666a]">
+                    <span className="flex items-center gap-1.5">
+                      <Trophy className="size-3.5 text-[#a98b78]" aria-hidden="true" />
+                      <span>Prize:</span>
+                    </span>
+                    <span className="text-[#3b0924] font-bold">{e.prizes}</span>
+                  </div>
+                )}
               </div>
 
               {/* Registration CTA */}

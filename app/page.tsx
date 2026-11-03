@@ -41,61 +41,61 @@ export default function PublicHomePage() {
     {
       image: '/images/card-cubes.jpg',
       label: 'CONmix: Mix Design',
-      link: '/register',
+      link: '/events',
       category: 'Technical',
       code: 'CF-01',
       description: 'Can you design the perfect concrete mix and prove its performance? Prepare a target mix, conduct slump and workability tests, and cast concrete specimens for 20-hour UTM compressive strength testing.',
       date: '30 Nov 2026',
-      venue: 'Civil Department Labs, RVCE',
-      prizes: 'Merit Awards',
+      venue: 'Concrete & Materials Testing Lab, RVCE',
+      prizes: '₹ X,XX,XXX',
       badge: 'Mix Design',
     },
     {
       image: '/images/event-bridge.png',
       label: 'CONarch: Arch Design & Build',
-      link: '/register',
+      link: '/events',
       category: 'Technical',
       code: 'CF-02',
       description: 'Design with purpose. Build with precision. Transform structural concepts into reality through paper drafting and physical arch construction.',
       date: '30 Nov 2026',
-      venue: 'Department of Civil Engineering, RVCE',
-      prizes: 'Merit Awards',
+      venue: 'Structural Fabrication Yard, RVCE',
+      prizes: '₹ X,XX,XXX',
       badge: 'Arch Build',
     },
     {
       image: '/images/event-blueprint.png',
       label: 'CONzine: Smart City Designing',
-      link: '/register',
+      link: '/events',
       category: 'Technical',
       code: 'CF-03',
       description: 'Imagine the cities of tomorrow and design a smarter future. Technical crossword challenge followed by town-planning drafting and presentation.',
       date: '30 Nov 2026',
-      venue: 'Department of Civil Engineering, RVCE',
-      prizes: 'Merit Awards',
+      venue: 'CAD & GIS Modeling Studio, RVCE',
+      prizes: '₹ X,XX,XXX',
       badge: 'Smart City',
     },
     {
       image: '/images/card-sprout.jpg',
       label: 'CONmake: Model Making',
-      link: '/register',
+      link: '/events',
       category: 'Technical',
       code: 'CF-04',
       description: 'Visualize, create and build — transform raw materials into miniature masterpieces! Visual dimension estimation followed by miniature brick and mortar house construction.',
       date: '30 Nov 2026',
-      venue: 'Department of Civil Engineering, RVCE',
-      prizes: 'Merit Awards',
+      venue: 'Masonry & Model Workshop, RVCE',
+      prizes: '₹ X,XX,XXX',
       badge: 'Model Making',
     },
     {
       image: '/images/event-survey.png',
       label: 'CONscape: Surveying & Escape Room',
-      link: '/register',
+      link: '/events',
       category: 'Technical',
       code: 'CF-06',
       description: 'Follow the clues. Explore the campus. Unlock the mystery! Campus surveying challenge leading into a timed engineering escape room.',
       date: '01 Dec 2026',
-      venue: 'RVCE Campus Grounds',
-      prizes: 'Merit Awards',
+      venue: 'Campus Surveying Ground & Lab, RVCE',
+      prizes: '₹ X,XX,XXX',
       badge: 'Survey & Escape',
     },
   ]
@@ -128,9 +128,9 @@ export default function PublicHomePage() {
           <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-4 flex items-center justify-between pointer-events-none">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#3b0924]/90 backdrop-blur-md border border-[#75435c]/80 shadow-2xs pointer-events-auto font-mono text-[10px] sm:text-[11px] font-bold tracking-widest uppercase text-[#eadfd4]">
               <span className="size-2 rounded-full bg-[#d8c2ab] animate-pulse" aria-hidden="true" />
-              <span className="text-white">RVCE CIVIL</span>
+              <span className="text-white">CONCRETE FAIR, 13TH EDITION</span>
               <span className="text-[#a98b78]">·</span>
-              <span className="text-[#eadfd4]">13TH EDITION · EST. 1963</span>
+              <span className="text-[#eadfd4]">DEPT. OF CIVIL ENGG, RVCE</span>
             </div>
 
             <div className="flex items-center gap-2.5 pointer-events-auto">
@@ -155,7 +155,7 @@ export default function PublicHomePage() {
                 <div className="flex items-center gap-2">
                   <span className="w-5 h-0.5 bg-[#d8c2ab]" aria-hidden="true" />
                   <span className="font-mono text-[10px] sm:text-[11px] tracking-[0.22em] text-[#d8c2ab] uppercase font-bold">
-                    RVCE CIVIL ENGINEERING · 13TH EDITION
+                    CONCRETE FAIR, 13TH EDITION · DEPT. OF CIVIL ENGG, RVCE
                   </span>
                 </div>
 
@@ -174,7 +174,7 @@ export default function PublicHomePage() {
                     {conclaveInfo.promise}
                   </p>
                   <p className="text-xs text-[#eadfd4]/90 leading-relaxed font-sans text-pretty">
-                    A national-level platform organized by the Department of Civil Engineering at RV College of Engineering, in association with the ICI Chapter.
+                    A national-level platform organized by the Department of Civil Engineering at RV College of Engineering, in association with the ICI Student Chapter RVCE.
                   </p>
                 </div>
 
@@ -521,9 +521,9 @@ export default function PublicHomePage() {
                             {item.name}
                           </h3>
                           <Link
-                            href="/register"
+                            href="/events"
                             className="size-7 rounded-full bg-white border border-[#eadfd4] shrink-0 grid place-items-center group-hover:bg-[#3b0924] group-hover:text-white transition-colors duration-200 shadow-2xs"
-                            aria-label={`Register for ${item.name}`}
+                            aria-label={`View details for ${item.name}`}
                           >
                             <ArrowRight className="size-3.5" aria-hidden="true" />
                           </Link>
@@ -540,8 +540,8 @@ export default function PublicHomePage() {
                           <Users className="size-3 text-[#3b0924]" aria-hidden="true" />
                           <span>{item.teamSize}</span>
                         </span>
-                        <Link href="/register" className="text-[#3b0924] font-semibold hover:underline">
-                          Register →
+                        <Link href="/events" className="text-[#3b0924] font-semibold hover:underline">
+                          Details →
                         </Link>
                       </div>
                     </div>

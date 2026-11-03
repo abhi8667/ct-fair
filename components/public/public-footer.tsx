@@ -12,7 +12,7 @@ export function PublicFooter() {
         <div className="p-8 sm:p-10 rounded-3xl bg-[#fff8ef] text-[#34252b] border border-[#d8c2ab] shadow-xl flex flex-col lg:flex-row lg:items-center justify-between gap-6">
           <div className="space-y-2">
             <span className="font-mono text-[10px] text-[#75435c] uppercase tracking-widest font-bold">
-              ICI CHAPTER • RVCE
+              ICI STUDENT CHAPTER • RVCE
             </span>
             <h3 className="font-sans font-black text-3xl sm:text-4xl text-[#3b0924] uppercase tracking-tight">
               LET’S BUILD WHAT’S NEXT.
@@ -23,14 +23,8 @@ export function PublicFooter() {
           </div>
           <div className="flex flex-wrap items-center gap-3 shrink-0">
             <Link
-              href="mailto:ici@rvce.edu.in"
-              className="px-6 py-3 bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] rounded-full font-sans text-xs font-semibold tracking-wide transition-all shadow-md hover:-translate-y-0.5"
-            >
-              Contact Coordinators
-            </Link>
-            <Link
               href="/register"
-              className="px-6 py-3 bg-[#f4e9dc] hover:bg-[#eadfd4] text-[#3b0924] border border-[#d8c2ab] rounded-full font-sans text-xs font-semibold tracking-wide transition-all"
+              className="px-6 py-3 bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] rounded-full font-sans text-xs font-semibold tracking-wide transition-all shadow-md hover:-translate-y-0.5"
             >
               Register via Google Form
             </Link>

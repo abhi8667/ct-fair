@@ -43,11 +43,11 @@ export default function AboutPage() {
               </div>
 
               <p className="text-sm text-[#77666a] leading-relaxed">
-                Concrete Fair 2026 is a national-level technical fest organized by the Department of Civil Engineering at RV College of Engineering, Bengaluru, in association with the ICI (Indian Concrete Institute) Chapter.
+                Concrete Fair 2026 is a national-level technical fest organized by the Department of Civil Engineering at RV College of Engineering, Bengaluru, in association with the ICI (Indian Concrete Institute) Student Chapter RVCE.
               </p>
 
               <p className="text-sm text-[#77666a] leading-relaxed">
-                With a legacy of bringing together aspiring civil engineers, Concrete Fair provides a dynamic platform for technical excellence, creative thinking, practical learning, and collaboration. Bringing together 800+ participants from across India, the fest celebrates engineering talent while fostering connections between students, academia, and the construction industry.
+                With a legacy of bringing together aspiring civil engineers, Concrete Fair provides a dynamic platform for technical excellence, creative thinking, practical learning, and collaboration. Bringing together 600+ participants from across India, the fest celebrates engineering talent while fostering connections between students, academia, and the construction industry.
               </p>
 
               {/* Department History Box from Brochure */}
