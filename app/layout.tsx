@@ -13,17 +13,22 @@ const cormorant = Cormorant_Garamond({
 const jetbrains = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jetbrains' })
 
 export const metadata: Metadata = {
-  title: 'Concrete Fair 2026 | RVCE Civil Engineering — Tradition Meets Tomorrow',
+  title: 'Concrete Fair 2026 | RVCE Civil Engineering — Where Concrete Meets Creativity',
   description:
-    'Annual premier civil engineering confluence hosted by the Department of Civil Engineering, RV College of Engineering, Bengaluru. 30 November — 01 December 2026. Tradition meets tomorrow.',
-  generator: 'v0.app',
+    'Annual premier civil engineering confluence hosted by the Department of Civil Engineering, RV College of Engineering, Bengaluru. 30 November — 01 December 2026. Where Concrete meets creativity.',
   icons: {
     icon: [
-      { url: '/icon-light-32x32.png', media: '(prefers-color-scheme: light)' },
-      { url: '/icon-dark-32x32.png', media: '(prefers-color-scheme: dark)' },
+      { url: '/theme/concrete-fair-logo.png' },
+      { url: '/favicon.ico' },
+      { url: '/icon-light-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon-dark-32x32.png', sizes: '32x32', type: 'image/png' },
       { url: '/icon.svg', type: 'image/svg+xml' },
     ],
-    apple: '/apple-icon.png',
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/theme/concrete-fair-logo.png' },
+    ],
+    shortcut: '/favicon.ico',
   },
 }
 
