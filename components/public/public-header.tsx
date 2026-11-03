@@ -21,30 +21,30 @@ export function PublicHeader() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#fff8ef]/95 backdrop-blur-md border-b border-[#eadfd4]">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10 h-20 flex items-center justify-between gap-4">
+      <div className="max-w-[1400px] mx-auto px-3 sm:px-6 lg:px-10 h-16 sm:h-20 flex items-center justify-between gap-2 sm:gap-4">
         {/* Left: Brand Lockup & Institutional Crests */}
-        <div className="flex items-center gap-3 sm:gap-5 shrink-0">
+        <div className="flex items-center gap-2 sm:gap-5 shrink-0 min-w-0">
           {/* Official Concrete Fair & RVCE Brand Lockup */}
-          <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group focus-visible:outline-2 focus-visible:outline-[#3b0924]">
-            <div className="size-10 sm:size-11 rounded-xl border border-[#eadfd4] bg-white grid place-items-center shadow-xs overflow-hidden group-hover:border-[#3b0924] transition-colors p-1 shrink-0">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 group focus-visible:outline-2 focus-visible:outline-[#3b0924] min-w-0">
+            <div className="size-9 sm:size-11 rounded-xl border border-[#eadfd4] bg-white grid place-items-center shadow-xs overflow-hidden group-hover:border-[#3b0924] transition-colors p-1 shrink-0">
               <img
                 src="/theme/concrete-fair-logo.png"
                 alt="Concrete Fair 2026 Official Logo"
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="size-10 sm:size-11 rounded-xl border border-[#eadfd4] bg-white grid place-items-center shadow-xs overflow-hidden group-hover:border-[#3b0924] transition-colors p-1 shrink-0 hidden sm:grid">
+            <div className="size-9 sm:size-11 rounded-xl border border-[#eadfd4] bg-white grid place-items-center shadow-xs overflow-hidden group-hover:border-[#3b0924] transition-colors p-1 shrink-0 hidden sm:grid">
               <img
                 src="/theme/rvce-logo.png"
                 alt="RVCE Crest"
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="flex flex-col leading-none">
-              <span className="font-sans font-black text-base sm:text-lg tracking-tight text-[#3b0924] uppercase group-hover:text-[#521331] transition-colors">
+            <div className="flex flex-col leading-none min-w-0">
+              <span className="font-sans font-black text-sm sm:text-lg tracking-tight text-[#3b0924] uppercase group-hover:text-[#521331] transition-colors truncate">
                 CONCRETE FAIR <span className="text-[#a98b78]">2026</span>
               </span>
-              <span className="font-mono text-[8px] text-[#77666a] uppercase mt-1 tracking-wider font-semibold">
+              <span className="font-mono text-[7px] sm:text-[8px] text-[#77666a] uppercase mt-0.5 sm:mt-1 tracking-wider font-semibold truncate">
                 RVCE CIVIL · WHERE CONCRETE MEETS CREATIVITY
               </span>
             </div>

@@ -104,11 +104,11 @@ export default function PublicHomePage() {
     <div className="min-h-[100dvh] bg-[#fff8ef] text-[#34252b] flex flex-col font-sans selection:bg-[#3b0924] selection:text-[#fff8ef]">
       <PublicHeader />
 
-      <main className="flex-1 w-full pt-20">
+      <main className="flex-1 w-full pt-16 sm:pt-20">
         {/* =========================================================================
             1. IMMERSIVE HERO WITH 3D CANVAS & PPT BRANDING
             ========================================================================= */}
-        <section className="relative w-full min-h-[90dvh] lg:min-h-[94dvh] flex flex-col justify-between overflow-hidden bg-[#1d0411] border-b border-[#75435c]/60 select-none">
+        <section className="relative w-full min-h-[92dvh] lg:min-h-[94dvh] flex flex-col justify-between overflow-hidden bg-[#1d0411] border-b border-[#75435c]/60 select-none">
           {/* Background: 3D Stage */}
           <div className="absolute inset-0 z-0 pointer-events-auto">
             <JapaneseTowerLandscape
@@ -125,61 +125,61 @@ export default function PublicHomePage() {
           <div className="absolute inset-x-0 bottom-0 h-28 z-1 pointer-events-none bg-gradient-to-t from-[#fff8ef] via-[#1d0411]/25 to-transparent" />
 
           {/* Top HUD */}
-          <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-4 flex items-center justify-between pointer-events-none">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#3b0924]/90 backdrop-blur-md border border-[#75435c]/80 shadow-2xs pointer-events-auto font-mono text-[10px] sm:text-[11px] font-bold tracking-widest uppercase text-[#eadfd4]">
-              <span className="size-2 rounded-full bg-[#d8c2ab] animate-pulse" aria-hidden="true" />
-              <span className="text-white">CONCRETE FAIR, 13TH EDITION</span>
+          <div className="relative z-10 w-full max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-10 pt-3 sm:pt-4 flex items-center justify-between pointer-events-none gap-2">
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-[#3b0924]/90 backdrop-blur-md border border-[#75435c]/80 shadow-2xs pointer-events-auto font-mono text-[9px] sm:text-[11px] font-bold tracking-wider sm:tracking-widest uppercase text-[#eadfd4]">
+              <span className="size-1.5 sm:size-2 rounded-full bg-[#d8c2ab] animate-pulse" aria-hidden="true" />
+              <span className="text-white">CONCRETE FAIR 2026</span>
               <span className="text-[#a98b78]">·</span>
-              <span className="text-[#eadfd4]">DEPT. OF CIVIL ENGG, RVCE</span>
+              <span className="text-[#eadfd4]">RVCE</span>
             </div>
 
-            <div className="flex items-center gap-2.5 pointer-events-auto">
+            <div className="flex items-center gap-2 pointer-events-auto">
               <span className="font-mono text-[10px] tracking-wider uppercase text-[#eadfd4] hidden md:inline">
                 DRAG TO EXPLORE
               </span>
               <Link
                 href="/towers"
-                className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#521331] hover:bg-[#75435c] text-white border border-[#75435c] font-mono text-[10px] font-semibold tracking-wider uppercase transition-all shadow-2xs"
+                className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-3.5 sm:py-1 rounded-full bg-[#521331] hover:bg-[#75435c] text-white border border-[#75435c] font-mono text-[9px] sm:text-[10px] font-semibold tracking-wider uppercase transition-all shadow-2xs"
               >
-                <span>3D Structure</span>
+                <span>3D Stage</span>
                 <ArrowUpRight className="size-3 text-[#d8c2ab]" aria-hidden="true" />
               </Link>
             </div>
           </div>
 
           {/* Central Architectural Hero Card */}
-          <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 my-auto py-6 sm:py-8 flex flex-col items-start pointer-events-none">
+          <div className="relative z-10 w-full max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-10 my-auto py-4 sm:py-8 flex flex-col items-start pointer-events-none">
             <div className="pointer-events-auto w-full max-w-lg lg:max-w-[480px]">
-              <div className="bg-[#3b0924]/95 backdrop-blur-md p-6 sm:p-7 rounded-3xl border border-[#75435c] shadow-[0_25px_60px_-15px_rgba(42,5,25,0.7)] space-y-4 hover:border-[#d8c2ab]/50 transition-all duration-300">
+              <div className="bg-[#3b0924]/95 backdrop-blur-md p-5 sm:p-7 rounded-2xl sm:rounded-3xl border border-[#75435c] shadow-[0_25px_60px_-15px_rgba(42,5,25,0.7)] space-y-3.5 sm:space-y-4 hover:border-[#d8c2ab]/50 transition-all duration-300">
                 {/* Institutional Eyebrow */}
                 <div className="flex items-center gap-2">
-                  <span className="w-5 h-0.5 bg-[#d8c2ab]" aria-hidden="true" />
-                  <span className="font-mono text-[10px] sm:text-[11px] tracking-[0.22em] text-[#d8c2ab] uppercase font-bold">
-                    CONCRETE FAIR, 13TH EDITION · DEPT. OF CIVIL ENGG, RVCE
+                  <span className="w-4 sm:w-5 h-0.5 bg-[#d8c2ab]" aria-hidden="true" />
+                  <span className="font-mono text-[9px] sm:text-[11px] tracking-[0.18em] sm:tracking-[0.22em] text-[#d8c2ab] uppercase font-bold">
+                    CONCRETE FAIR, 13TH EDITION · RVCE CIVIL
                   </span>
                 </div>
 
                 {/* Event Headline */}
-                <h1 className="font-black text-4xl sm:text-5xl lg:text-[50px] tracking-tight text-white leading-[0.9] uppercase text-balance">
+                <h1 className="font-black text-3xl sm:text-5xl lg:text-[50px] tracking-tight text-white leading-[0.95] sm:leading-[0.9] uppercase text-balance">
                   CONCRETE<br />
                   FAIR <span className="text-[#d8c2ab]">2026</span>
                 </h1>
 
                 {/* Official Tagline & Promise */}
-                <div className="space-y-1.5 border-l-2 border-[#d8c2ab] pl-3.5 py-0.5">
-                  <div className="font-mono text-[11px] tracking-[0.18em] text-[#d8c2ab] uppercase font-bold">
+                <div className="space-y-1.5 border-l-2 border-[#d8c2ab] pl-3 sm:pl-3.5 py-0.5">
+                  <div className="font-mono text-[10px] sm:text-[11px] tracking-[0.16em] sm:tracking-[0.18em] text-[#d8c2ab] uppercase font-bold">
                     // WHERE CONCRETE MEETS CREATIVITY //
                   </div>
                   <p className="text-xs sm:text-[13px] font-serif italic text-[#eadfd4] leading-snug text-pretty">
                     {conclaveInfo.promise}
                   </p>
-                  <p className="text-xs text-[#eadfd4]/90 leading-relaxed font-sans text-pretty">
+                  <p className="text-[11px] sm:text-xs text-[#eadfd4]/90 leading-relaxed font-sans text-pretty">
                     A national-level platform organized by the Department of Civil Engineering at RV College of Engineering, in association with the ICI Student Chapter RVCE.
                   </p>
                 </div>
 
                 {/* Date & Location */}
-                <div className="flex items-center gap-2 text-xs font-mono text-white font-semibold pt-1">
+                <div className="flex flex-wrap items-center gap-2 text-[11px] sm:text-xs font-mono text-white font-semibold pt-0.5 sm:pt-1">
                   <Calendar className="size-3.5 text-[#d8c2ab] shrink-0" aria-hidden="true" />
                   <span>{conclaveInfo.dates}</span>
                   <span className="text-[#75435c]">·</span>
@@ -187,10 +187,10 @@ export default function PublicHomePage() {
                 </div>
 
                 {/* Primary CTAs */}
-                <div className="flex flex-wrap items-center gap-3 pt-1">
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 pt-1">
                   <Link
                     href="/register"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#521331] hover:bg-[#75435c] text-[#fff8ef] hover:text-white border border-[#d8c2ab]/40 rounded-full font-sans text-xs font-semibold tracking-wide transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 cursor-pointer"
+                    className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 bg-[#521331] hover:bg-[#75435c] text-[#fff8ef] hover:text-white border border-[#d8c2ab]/40 rounded-full font-sans text-xs font-semibold tracking-wide transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 cursor-pointer text-center"
                   >
                     <span>Register via Google Form</span>
                     <ArrowUpRight className="size-3.5 text-[#d8c2ab]" aria-hidden="true" />
@@ -198,46 +198,46 @@ export default function PublicHomePage() {
 
                   <Link
                     href="/events"
-                    className="inline-flex items-center gap-2 px-5 py-3 bg-[#2a0519]/80 hover:bg-[#521331] text-white border border-[#75435c] rounded-full font-sans text-xs font-medium tracking-wide transition-all duration-200 shadow-2xs hover:shadow-xs cursor-pointer"
+                    className="inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 bg-[#2a0519]/80 hover:bg-[#521331] text-white border border-[#75435c] rounded-full font-sans text-xs font-medium tracking-wide transition-all duration-200 shadow-2xs hover:shadow-xs cursor-pointer text-center"
                   >
                     <span>Explore 8 Events</span>
                   </Link>
                 </div>
 
                 {/* 4 Key Conclave Highlights */}
-                <div className="grid grid-cols-4 gap-2 pt-4 border-t border-[#75435c]/80 text-center">
+                <div className="grid grid-cols-4 gap-2 pt-3 sm:pt-4 border-t border-[#75435c]/80 text-center">
                   <div className="space-y-0.5">
-                    <span className="block font-black text-lg sm:text-2xl text-white leading-none tabular-nums">
+                    <span className="block font-black text-base sm:text-2xl text-white leading-none tabular-nums">
                       13th
                     </span>
-                    <span className="block font-mono text-[8px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
+                    <span className="block font-mono text-[7px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
                       EDITION
                     </span>
                   </div>
 
                   <div className="space-y-0.5 border-l border-[#75435c]/60">
-                    <span className="block font-black text-lg sm:text-2xl text-white leading-none tabular-nums">
+                    <span className="block font-black text-base sm:text-2xl text-white leading-none tabular-nums">
                       {conclaveInfo.participantsExpected}
                     </span>
-                    <span className="block font-mono text-[8px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
+                    <span className="block font-mono text-[7px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
                       DELEGATES
                     </span>
                   </div>
 
                   <div className="space-y-0.5 border-l border-[#75435c]/60">
-                    <span className="block font-black text-lg sm:text-2xl text-white leading-none">
+                    <span className="block font-black text-base sm:text-2xl text-white leading-none">
                       08
                     </span>
-                    <span className="block font-mono text-[8px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
+                    <span className="block font-mono text-[7px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
                       EVENTS
                     </span>
                   </div>
 
                   <div className="space-y-0.5 border-l border-[#75435c]/60">
-                    <span className="block font-black text-lg sm:text-2xl text-[#d8c2ab] leading-none">
+                    <span className="block font-black text-base sm:text-2xl text-[#d8c2ab] leading-none">
                       ₹1.3L
                     </span>
-                    <span className="block font-mono text-[8px] sm:text-[9px] text-[#d8c2ab] tracking-wider uppercase font-bold">
+                    <span className="block font-mono text-[7px] sm:text-[9px] text-[#d8c2ab] tracking-wider uppercase font-bold">
                       PRIZES
                     </span>
                   </div>
@@ -247,7 +247,7 @@ export default function PublicHomePage() {
           </div>
 
           {/* Bottom Hero Bar */}
-          <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pb-4 pt-2 flex flex-col md:flex-row items-center justify-between gap-3 pointer-events-none">
+          <div className="relative z-10 w-full max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-10 pb-4 pt-2 flex flex-col md:flex-row items-center justify-between gap-2.5 sm:gap-3 pointer-events-none">
             {/* Left: Location Pin */}
             <div className="pointer-events-auto flex items-center gap-2 font-mono text-[11px] text-[#eadfd4] bg-[#3b0924]/90 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-[#75435c]/80 shadow-2xs">
               <span className="size-1.5 rounded-full bg-[#d8c2ab]" />

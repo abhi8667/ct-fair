@@ -46,33 +46,33 @@ export function CountdownTimer({
 
   if (variant === 'hero-strip') {
     return (
-      <div className="flex items-center gap-3 sm:gap-5 text-center tabular-nums" aria-label="Event countdown">
-        <div className="flex flex-col items-center min-w-[38px] sm:min-w-[46px]">
-          <span className="font-serif text-2xl sm:text-3xl font-light text-white leading-none">
+      <div className="flex items-center gap-1.5 sm:gap-5 text-center tabular-nums" aria-label="Event countdown">
+        <div className="flex flex-col items-center min-w-[28px] sm:min-w-[46px]">
+          <span className="font-serif text-lg sm:text-3xl font-light text-white leading-none">
             {pad(timeLeft.days)}
           </span>
-          <span className="font-mono text-[9px] text-[#94a3b8] tracking-wider uppercase mt-1">DAYS</span>
+          <span className="font-mono text-[7px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase mt-0.5 sm:mt-1">DAYS</span>
         </div>
-        <span className="text-[#64748b] font-light text-xl -mt-3">:</span>
-        <div className="flex flex-col items-center min-w-[38px] sm:min-w-[46px]">
-          <span className="font-serif text-2xl sm:text-3xl font-light text-white leading-none">
+        <span className="text-[#d8c2ab]/60 font-light text-sm sm:text-xl -mt-2 sm:-mt-3">:</span>
+        <div className="flex flex-col items-center min-w-[28px] sm:min-w-[46px]">
+          <span className="font-serif text-lg sm:text-3xl font-light text-white leading-none">
             {pad(timeLeft.hours)}
           </span>
-          <span className="font-mono text-[9px] text-[#94a3b8] tracking-wider uppercase mt-1">HRS</span>
+          <span className="font-mono text-[7px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase mt-0.5 sm:mt-1">HRS</span>
         </div>
-        <span className="text-[#64748b] font-light text-xl -mt-3">:</span>
-        <div className="flex flex-col items-center min-w-[38px] sm:min-w-[46px]">
-          <span className="font-serif text-2xl sm:text-3xl font-light text-white leading-none">
+        <span className="text-[#d8c2ab]/60 font-light text-sm sm:text-xl -mt-2 sm:-mt-3">:</span>
+        <div className="flex flex-col items-center min-w-[28px] sm:min-w-[46px]">
+          <span className="font-serif text-lg sm:text-3xl font-light text-white leading-none">
             {pad(timeLeft.minutes)}
           </span>
-          <span className="font-mono text-[9px] text-[#94a3b8] tracking-wider uppercase mt-1">MIN</span>
+          <span className="font-mono text-[7px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase mt-0.5 sm:mt-1">MIN</span>
         </div>
-        <span className="text-[#64748b] font-light text-xl -mt-3">:</span>
-        <div className="flex flex-col items-center min-w-[38px] sm:min-w-[46px]">
-          <span className="font-serif text-2xl sm:text-3xl font-light text-[#d8c2ab] leading-none">
+        <span className="text-[#d8c2ab]/60 font-light text-sm sm:text-xl -mt-2 sm:-mt-3">:</span>
+        <div className="flex flex-col items-center min-w-[28px] sm:min-w-[46px]">
+          <span className="font-serif text-lg sm:text-3xl font-light text-[#d8c2ab] leading-none">
             {pad(timeLeft.seconds)}
           </span>
-          <span className="font-mono text-[9px] text-[#d8c2ab] tracking-wider uppercase mt-1">SEC</span>
+          <span className="font-mono text-[7px] sm:text-[9px] text-[#d8c2ab] tracking-wider uppercase mt-0.5 sm:mt-1">SEC</span>
         </div>
       </div>
     )
