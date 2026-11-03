@@ -335,9 +335,25 @@ export const conclaveInfo = {
   instagram: '@icirvce',
   instagramUrl: 'https://instagram.com/icirvce',
   contacts: [
-    { name: 'Dakshak Pradeep', phone: '+91 91085 73889' },
-    { name: 'Prachi Singh', phone: '+91 80036 22469' },
+    { name: 'Prateek Mahantesh Baligar', phone: '+91 95907 93555', rawPhone: '919590793555', category: 'Events and registration' },
+    { name: 'Swathi M Revankar', phone: '+91 83102 76278', rawPhone: '918310276278', category: 'Events and registration' },
+    { name: 'Vishal Patil', phone: '+91 93800 86451', rawPhone: '919380086451', category: 'Events and registration' },
+    { name: 'Abhishek Kotyal', phone: '+91 91480 76735', rawPhone: '919148076735', category: 'General' },
+    { name: 'Suyash Tiwari', phone: '+91 70900 30000', rawPhone: '917090030000', category: 'General' },
+    { name: 'Venkatesh K', phone: '+91 95355 62019', rawPhone: '919535562019', category: 'General' },
   ],
+  contactsCategorized: {
+    eventsAndRegistration: [
+      { name: 'Prateek Mahantesh Baligar', phone: '+91 95907 93555', rawPhone: '919590793555' },
+      { name: 'Swathi M Revankar', phone: '+91 83102 76278', rawPhone: '918310276278' },
+      { name: 'Vishal Patil', phone: '+91 93800 86451', rawPhone: '919380086451' },
+    ],
+    general: [
+      { name: 'Abhishek Kotyal', phone: '+91 91480 76735', rawPhone: '919148076735' },
+      { name: 'Suyash Tiwari', phone: '+91 70900 30000', rawPhone: '917090030000' },
+      { name: 'Venkatesh K', phone: '+91 95355 62019', rawPhone: '919535562019' },
+    ],
+  },
   organizedBy: 'Department of Civil Engineering, RV College of Engineering, Bengaluru',
   inAssociationWith: 'Indian Concrete Institute (ICI) Student Chapter RVCE',
   departmentHistory:
@@ -453,8 +469,12 @@ export const announcements: Announcement[] = [
 export const activity: any[] = []
 
 export const coordinators = [
-  { id: 'c1', name: 'Dakshak Pradeep', title: 'Student Coordinator', initials: 'DP' },
-  { id: 'c2', name: 'Prachi Singh', title: 'Student Coordinator', initials: 'PS' },
+  { id: 'c1', name: 'Prateek Mahantesh Baligar', title: 'Events & Registration', phone: '+91 95907 93555', rawPhone: '919590793555', initials: 'PB' },
+  { id: 'c2', name: 'Swathi M Revankar', title: 'Events & Registration', phone: '+91 83102 76278', rawPhone: '918310276278', initials: 'SR' },
+  { id: 'c3', name: 'Vishal Patil', title: 'Events & Registration', phone: '+91 93800 86451', rawPhone: '919380086451', initials: 'VP' },
+  { id: 'c4', name: 'Abhishek Kotyal', title: 'General Enquiries', phone: '+91 91480 76735', rawPhone: '919148076735', initials: 'AK' },
+  { id: 'c5', name: 'Suyash Tiwari', title: 'General Enquiries', phone: '+91 70900 30000', rawPhone: '917090030000', initials: 'ST' },
+  { id: 'c6', name: 'Venkatesh K', title: 'General Enquiries', phone: '+91 95355 62019', rawPhone: '919535562019', initials: 'VK' },
 ]
 
 export const currentDelegate = {

@@ -132,11 +132,45 @@ export default function AboutPage() {
                         {conclaveInfo.instagram}
                       </a>
                     </div>
-                    {conclaveInfo.contacts.map((c) => (
-                      <div key={c.name}>
-                        <span className="text-[#3b0924] font-bold">{c.name}:</span> {c.phone}
+                    <div className="pt-2 border-t border-[#eadfd4] space-y-3 font-sans text-xs">
+                      <div>
+                        <span className="font-mono text-[9px] uppercase tracking-wider text-[#3b0924] font-bold block mb-1">
+                          EVENTS &amp; REGISTRATION (WHATSAPP)
+                        </span>
+                        {conclaveInfo.contactsCategorized.eventsAndRegistration.map((c) => (
+                          <div key={c.name} className="flex items-center justify-between py-0.5 text-[11px]">
+                            <span className="text-[#34252b] font-medium">{c.name}</span>
+                            <a
+                              href={`https://wa.me/${c.rawPhone}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="font-mono text-[#3b0924] font-bold hover:underline"
+                            >
+                              {c.phone}
+                            </a>
+                          </div>
+                        ))}
                       </div>
-                    ))}
+
+                      <div>
+                        <span className="font-mono text-[9px] uppercase tracking-wider text-[#3b0924] font-bold block mb-1">
+                          GENERAL ENQUIRIES (WHATSAPP)
+                        </span>
+                        {conclaveInfo.contactsCategorized.general.map((c) => (
+                          <div key={c.name} className="flex items-center justify-between py-0.5 text-[11px]">
+                            <span className="text-[#34252b] font-medium">{c.name}</span>
+                            <a
+                              href={`https://wa.me/${c.rawPhone}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="font-mono text-[#3b0924] font-bold hover:underline"
+                            >
+                              {c.phone}
+                            </a>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

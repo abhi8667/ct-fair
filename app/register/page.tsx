@@ -150,7 +150,7 @@ export default function RegisterPage() {
                   Questions regarding events or registration?
                 </h4>
                 <p className="text-xs text-[#77666a]">
-                  Contact: Dakshak Pradeep (+91 91085 73889) · Prachi Singh (+91 80036 22469) · ici@rvce.edu.in
+                  Events &amp; Registration WhatsApp: Prateek (+91 95907 93555), Swathi (+91 83102 76278), Vishal (+91 93800 86451) · General: Abhishek (+91 91480 76735) · ici@rvce.edu.in
                 </p>
               </div>
             </div>

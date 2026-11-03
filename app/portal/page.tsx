@@ -50,7 +50,7 @@ export default function ParticipantPortalPage() {
           </div>
 
           <div className="pt-4 border-t border-[#eadfd4] text-xs font-mono text-[#77666a]">
-            For queries: Dakshak Pradeep (+91 91085 73889) · {conclaveInfo.email}
+            For queries: Events &amp; Registration: Prateek (+91 95907 93555), Swathi (+91 83102 76278) · General: Abhishek (+91 91480 76735) · {conclaveInfo.email}
           </div>
         </div>
       </main>

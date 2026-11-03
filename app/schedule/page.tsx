@@ -52,7 +52,7 @@ export default function PublicSchedulePage() {
               <span>Campus Venue &amp; Reporting</span>
             </h3>
             <p className="text-xs text-[#77666a] leading-relaxed">
-              All events take place at the Department of Civil Engineering, RV College of Engineering, {conclaveInfo.address}. Participants are advised to arrive on time for Round 1 briefings. For any questions, contact Dakshak Pradeep (+91 91085 73889), Prachi Singh (+91 80036 22469), or email ici@rvce.edu.in.
+              All events take place at the Department of Civil Engineering, RV College of Engineering, {conclaveInfo.address}. Participants are advised to arrive on time for Round 1 briefings. For Events &amp; Registration questions, contact Prateek Mahantesh Baligar (+91 95907 93555), Swathi M Revankar (+91 83102 76278), or Vishal Patil (+91 93800 86451); for General queries, contact Abhishek Kotyal (+91 91480 76735), Suyash Tiwari (+91 70900 30000), or Venkatesh K (+91 95355 62019), or email ici@rvce.edu.in.
             </p>
           </div>
         </div>

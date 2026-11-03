@@ -32,29 +32,72 @@ export function PublicFooter() {
         </div>
 
         {/* 4 Official Columns from Slide 8 & Brochure */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 border-b border-[#75435c]/60">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-10 border-b border-[#75435c]/60">
           {/* Col 1: Contact */}
-          <div className="space-y-3">
-            <span className="font-mono text-[10px] uppercase tracking-widest text-[#d8c2ab] font-bold block">
-              CONTACT
-            </span>
-            <Link
-              href={`mailto:${conclaveInfo.email}`}
-              className="text-base font-semibold text-white hover:text-[#d8c2ab] transition-colors block"
-            >
-              {conclaveInfo.email}
-            </Link>
-            <div className="text-xs text-[#eadfd4]/90 space-y-1 font-sans">
-              {conclaveInfo.contacts.map((c) => (
-                <div key={c.name}>
-                  <span className="text-[#d8c2ab] font-medium">{c.name}:</span> {c.phone}
-                </div>
-              ))}
+          <div className="space-y-4 lg:col-span-5">
+            <div>
+              <span className="font-mono text-[10px] uppercase tracking-widest text-[#d8c2ab] font-bold block mb-1">
+                CONTACT &amp; WHATSAPP
+              </span>
+              <Link
+                href={`mailto:${conclaveInfo.email}`}
+                className="text-sm font-semibold text-white hover:text-[#d8c2ab] transition-colors inline-block"
+              >
+                {conclaveInfo.email}
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-sans">
+              {/* Events & Registration */}
+              <div className="space-y-1.5 p-3 rounded-xl bg-[#2a0519]/60 border border-[#75435c]/60">
+                <span className="font-mono text-[9px] uppercase tracking-wider text-[#d8c2ab] font-bold block">
+                  EVENTS &amp; REGISTRATION
+                </span>
+                {conclaveInfo.contactsCategorized.eventsAndRegistration.map((c) => (
+                  <div key={c.name} className="flex flex-col">
+                    <span className="text-white font-medium text-[11px]">{c.name}</span>
+                    <div className="flex items-center gap-2 text-[11px]">
+                      <a
+                        href={`https://wa.me/${c.rawPhone}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#d8c2ab] hover:text-white transition-colors underline flex items-center gap-1"
+                        title="Chat on WhatsApp"
+                      >
+                        <span>WhatsApp:</span> {c.phone}
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* General */}
+              <div className="space-y-1.5 p-3 rounded-xl bg-[#2a0519]/60 border border-[#75435c]/60">
+                <span className="font-mono text-[9px] uppercase tracking-wider text-[#d8c2ab] font-bold block">
+                  GENERAL ENQUIRIES
+                </span>
+                {conclaveInfo.contactsCategorized.general.map((c) => (
+                  <div key={c.name} className="flex flex-col">
+                    <span className="text-white font-medium text-[11px]">{c.name}</span>
+                    <div className="flex items-center gap-2 text-[11px]">
+                      <a
+                        href={`https://wa.me/${c.rawPhone}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#d8c2ab] hover:text-white transition-colors underline flex items-center gap-1"
+                        title="Chat on WhatsApp"
+                      >
+                        <span>WhatsApp:</span> {c.phone}
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
           {/* Col 2: Instagram */}
-          <div className="space-y-3">
+          <div className="space-y-3 lg:col-span-2">
             <span className="font-mono text-[10px] uppercase tracking-widest text-[#d8c2ab] font-bold block">
               INSTAGRAM
             </span>
@@ -72,7 +115,7 @@ export function PublicFooter() {
           </div>
 
           {/* Col 3: Organized By */}
-          <div className="space-y-3">
+          <div className="space-y-3 lg:col-span-3">
             <span className="font-mono text-[10px] uppercase tracking-widest text-[#d8c2ab] font-bold block">
               ORGANIZED BY
             </span>
@@ -86,7 +129,7 @@ export function PublicFooter() {
           </div>
 
           {/* Col 4: Conclave Details */}
-          <div className="space-y-3">
+          <div className="space-y-3 lg:col-span-2">
             <span className="font-mono text-[10px] uppercase tracking-widest text-[#d8c2ab] font-bold block">
               CONCLAVE DATES
             </span>

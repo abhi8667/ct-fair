@@ -49,28 +49,53 @@ export default function PublicFAQPage() {
           {/* Contact Directory */}
           <div className="bg-white border border-[#eadfd4] p-8 rounded-3xl space-y-6 shadow-2xs">
             <h3 className="font-serif text-2xl text-[#34252b] font-medium">
-              Conclave Secretariat &amp; Coordination
+              Conclave Secretariat &amp; WhatsApp Contacts
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-mono text-xs">
               <div className="space-y-2 border-l-2 border-[#3b0924] pl-4">
-                <span className="text-[10px] uppercase text-[#a98b78] font-bold block">STUDENT COORDINATOR</span>
-                <p className="text-[#34252b] font-bold text-sm">Dakshak Pradeep</p>
-                <p className="text-[#77666a]">+91 91085 73889</p>
-                <p className="text-[#77666a]">{conclaveInfo.email}</p>
+                <span className="text-[10px] uppercase text-[#a98b78] font-bold block">EVENTS &amp; REGISTRATION</span>
+                <div className="space-y-2">
+                  {conclaveInfo.contactsCategorized.eventsAndRegistration.map((c) => (
+                    <div key={c.name} className="space-y-0.5">
+                      <p className="text-[#34252b] font-bold text-xs">{c.name}</p>
+                      <a
+                        href={`https://wa.me/${c.rawPhone}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#3b0924] hover:underline flex items-center gap-1 text-[11px]"
+                      >
+                        <span>WhatsApp:</span> {c.phone}
+                      </a>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               <div className="space-y-2 border-l-2 border-[#3b0924] pl-4">
-                <span className="text-[10px] uppercase text-[#a98b78] font-bold block">STUDENT COORDINATOR</span>
-                <p className="text-[#34252b] font-bold text-sm">Prachi Singh</p>
-                <p className="text-[#77666a]">+91 80036 22469</p>
-                <p className="text-[#77666a]">{conclaveInfo.email}</p>
+                <span className="text-[10px] uppercase text-[#a98b78] font-bold block">GENERAL ENQUIRIES</span>
+                <div className="space-y-2">
+                  {conclaveInfo.contactsCategorized.general.map((c) => (
+                    <div key={c.name} className="space-y-0.5">
+                      <p className="text-[#34252b] font-bold text-xs">{c.name}</p>
+                      <a
+                        href={`https://wa.me/${c.rawPhone}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#3b0924] hover:underline flex items-center gap-1 text-[11px]"
+                      >
+                        <span>WhatsApp:</span> {c.phone}
+                      </a>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               <div className="space-y-2 border-l-2 border-[#3b0924] pl-4">
-                <span className="text-[10px] uppercase text-[#a98b78] font-bold block">ORGANIZATION</span>
-                <p className="text-[#34252b] font-bold text-sm">ICI Student Chapter</p>
+                <span className="text-[10px] uppercase text-[#a98b78] font-bold block">INSTITUTION &amp; SOCIAL</span>
+                <p className="text-[#34252b] font-bold text-sm">ICI Student Chapter RVCE</p>
                 <p className="text-[#77666a]">Dept. of Civil Engineering, RVCE</p>
-                <p className="text-[#77666a]">{conclaveInfo.instagram}</p>
+                <a href={`mailto:${conclaveInfo.email}`} className="text-[#3b0924] hover:underline block">{conclaveInfo.email}</a>
+                <a href={conclaveInfo.instagramUrl} target="_blank" rel="noopener noreferrer" className="text-[#77666a] hover:underline block">{conclaveInfo.instagram}</a>
               </div>
             </div>
 

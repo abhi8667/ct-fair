@@ -44,14 +44,14 @@ const faqs: FAQItem[] = [
     code: 'TEAM SIZES',
     question: 'What are the team size requirements for each event?',
     answer:
-      'Team sizes: CONmix (3 participants), CONarch (4 participants), CONzine (4–5 participants), CONmake (3 participants), CONquest (4 participants), CONscape (3–4 participants), CONflix (6–7 participants), and CONfight (3 participants).',
+      'Team sizes: CONmix (3–4 participants), CONarch (4–5 participants), CONmake (3–4 participants), CONzine (4–5 participants), CONscape (4–5 participants), CONfight (3 participants), CONquest (4 participants), and CONflix (6–7 participants).',
   },
   {
     id: 'f6',
     code: 'QUERIES',
     question: 'Who can I contact for queries regarding events?',
     answer:
-      'You can reach out to our student coordinators Dakshak Pradeep (+91 91085 73889) or Prachi Singh (+91 80036 22469), or email us directly at ici@rvce.edu.in.',
+      'For Events & Registration queries, reach out via WhatsApp/Call to Prateek Mahantesh Baligar (+91 95907 93555), Swathi M Revankar (+91 83102 76278), or Vishal Patil (+91 93800 86451). For General enquiries, contact Abhishek Kotyal (+91 91480 76735), Suyash Tiwari (+91 70900 30000), or Venkatesh K (+91 95355 62019), or email us at ici@rvce.edu.in.',
   },
 ]
 
