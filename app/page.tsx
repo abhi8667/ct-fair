@@ -11,7 +11,6 @@ import {
   Clock,
   Mail,
   MapPin,
-  Sparkles,
   Trophy,
   Users,
 } from 'lucide-react'
@@ -167,8 +166,8 @@ export default function PublicHomePage() {
 
                 {/* Official Tagline & Promise */}
                 <div className="space-y-1.5 border-l-2 border-[#d8c2ab] pl-3 sm:pl-3.5 py-0.5">
-                  <div className="font-mono text-[10px] sm:text-[11px] tracking-[0.16em] sm:tracking-[0.18em] text-[#d8c2ab] uppercase font-bold">
-                    // WHERE CONCRETE MEETS CREATIVITY //
+                  <div className="text-[10px] sm:text-[11px] tracking-[0.16em] sm:tracking-[0.18em] text-[#d8c2ab] uppercase font-bold">
+                    WHERE CONCRETE MEETS CREATIVITY
                   </div>
                   <p className="text-xs sm:text-[13px] font-serif italic text-[#eadfd4] leading-snug text-pretty">
                     {conclaveInfo.promise}
@@ -483,10 +482,9 @@ export default function PublicHomePage() {
 
             {/* Flagship Interactive Accordion Gallery Spotlight */}
             <div className="space-y-3">
-              <div className="flex items-center justify-between text-xs font-mono text-[#77666a] border-b border-[#eadfd4] pb-2">
-                <span className="uppercase tracking-widest text-[#3b0924] font-bold flex items-center gap-1.5">
-                  <Sparkles className="size-3.5 text-[#a98b78]" aria-hidden="true" />
-                  FLAGSHIP CHALLENGES // INTERACTIVE SPOTLIGHT
+              <div className="flex items-center justify-between text-xs text-[#77666a] border-b border-[#eadfd4] pb-2">
+                <span className="uppercase tracking-widest text-[#3b0924] font-bold">
+                  FLAGSHIP CHALLENGES · INTERACTIVE SPOTLIGHT
                 </span>
                 <span className="hidden sm:inline text-[#77666a]">
                   Hover or tap cards to expand specifications
@@ -666,8 +664,8 @@ export default function PublicHomePage() {
                   <div>
                     <div className="flex items-center gap-2">
                       <span className="size-2 rounded-full bg-[#3b0924]" aria-hidden="true" />
-                      <span className="font-mono text-xs uppercase tracking-widest text-[#3b0924] font-bold">
-                        ESTABLISHED 1963 // CIVIL ENGINEERING DEPARTMENT AT RVCE
+                      <span className="text-xs uppercase tracking-widest text-[#3b0924] font-bold">
+                        ESTABLISHED 1963 · CIVIL ENGINEERING DEPARTMENT AT RVCE
                       </span>
                     </div>
                     <h3 className="font-serif text-2xl sm:text-3xl text-[#34252b] font-medium mt-1">

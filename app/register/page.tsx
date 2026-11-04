@@ -17,8 +17,8 @@ export default function RegisterPage() {
           <div className="border-b border-[#eadfd4] pb-6 space-y-2">
             <div className="flex items-center gap-2">
               <span className="w-5 h-0.5 bg-[#3b0924]" aria-hidden="true" />
-              <span className="font-mono text-xs uppercase tracking-widest text-[#a98b78] font-bold">
-                CONCRETE FAIR 2026 // OFFICIAL REGISTRATION
+              <span className="text-xs uppercase tracking-widest text-[#a98b78] font-bold">
+                CONCRETE FAIR 2026 — OFFICIAL REGISTRATION
               </span>
             </div>
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-[#34252b] font-medium tracking-tight uppercase">

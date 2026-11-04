@@ -80,7 +80,7 @@ export function FAQAccordion() {
               aria-controls={`faq-panel-${faq.id}`}
             >
               <div className="flex items-center gap-3">
-                <span className="font-mono text-xs text-[#3b0924] font-bold">{faq.code} //</span>
+                <span className="font-mono text-xs text-[#3b0924] font-bold">{faq.code}</span>
                 <span className="font-serif text-base sm:text-lg text-[#34252b] font-medium text-balance">
                   {faq.question}
                 </span>

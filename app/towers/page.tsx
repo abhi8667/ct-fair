@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, Box, Compass, Sparkles, RefreshCw, Eye, Layers } from "lucide-react";
+import { ArrowLeft, Box, Compass, RefreshCw, Eye, Layers } from "lucide-react";
 import { JapaneseTowerLandscape, TOWER_COUNTRIES, TowerCountry } from "@/components/public/JapaneseTowerLandscape";
 import "@/src/shaders/japanese-tower/style.css";
 
@@ -134,8 +134,7 @@ export default function TowersPage() {
             </div>
 
             <div className="pt-4 border-t border-[#d8c2ab]/40 flex flex-wrap items-center justify-between gap-4 font-mono text-xs text-[#77666a]">
-              <span className="flex items-center gap-2">
-                <Sparkles className="size-3.5 text-[#3b0924]" aria-hidden="true" />
+              <span>
                 Concrete Fair 2026 · RVCE Department of Civil Engineering
               </span>
               <div className="flex items-center gap-4">

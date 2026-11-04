@@ -18,8 +18,8 @@ export default function PublicFAQPage() {
           <div className="border-b border-[#eadfd4] pb-8 space-y-2">
             <div className="flex items-center gap-2">
               <span className="w-5 h-0.5 bg-[#3b0924]" aria-hidden="true" />
-              <span className="font-mono text-xs uppercase tracking-widest text-[#a98b78] font-bold">
-                CONCRETE FAIR 2026 // FREQUENTLY ASKED QUESTIONS
+              <span className="text-xs uppercase tracking-widest text-[#a98b78] font-bold">
+                CONCRETE FAIR 2026 — FREQUENTLY ASKED QUESTIONS
               </span>
             </div>
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#34252b] font-normal tracking-tight uppercase text-balance">

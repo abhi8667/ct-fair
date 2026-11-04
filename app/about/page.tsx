@@ -18,8 +18,8 @@ export default function AboutPage() {
           <div className="border-b border-[#eadfd4] pb-8 space-y-2">
             <div className="flex items-center gap-2">
               <span className="w-5 h-0.5 bg-[#3b0924]" aria-hidden="true" />
-              <span className="font-mono text-xs uppercase tracking-widest text-[#a98b78] font-bold">
-                02 • ABOUT US // DEPARTMENT OF CIVIL ENGINEERING · RVCE
+              <span className="text-xs uppercase tracking-widest text-[#a98b78] font-bold">
+                ABOUT US — DEPARTMENT OF CIVIL ENGINEERING · RVCE
               </span>
             </div>
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#34252b] font-normal tracking-tight uppercase text-balance">
@@ -180,8 +180,8 @@ export default function AboutPage() {
           {/* What Makes Us Different: 4 Values from Slide 4 */}
           <div className="bg-white border border-[#eadfd4] p-8 md:p-12 rounded-3xl space-y-8 shadow-sm">
             <div>
-              <span className="font-mono text-xs uppercase tracking-wider text-[#a98b78] font-bold block">
-                04 • WHAT MAKES US DIFFERENT
+              <span className="text-xs uppercase tracking-wider text-[#a98b78] font-bold block">
+                WHAT MAKES US DIFFERENT
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl text-[#34252b] font-medium tracking-tight mt-1">
                 Designed for technical depth. Built for participation.

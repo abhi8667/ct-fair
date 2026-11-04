@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, MapPin, Search, Users, Sparkles, Calendar, Trophy } from 'lucide-react'
+import { ArrowRight, MapPin, Search, Users, Calendar, Trophy } from 'lucide-react'
 import { PublicHeader } from '@/components/public/public-header'
 import { PublicFooter } from '@/components/public/public-footer'
 import { events, conclaveInfo } from '@/lib/data'
@@ -103,8 +103,8 @@ export default function PublicEventsPage() {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <span className="w-5 h-0.5 bg-[#3b0924]" aria-hidden="true" />
-                <span className="font-mono text-xs uppercase tracking-widest text-[#a98b78] font-bold">
-                  05 • CONCRETE FAIR 2026 // EIGHT EVENT EXPERIENCES · ONE CONNECTED COMMUNITY
+                <span className="text-xs uppercase tracking-widest text-[#a98b78] font-bold">
+                  CONCRETE FAIR 2026 — EIGHT EVENT EXPERIENCES · ONE CONNECTED COMMUNITY
                 </span>
               </div>
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#34252b] font-normal tracking-tight uppercase text-balance">
@@ -129,11 +129,10 @@ export default function PublicEventsPage() {
           {/* Interactive Accordion Gallery Spotlight */}
           <div className="space-y-4">
             <div className="flex items-center justify-between border-b border-[#eadfd4] pb-2">
-              <span className="font-mono text-xs text-[#3b0924] font-bold uppercase tracking-wider flex items-center gap-2">
-                <Sparkles className="size-4 text-[#a98b78]" />
-                FLAGSHIP EVENTS // INTERACTIVE SPOTLIGHT
+              <span className="text-xs text-[#3b0924] font-bold uppercase tracking-wider flex items-center gap-2">
+                FLAGSHIP EVENTS · INTERACTIVE SPOTLIGHT
               </span>
-              <span className="font-mono text-[11px] text-[#77666a] hidden sm:inline">
+              <span className="text-[11px] text-[#77666a] hidden sm:inline">
                 Hover or tap to view event specifications
               </span>
             </div>

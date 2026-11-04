@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowUpRight, Trophy, MapPin, Calendar, Clock, Sparkles } from 'lucide-react'
+import { ArrowUpRight, Trophy, MapPin, Calendar, Clock } from 'lucide-react'
 
 export interface AccordionGalleryItem {
   image: string
@@ -188,7 +188,7 @@ export default function AccordionGallery({
                   {/* Category & Tag row */}
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className="font-mono text-[9px] sm:text-[10px] tracking-[0.18em] sm:tracking-[0.2em] text-[#d8c2ab] uppercase font-semibold">
-                      {item.code ? `// ${item.code} //` : '// FLAGSHIP EVENT //'}
+                      {item.code ? item.code : 'FLAGSHIP EVENT'}
                     </span>
                     {item.badge && (
                       <span className="px-2 py-0.5 rounded-full bg-[#521331] text-[#eadfd4] border border-[#75435c] font-mono text-[8px] sm:text-[9px] uppercase tracking-wider">

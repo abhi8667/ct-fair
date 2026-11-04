@@ -52,7 +52,7 @@ export function EventsShowcase() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1d0411]/80 via-transparent to-transparent" />
               <div className="absolute top-3 left-3 bg-[#3b0924]/90 backdrop-blur-sm px-2.5 py-0.5 rounded-full font-mono text-[10px] text-white border border-white/20">
-                {e.code} // {e.day}
+                {e.code} · {e.day}
               </div>
               <div className="absolute top-3 right-3 font-mono text-[10px] px-2.5 py-0.5 rounded-full bg-white text-[#3b0924] font-bold border border-[#eadfd4]">
                 {e.category}
