@@ -160,21 +160,21 @@ export default function PublicHomePage() {
                 </div>
 
                 {/* Event Headline */}
-                <h1 className="font-black text-3xl sm:text-5xl lg:text-[50px] tracking-tight text-white leading-[0.95] sm:leading-[0.9] uppercase text-balance">
-                  CONCRETE<br />
-                  FAIR <span className="text-[#d8c2ab]">2026</span>
+                <h1 className="font-serif text-3xl sm:text-5xl lg:text-[50px] tracking-tight text-white leading-[0.95] sm:leading-[0.9] uppercase text-balance font-normal">
+                  Concrete<br />
+                  <span className="font-sans font-black italic tracking-tighter text-[#d8c2ab]">Fair 2026</span>
                 </h1>
 
                 {/* Official Tagline & Promise */}
                 <div className="space-y-1.5 border-l-2 border-[#d8c2ab] pl-3 sm:pl-3.5 py-0.5">
                   <div className="font-mono text-[10px] sm:text-[11px] tracking-[0.16em] sm:tracking-[0.18em] text-[#d8c2ab] uppercase font-bold">
-                    // WHERE CONCRETE MEETS CREATIVITY //
+                    WHERE CONCRETE MEETS CREATIVITY
                   </div>
                   <p className="text-xs sm:text-[13px] font-serif italic text-[#eadfd4] leading-snug text-pretty">
                     {conclaveInfo.promise}
                   </p>
                   <p className="text-[11px] sm:text-xs text-[#eadfd4]/90 leading-relaxed font-sans text-pretty">
-                    A national-level platform organized by the Department of Civil Engineering at RV College of Engineering, in association with the ICI Student Chapter RVCE.
+                    National-level confluence organized by the Department of Civil Engineering at RVCE in association with ICI Student Chapter.
                   </p>
                 </div>
 
