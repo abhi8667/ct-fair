@@ -90,8 +90,8 @@ export const events: FairEvent[] = [
     venue: 'Structural Fabrication Yard, RVCE',
     status: 'OPEN',
     image: '/images/event-bridge.png',
-    description: 'Transform structural concepts into reality through a challenge that combines design creativity and construction skills.',
-    teamSize: '4–5 participants',
+    description: 'Transform structural concepts into reality through a challenge that combines design creativity and construction skills. Round 1 tests arch and truss fundamentals, with the top 5 teams qualifying for Round 2 arch construction.',
+    teamSize: '4 participants per team',
     coordinator: 'Department of Civil Engineering, RVCE',
     prizes: '₹ 18,000',
     prizePool: '₹ 18,000',
@@ -102,12 +102,12 @@ export const events: FairEvent[] = [
     fee: 0,
     rounds: [
       {
-        name: 'Round 1: Design on Paper',
-        details: 'Design an arch or bridge on paper.',
+        name: 'Round 1 — Arch & Truss Quiz',
+        details: 'Written quiz on arch and truss fundamentals (20 minutes / 25 marks). All registered teams participate; top 5 teams qualify.',
       },
       {
-        name: 'Round 2: Build the Arch / Bridge',
-        details: 'Build the designed arch or bridge.',
+        name: 'Round 2 — Arch Construction Challenge',
+        details: 'Top 5 qualified teams (20 participants total) construct and demonstrate a physical arch according to the organisers\' brief (50 marks).',
       },
     ],
   },

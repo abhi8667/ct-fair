@@ -261,6 +261,25 @@
   .animate-float-slow {
     animation: antigravity-float 9s ease-in-out infinite reverse;
   }
+
+  .animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll var(--marquee-duration, 38s) linear infinite;
+  }
+
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes antigravity-float {

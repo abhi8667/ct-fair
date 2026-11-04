@@ -17,6 +17,7 @@ import {
 import { PublicHeader } from '@/components/public/public-header'
 import { PublicFooter } from '@/components/public/public-footer'
 import { CountdownTimer } from '@/components/public/countdown-timer'
+import { AnnouncementsMarquee } from '@/components/public/announcements-marquee'
 import { FAQAccordion } from '@/components/public/faq-accordion'
 import {
   AntigravityTilt,
@@ -55,7 +56,7 @@ export default function PublicHomePage() {
       link: '/events',
       category: 'Technical',
       code: 'CF-02',
-      description: 'Design with purpose. Build with precision. Transform structural concepts into reality through paper drafting and physical arch construction.',
+      description: 'Arch & Truss Quiz followed by physical arch construction for the top 5 qualifying teams. 4 participants per team.',
       date: '30 Nov 2026',
       venue: 'Structural Fabrication Yard, RVCE',
       prizes: '₹ 18,000 (1st: ₹10k · 2nd: ₹5k · 3rd: ₹3k)',
@@ -280,6 +281,11 @@ export default function PublicHomePage() {
             </div>
           </div>
         </section>
+
+        {/* =========================================================================
+            LIVE ANNOUNCEMENTS & DEADLINE MARQUEE TICKER
+            ========================================================================= */}
+        <AnnouncementsMarquee />
 
         {/* =========================================================================
             2. QUICK NAV & HIGHLIGHTS ROW
