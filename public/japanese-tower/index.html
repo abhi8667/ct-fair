@@ -1811,15 +1811,6 @@ renderer.setClearColor(0x000000,0);
 renderer.localClippingEnabled=true;
 renderer.shadowMap.enabled=true;
 renderer.shadowMap.type=T.PCFSoftShadowMap;
-
-/* V-Ray Style Photorealistic Physical Tone Mapping & Gamma Correction */
-if('toneMapping' in renderer && T.ACESFilmicToneMapping!==undefined){
-  renderer.toneMapping=T.ACESFilmicToneMapping;
-  renderer.toneMappingExposure=1.18;
-}
-if('physicallyCorrectLights' in renderer) renderer.physicallyCorrectLights=true;
-if('useLegacyLights' in renderer) renderer.useLegacyLights=false;
-
 if('outputColorSpace' in renderer&&T.SRGBColorSpace!==undefined)renderer.outputColorSpace=T.SRGBColorSpace;
 else if(renderer.outputEncoding!==undefined&&T.sRGBEncoding!==undefined)renderer.outputEncoding=T.sRGBEncoding;
 
