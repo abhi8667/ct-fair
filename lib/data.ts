@@ -264,7 +264,7 @@ export const events: FairEvent[] = [
     venue: 'Audio Visual Auditorium, RVCE',
     status: 'OPEN',
     image: '/images/hero-montage.jpg',
-    description: 'Bring your storytelling and filmmaking skills together to create an engaging short film inspired by products associated with the event\'s sponsors. Important Deadlines — Last date for registration: 20 November 2026. Last date for short-film submission: 26 November 2026.',
+    description: 'Bring your storytelling and filmmaking skills together to create an engaging short film inspired by products associated with the event\'s sponsors.',
     teamSize: '6–7 participants · Duration: 5 minutes',
     coordinator: 'Department of Civil Engineering, RVCE',
     prizes: '₹ 13,000',
@@ -275,10 +275,6 @@ export const events: FairEvent[] = [
     checkedIn: 0,
     fee: 0,
     rounds: [
-      {
-        name: 'Deadlines & Timeline',
-        details: 'Registration Deadline: 20 November 2026 | Short-Film Submission Deadline: 26 November 2026.',
-      },
       {
         name: 'Round 1: Screening & Presentation',
         details: 'Teams create and present a five-minute short film based on sponsor products.',
