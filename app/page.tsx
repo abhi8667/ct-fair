@@ -106,10 +106,10 @@ export default function PublicHomePage() {
 
       <main className="flex-1 w-full pt-16 sm:pt-20">
         {/* =========================================================================
-            1. IMMERSIVE HERO WITH 3D CANVAS & EDITORIAL SPLIT
+            1. IMMERSIVE HERO WITH 3D CANVAS & PPT BRANDING
             ========================================================================= */}
-        <section className="relative w-full min-h-[92dvh] lg:min-h-[95dvh] flex flex-col justify-between overflow-hidden bg-[#12020a] border-b border-[#75435c]/60 select-none">
-          {/* Background: 3D Monument Experience (Unobstructed on Desktop) */}
+        <section className="relative w-full min-h-[92dvh] lg:min-h-[94dvh] flex flex-col justify-between overflow-hidden bg-[#1d0411] border-b border-[#75435c]/60 select-none">
+          {/* Background: 3D Stage */}
           <div className="absolute inset-0 z-0 pointer-events-auto">
             <JapaneseTowerLandscape
               country="india"
@@ -120,122 +120,127 @@ export default function PublicHomePage() {
             />
           </div>
 
-          {/* Architectural Vignette Gradients */}
-          <div className="absolute inset-y-0 left-0 w-full lg:w-[52%] z-1 pointer-events-none bg-gradient-to-r from-[#12020a]/95 via-[#12020a]/75 to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 h-32 z-1 pointer-events-none bg-gradient-to-t from-[#fff8ef] via-[#12020a]/30 to-transparent" />
+          {/* Deep Wine / Burgundy Gradient Anchor */}
+          <div className="absolute inset-y-0 left-0 w-full lg:w-[48%] z-1 pointer-events-none bg-gradient-to-r from-[#1d0411]/95 via-[#1d0411]/65 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-28 z-1 pointer-events-none bg-gradient-to-t from-[#fff8ef] via-[#1d0411]/25 to-transparent" />
 
           {/* Top HUD */}
-          <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-4 flex items-center justify-between pointer-events-none gap-2">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1e0513]/90 backdrop-blur-md border border-[#75435c]/70 shadow-2xs pointer-events-auto font-mono text-[9px] sm:text-[11px] font-bold tracking-widest uppercase text-[#eadfd4]">
-              <span className="size-2 rounded-full bg-[#d8c2ab] animate-pulse" aria-hidden="true" />
+          <div className="relative z-10 w-full max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-10 pt-3 sm:pt-4 flex items-center justify-between pointer-events-none gap-2">
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-[#3b0924]/90 backdrop-blur-md border border-[#75435c]/80 shadow-2xs pointer-events-auto font-mono text-[9px] sm:text-[11px] font-bold tracking-wider sm:tracking-widest uppercase text-[#eadfd4]">
+              <span className="size-1.5 sm:size-2 rounded-full bg-[#d8c2ab] animate-pulse" aria-hidden="true" />
               <span className="text-white">CONCRETE FAIR 2026</span>
               <span className="text-[#a98b78]">·</span>
-              <span className="text-[#eadfd4]">13TH NATIONAL CONCLAVE</span>
+              <span className="text-[#eadfd4]">RVCE</span>
             </div>
 
-            <div className="flex items-center gap-2.5 pointer-events-auto">
+            <div className="flex items-center gap-2 pointer-events-auto">
+              <span className="font-mono text-[10px] tracking-wider uppercase text-[#eadfd4] hidden md:inline">
+                DRAG TO EXPLORE
+              </span>
               <Link
                 href="/towers"
-                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#3b0924] hover:bg-[#521331] text-white border border-[#d8c2ab]/40 font-mono text-[9px] sm:text-[10px] font-semibold tracking-wider uppercase transition-all shadow-md"
+                className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-3.5 sm:py-1 rounded-full bg-[#521331] hover:bg-[#75435c] text-white border border-[#75435c] font-mono text-[9px] sm:text-[10px] font-semibold tracking-wider uppercase transition-all shadow-2xs"
               >
-                <span>3D Conclave Studio</span>
+                <span>3D Stage</span>
                 <ArrowUpRight className="size-3 text-[#d8c2ab]" aria-hidden="true" />
               </Link>
             </div>
           </div>
 
-          {/* Editorial Architectural Hero Left Column */}
-          <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 my-auto py-6 sm:py-10 flex flex-col items-start pointer-events-none">
-            <div className="pointer-events-auto w-full max-w-xl lg:max-w-[540px] space-y-5">
-              {/* Institutional Eyebrow */}
-              <div className="flex items-center gap-3">
-                <span className="w-8 h-0.5 bg-[#d8c2ab]" aria-hidden="true" />
-                <span className="font-mono text-[10px] sm:text-xs tracking-[0.25em] text-[#d8c2ab] uppercase font-bold">
-                  DEPARTMENT OF CIVIL ENGINEERING · RVCE
-                </span>
-              </div>
-
-              {/* Monumental Headline */}
-              <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl tracking-tight text-white font-normal uppercase leading-[0.92] text-balance">
-                Concrete<br />
-                <span className="font-sans font-black italic tracking-tighter text-[#d8c2ab]">Fair 2026</span>
-              </h1>
-
-              {/* Tagline & Purpose with Hairline Accents */}
-              <div className="space-y-2 border-l-2 border-[#d8c2ab] pl-4 py-1">
-                <div className="font-mono text-xs tracking-widest text-[#d8c2ab] uppercase font-semibold">
-                  Where Concrete Meets Creativity
-                </div>
-                <p className="text-sm sm:text-base font-serif italic text-[#eadfd4] leading-relaxed text-pretty">
-                  {conclaveInfo.promise}
-                </p>
-                <p className="text-xs text-[#eadfd4]/85 leading-relaxed font-sans text-pretty">
-                  National biennial civil engineering confluence organized in association with the ICI Student Chapter RVCE.
-                </p>
-              </div>
-
-              {/* Date & Location Plinth */}
-              <div className="inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-[#1e0513]/85 backdrop-blur-md border border-[#75435c]/70 text-xs font-mono text-white">
-                <Calendar className="size-3.5 text-[#d8c2ab]" aria-hidden="true" />
-                <span className="font-semibold">{conclaveInfo.dates}</span>
-                <span className="text-[#75435c]">|</span>
-                <span className="text-[#eadfd4]">RVCE BENGALURU, INDIA</span>
-              </div>
-
-              {/* Primary Action Buttons */}
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
-                <Link
-                  href="/register"
-                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#f4e9dc] hover:bg-white text-[#3b0924] rounded-full font-sans text-xs font-bold tracking-wide transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5 cursor-pointer text-center"
-                >
-                  <span>Register via Official Form</span>
-                  <ArrowUpRight className="size-3.5" aria-hidden="true" />
-                </Link>
-
-                <Link
-                  href="/events"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/25 rounded-full font-sans text-xs font-medium tracking-wide transition-all duration-200 backdrop-blur-sm hover:border-white/40 cursor-pointer text-center"
-                >
-                  <span>Explore 8 Challenges</span>
-                </Link>
-              </div>
-
-              {/* Conclave Metrics Plinth */}
-              <div className="grid grid-cols-4 gap-3 pt-4 border-t border-[#75435c]/70 text-center font-mono">
-                <div className="space-y-0.5">
-                  <span className="block font-sans font-black text-xl sm:text-2xl text-white leading-none">
-                    13th
-                  </span>
-                  <span className="block text-[8px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
-                    EDITION
+          {/* Central Architectural Hero Card */}
+          <div className="relative z-10 w-full max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-10 my-auto py-4 sm:py-8 flex flex-col items-start pointer-events-none">
+            <div className="pointer-events-auto w-full max-w-lg lg:max-w-[480px]">
+              <div className="bg-[#3b0924]/95 backdrop-blur-md p-5 sm:p-7 rounded-2xl sm:rounded-3xl border border-[#75435c] shadow-[0_25px_60px_-15px_rgba(42,5,25,0.7)] space-y-3.5 sm:space-y-4 hover:border-[#d8c2ab]/50 transition-all duration-300">
+                {/* Institutional Eyebrow */}
+                <div className="flex items-center gap-2">
+                  <span className="w-4 sm:w-5 h-0.5 bg-[#d8c2ab]" aria-hidden="true" />
+                  <span className="font-mono text-[9px] sm:text-[11px] tracking-[0.18em] sm:tracking-[0.22em] text-[#d8c2ab] uppercase font-bold">
+                    CONCRETE FAIR, 13TH EDITION · RVCE CIVIL
                   </span>
                 </div>
 
-                <div className="space-y-0.5 border-l border-[#75435c]/60">
-                  <span className="block font-sans font-black text-xl sm:text-2xl text-white leading-none">
-                    {conclaveInfo.participantsExpected}
-                  </span>
-                  <span className="block text-[8px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
-                    DELEGATES
-                  </span>
+                {/* Event Headline */}
+                <h1 className="font-black text-3xl sm:text-5xl lg:text-[50px] tracking-tight text-white leading-[0.95] sm:leading-[0.9] uppercase text-balance">
+                  CONCRETE<br />
+                  FAIR <span className="text-[#d8c2ab]">2026</span>
+                </h1>
+
+                {/* Official Tagline & Promise */}
+                <div className="space-y-1.5 border-l-2 border-[#d8c2ab] pl-3 sm:pl-3.5 py-0.5">
+                  <div className="font-mono text-[10px] sm:text-[11px] tracking-[0.16em] sm:tracking-[0.18em] text-[#d8c2ab] uppercase font-bold">
+                    // WHERE CONCRETE MEETS CREATIVITY //
+                  </div>
+                  <p className="text-xs sm:text-[13px] font-serif italic text-[#eadfd4] leading-snug text-pretty">
+                    {conclaveInfo.promise}
+                  </p>
+                  <p className="text-[11px] sm:text-xs text-[#eadfd4]/90 leading-relaxed font-sans text-pretty">
+                    A national-level platform organized by the Department of Civil Engineering at RV College of Engineering, in association with the ICI Student Chapter RVCE.
+                  </p>
                 </div>
 
-                <div className="space-y-0.5 border-l border-[#75435c]/60">
-                  <span className="block font-sans font-black text-xl sm:text-2xl text-white leading-none">
-                    08
-                  </span>
-                  <span className="block text-[8px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
-                    EVENTS
-                  </span>
+                {/* Date & Location */}
+                <div className="flex flex-wrap items-center gap-2 text-[11px] sm:text-xs font-mono text-white font-semibold pt-0.5 sm:pt-1">
+                  <Calendar className="size-3.5 text-[#d8c2ab] shrink-0" aria-hidden="true" />
+                  <span>{conclaveInfo.dates}</span>
+                  <span className="text-[#75435c]">·</span>
+                  <span className="text-[#eadfd4]">RVCE BENGALURU</span>
                 </div>
 
-                <div className="space-y-0.5 border-l border-[#75435c]/60">
-                  <span className="block font-sans font-black text-xl sm:text-2xl text-[#d8c2ab] leading-none">
-                    ₹1.3L
-                  </span>
-                  <span className="block text-[8px] sm:text-[9px] text-[#d8c2ab] tracking-wider uppercase font-bold">
-                    PRIZES
-                  </span>
+                {/* Primary CTAs */}
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 pt-1">
+                  <Link
+                    href="/register"
+                    className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 bg-[#521331] hover:bg-[#75435c] text-[#fff8ef] hover:text-white border border-[#d8c2ab]/40 rounded-full font-sans text-xs font-semibold tracking-wide transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 cursor-pointer text-center"
+                  >
+                    <span>Register via Google Form</span>
+                    <ArrowUpRight className="size-3.5 text-[#d8c2ab]" aria-hidden="true" />
+                  </Link>
+
+                  <Link
+                    href="/events"
+                    className="inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 bg-[#2a0519]/80 hover:bg-[#521331] text-white border border-[#75435c] rounded-full font-sans text-xs font-medium tracking-wide transition-all duration-200 shadow-2xs hover:shadow-xs cursor-pointer text-center"
+                  >
+                    <span>Explore 8 Events</span>
+                  </Link>
+                </div>
+
+                {/* 4 Key Conclave Highlights */}
+                <div className="grid grid-cols-4 gap-2 pt-3 sm:pt-4 border-t border-[#75435c]/80 text-center">
+                  <div className="space-y-0.5">
+                    <span className="block font-black text-base sm:text-2xl text-white leading-none tabular-nums">
+                      13th
+                    </span>
+                    <span className="block font-mono text-[7px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
+                      EDITION
+                    </span>
+                  </div>
+
+                  <div className="space-y-0.5 border-l border-[#75435c]/60">
+                    <span className="block font-black text-base sm:text-2xl text-white leading-none tabular-nums">
+                      {conclaveInfo.participantsExpected}
+                    </span>
+                    <span className="block font-mono text-[7px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
+                      DELEGATES
+                    </span>
+                  </div>
+
+                  <div className="space-y-0.5 border-l border-[#75435c]/60">
+                    <span className="block font-black text-base sm:text-2xl text-white leading-none">
+                      08
+                    </span>
+                    <span className="block font-mono text-[7px] sm:text-[9px] text-[#eadfd4] tracking-wider uppercase font-bold">
+                      EVENTS
+                    </span>
+                  </div>
+
+                  <div className="space-y-0.5 border-l border-[#75435c]/60">
+                    <span className="block font-black text-base sm:text-2xl text-[#d8c2ab] leading-none">
+                      ₹1.3L
+                    </span>
+                    <span className="block font-mono text-[7px] sm:text-[9px] text-[#d8c2ab] tracking-wider uppercase font-bold">
+                      PRIZES
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
