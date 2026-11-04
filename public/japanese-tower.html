@@ -1826,25 +1826,6 @@ else if(renderer.outputEncoding!==undefined&&T.sRGBEncoding!==undefined)renderer
 const scene=new T.Scene();
 const camera=new T.PerspectiveCamera(11,1,15,2200);
 
-/* Ambient Occlusion & Global Illuminance Rim */
-const skyRim=new T.HemisphereLight(0xfff6ea, 0x1d141b, 0.75);
-scene.add(skyRim);
-
-const directSun=new T.DirectionalLight(0xfff4e0, 1.4);
-directSun.position.set(35, 75, 45);
-directSun.castShadow=true;
-directSun.shadow.mapSize.width=2048;
-directSun.shadow.mapSize.height=2048;
-directSun.shadow.camera.near=10;
-directSun.shadow.camera.far=250;
-directSun.shadow.camera.left=-35;
-directSun.shadow.camera.right=35;
-directSun.shadow.camera.top=35;
-directSun.shadow.camera.bottom=-35;
-directSun.shadow.bias=-0.0004;
-directSun.shadow.radius=2;
-scene.add(directSun);
-
 buildMaterials();
 captureMatBase();
 let modelGroup=null,styleIdx=0;
