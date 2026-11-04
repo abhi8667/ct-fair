@@ -114,9 +114,9 @@ const scheduleItems: ScheduleItem[] = [
     code: 'CF-07',
     title: 'CONflix: Short Film',
     venue: 'Audio Visual Auditorium, RVCE',
-    description: 'Lights. Camera. Creativity! Tell a story that leaves an impact. Teams present a 5-minute short film inspired by sponsor products.',
+    description: 'Lights. Camera. Creativity! Tell a story that leaves an impact. Teams present a 5-minute short film inspired by sponsor products. Deadlines: Registration by 20 Nov 2026, film submission by 26 Nov 2026.',
     teamSize: '6–7 participants · 5 mins',
-    rounds: 'Round 1 (Screening & Presentation)',
+    rounds: 'Reg Deadline: 20 Nov 2026 | Submission: 26 Nov 2026 | Screening: Day 02',
   },
   {
     day: 'day2',

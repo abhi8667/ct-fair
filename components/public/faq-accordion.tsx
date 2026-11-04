@@ -37,7 +37,7 @@ const faqs: FAQItem[] = [
     code: 'REGISTRATION',
     question: 'How do participants register for events?',
     answer:
-      'All registrations are handled centrally via the official Google Form embedded on our Registration page. Teams can submit their details directly online without any ticket booking fees.',
+      'All registrations are handled centrally via the official Google Form embedded on our Registration page. Teams can submit their details directly online without any ticket booking fees. Please note for CONflix (Short Film): Registration closes on 20 November 2026, and the short-film submission deadline is 26 November 2026.',
   },
   {
     id: 'f5',
