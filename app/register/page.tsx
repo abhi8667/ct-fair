@@ -63,11 +63,11 @@ export default function RegisterPage() {
           </div>
 
           {/* Embedded Google Form Container */}
-          <div className="bg-white border border-[#eadfd4] rounded-3xl shadow-sm overflow-hidden">
+          <div className="bg-white border border-[#eadfd4] rounded-2xl shadow-sm overflow-hidden">
             {/* Top Bar with Direct Link Button */}
             <div className="p-4 sm:p-5 border-b border-[#eadfd4] bg-[#f4e9dc]/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
               <div>
-                <span className="font-mono text-[10px] uppercase tracking-wider text-[#3b0924] font-bold block">
+                <span className="text-xs uppercase tracking-wider text-[#3b0924] font-bold block">
                   CENTRAL REGISTRATION PORTAL
                 </span>
                 <p className="text-xs text-[#77666a]">
@@ -79,7 +79,7 @@ export default function RegisterPage() {
                 href={GOOGLE_FORM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] rounded-full font-sans text-xs font-semibold tracking-wide transition-all shadow-2xs shrink-0 cursor-pointer"
+                className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] rounded-lg font-sans text-xs font-semibold tracking-wide transition-all shadow-2xs shrink-0 cursor-pointer"
               >
                 <span>Open in Fullscreen / New Tab</span>
                 <ExternalLink className="size-3.5" />
@@ -99,9 +99,9 @@ export default function RegisterPage() {
           </div>
 
           {/* Reference: Official Event Lineup & Team Sizes */}
-          <div className="bg-[#f4e9dc]/40 border border-[#eadfd4] p-6 sm:p-8 rounded-3xl space-y-6">
+          <div className="bg-[#f4e9dc]/40 border border-[#eadfd4] p-6 sm:p-8 rounded-2xl space-y-6">
             <div className="border-b border-[#eadfd4] pb-4">
-              <span className="font-mono text-xs uppercase text-[#a98b78] font-bold block">
+              <span className="text-xs uppercase text-[#a98b78] font-bold block">
                 REFERENCE LINEUP
               </span>
               <h2 className="font-serif text-2xl text-[#34252b] font-medium mt-0.5">
@@ -113,26 +113,26 @@ export default function RegisterPage() {
               {events.map((e) => (
                 <div
                   key={e.id}
-                  className="bg-white p-4 rounded-2xl border border-[#eadfd4] space-y-2 flex flex-col justify-between"
+                  className="bg-white p-4 rounded-xl border border-[#eadfd4] space-y-2 flex flex-col justify-between shadow-2xs"
                 >
                   <div>
-                    <div className="flex items-center justify-between text-[10px] font-mono text-[#77666a]">
-                      <span>{e.code}</span>
-                      <span className="px-2 py-0.5 bg-[#f4e9dc] text-[#3b0924] rounded-full font-bold">
+                    <div className="flex items-center justify-between text-[11px] text-[#77666a]">
+                      <span className="font-mono font-bold text-[#3b0924]">{e.code}</span>
+                      <span className="px-2 py-0.5 bg-[#f4e9dc] text-[#3b0924] rounded-md font-bold text-[10px] uppercase">
                         {e.day}
                       </span>
                     </div>
                     <h3 className="font-serif text-base font-bold text-[#34252b] mt-1">
                       {e.name}
                     </h3>
-                    <p className="text-[11px] text-[#77666a] mt-1 line-clamp-2">
+                    <p className="text-xs text-[#77666a] mt-1 line-clamp-2">
                       {e.subtitle}
                     </p>
                   </div>
 
-                  <div className="pt-3 border-t border-[#eadfd4] text-[10px] font-mono text-[#3b0924] font-semibold flex items-center justify-between">
+                  <div className="pt-3 border-t border-[#eadfd4] text-xs text-[#3b0924] font-medium flex items-center justify-between">
                     <span>{e.teamSize}</span>
-                    <span className="text-[#a98b78]">{e.category}</span>
+                    <span className="text-[#a98b78] font-semibold">{e.category}</span>
                   </div>
                 </div>
               ))}

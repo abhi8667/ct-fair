@@ -9,10 +9,10 @@ export function PublicFooter() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10 space-y-12">
         {/* Top Prominent Banner from Slide 8 */}
-        <div className="p-8 sm:p-10 rounded-3xl bg-[#fff8ef] text-[#34252b] border border-[#d8c2ab] shadow-xl flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+        <div className="p-8 sm:p-10 rounded-2xl bg-[#fff8ef] text-[#34252b] border border-[#d8c2ab] shadow-xl flex flex-col lg:flex-row lg:items-center justify-between gap-6">
           <div className="space-y-2">
-            <span className="font-mono text-[10px] text-[#75435c] uppercase tracking-widest font-bold">
-              ICI STUDENT CHAPTER • RVCE
+            <span className="text-xs text-[#75435c] uppercase tracking-widest font-bold">
+              ICI STUDENT CHAPTER · RVCE
             </span>
             <h3 className="font-sans font-black text-3xl sm:text-4xl text-[#3b0924] uppercase tracking-tight">
               LET’S BUILD WHAT’S NEXT.
@@ -24,7 +24,7 @@ export function PublicFooter() {
           <div className="flex flex-wrap items-center gap-3 shrink-0">
             <Link
               href="/register"
-              className="px-6 py-3 bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] rounded-full font-sans text-xs font-semibold tracking-wide transition-all shadow-md hover:-translate-y-0.5"
+              className="px-6 py-3 bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] rounded-lg font-sans text-xs font-semibold tracking-wide transition-all shadow-md"
             >
               Register via Google Form
             </Link>
@@ -49,14 +49,14 @@ export function PublicFooter() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-sans">
               {/* Events & Registration */}
-              <div className="space-y-1.5 p-3 rounded-xl bg-[#2a0519]/60 border border-[#75435c]/60">
-                <span className="font-mono text-[9px] uppercase tracking-wider text-[#d8c2ab] font-bold block">
+              <div className="space-y-1.5 p-3.5 rounded-lg bg-[#2a0519]/70 border border-[#75435c]/70">
+                <span className="text-[10px] uppercase tracking-wider text-[#d8c2ab] font-bold block">
                   EVENTS &amp; REGISTRATION
                 </span>
                 {conclaveInfo.contactsCategorized.eventsAndRegistration.map((c) => (
-                  <div key={c.name} className="flex flex-col">
-                    <span className="text-white font-medium text-[11px]">{c.name}</span>
-                    <div className="flex items-center gap-2 text-[11px]">
+                  <div key={c.name} className="flex flex-col pt-1 border-t border-[#75435c]/30 first:border-0 first:pt-0">
+                    <span className="text-white font-medium text-xs">{c.name}</span>
+                    <div className="flex items-center gap-2 text-xs">
                       <a
                         href={`https://wa.me/${c.rawPhone}`}
                         target="_blank"
@@ -72,14 +72,14 @@ export function PublicFooter() {
               </div>
 
               {/* General */}
-              <div className="space-y-1.5 p-3 rounded-xl bg-[#2a0519]/60 border border-[#75435c]/60">
-                <span className="font-mono text-[9px] uppercase tracking-wider text-[#d8c2ab] font-bold block">
+              <div className="space-y-1.5 p-3.5 rounded-lg bg-[#2a0519]/70 border border-[#75435c]/70">
+                <span className="text-[10px] uppercase tracking-wider text-[#d8c2ab] font-bold block">
                   GENERAL ENQUIRIES
                 </span>
                 {conclaveInfo.contactsCategorized.general.map((c) => (
-                  <div key={c.name} className="flex flex-col">
-                    <span className="text-white font-medium text-[11px]">{c.name}</span>
-                    <div className="flex items-center gap-2 text-[11px]">
+                  <div key={c.name} className="flex flex-col pt-1 border-t border-[#75435c]/30 first:border-0 first:pt-0">
+                    <span className="text-white font-medium text-xs">{c.name}</span>
+                    <div className="flex items-center gap-2 text-xs">
                       <a
                         href={`https://wa.me/${c.rawPhone}`}
                         target="_blank"

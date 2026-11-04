@@ -25,62 +25,48 @@ export function PublicHeader() {
         {/* Left: Brand Lockup & Institutional Crests */}
         <div className="flex items-center gap-2 sm:gap-5 shrink-0 min-w-0">
           {/* Official Concrete Fair & RVCE Brand Lockup */}
-          <Link href="/" className="flex items-center gap-2 sm:gap-3 group focus-visible:outline-2 focus-visible:outline-[#3b0924] min-w-0">
-            <div className="size-9 sm:size-11 rounded-xl border border-[#eadfd4] bg-white grid place-items-center shadow-xs overflow-hidden group-hover:border-[#3b0924] transition-colors p-1 shrink-0">
+          <Link href="/" className="flex items-center gap-2.5 sm:gap-3.5 group focus-visible:outline-2 focus-visible:outline-[#3b0924] min-w-0">
+            <div className="size-9 sm:size-10 rounded-lg border border-[#eadfd4] bg-white grid place-items-center shadow-xs overflow-hidden group-hover:border-[#3b0924] transition-colors p-1 shrink-0">
               <img
                 src="/theme/concrete-fair-logo.png"
                 alt="Concrete Fair 2026 Official Logo"
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="size-9 sm:size-11 rounded-xl border border-[#eadfd4] bg-white grid place-items-center shadow-xs overflow-hidden group-hover:border-[#3b0924] transition-colors p-1 shrink-0 hidden sm:grid">
+            <div className="size-9 sm:size-10 rounded-lg border border-[#eadfd4] bg-white grid place-items-center shadow-xs overflow-hidden group-hover:border-[#3b0924] transition-colors p-1 shrink-0 hidden sm:grid">
               <img
                 src="/theme/rvce-logo.png"
                 alt="RVCE Crest"
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="flex flex-col leading-none min-w-0">
-              <span className="font-sans font-black text-sm sm:text-lg tracking-tight text-[#3b0924] uppercase group-hover:text-[#521331] transition-colors truncate">
-                CONCRETE FAIR <span className="text-[#a98b78]">2026</span>
+            <div className="flex flex-col leading-tight min-w-0">
+              <span className="font-sans font-black text-sm sm:text-base tracking-tight text-[#3b0924] uppercase group-hover:text-[#521331] transition-colors truncate">
+                CONCRETE FAIR <span className="text-[#a98b78] font-bold">2026</span>
               </span>
-              <span className="font-mono text-[7px] sm:text-[8px] text-[#77666a] uppercase mt-0.5 sm:mt-1 tracking-wider font-semibold truncate">
-                RVCE CIVIL · WHERE CONCRETE MEETS CREATIVITY
+              <span className="text-[10px] text-[#77666a] uppercase tracking-wider font-semibold truncate">
+                RVCE Civil Engineering
               </span>
             </div>
           </Link>
 
           <span className="hidden md:inline-block h-6 w-px bg-[#eadfd4]" />
 
-          {/* Department of Civil Engineering */}
-          <div className="hidden sm:flex items-center gap-2">
-            <div className="flex flex-col leading-none">
-              <span className="font-sans text-xs font-black tracking-tight text-[#34252b]">
-                DEPT. OF CIVIL ENGINEERING
-              </span>
-              <span className="font-mono text-[7px] text-[#77666a] uppercase tracking-tighter">
-                RV COLLEGE OF ENGINEERING · 13TH EDITION
-              </span>
-            </div>
-          </div>
-
-          <span className="hidden lg:inline-block h-6 w-px bg-[#eadfd4]" />
-
-          {/* Indian Concrete Institute (ICI) */}
-          <div className="hidden lg:flex items-center gap-2">
-            <div className="size-7 rounded border border-[#eadfd4] overflow-hidden bg-white p-0.5">
+          {/* Department of Civil Engineering & ICI Chapter */}
+          <div className="hidden md:flex items-center gap-3">
+            <div className="size-7 rounded-md border border-[#eadfd4] overflow-hidden bg-white p-0.5 shrink-0 hidden lg:block">
               <img
                 src="/theme/ici-logo.jpg"
                 alt="ICI Logo"
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="flex flex-col leading-none">
-              <span className="font-mono text-[8px] font-bold text-[#3b0924] tracking-tight uppercase">
-                ICI STUDENT CHAPTER
+            <div className="flex flex-col leading-tight">
+              <span className="text-xs font-bold tracking-tight text-[#34252b]">
+                Department of Civil Engineering
               </span>
-              <span className="font-mono text-[7px] text-[#77666a] uppercase tracking-tighter">
-                RVCE
+              <span className="text-[10px] text-[#77666a] tracking-normal">
+                RVCE · In association with ICI Student Chapter
               </span>
             </div>
           </div>
@@ -111,18 +97,17 @@ export function PublicHeader() {
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <Link
             href="/register"
-            className="inline-flex items-center gap-1 sm:gap-1.5 px-3 sm:px-5 py-2 sm:py-2.5 bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] hover:text-white rounded-full font-sans text-xs font-semibold tracking-wide transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 cursor-pointer focus-visible:outline-2 focus-visible:outline-[#3b0924] whitespace-nowrap"
+            className="inline-flex items-center gap-1.5 px-4 sm:px-5 py-2 sm:py-2.5 bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] rounded-lg font-sans text-xs font-semibold tracking-wide transition-all shadow-sm hover:shadow cursor-pointer focus-visible:outline-2 focus-visible:outline-[#3b0924] whitespace-nowrap"
           >
-            <span className="hidden sm:inline">Register Now</span>
-            <span className="sm:hidden">Register</span>
-            <ArrowUpRight className="size-3 sm:size-3.5" />
+            <span>Register Now</span>
+            <ArrowUpRight className="size-3.5" />
           </Link>
 
           {/* Mobile hamburger button */}
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden shrink-0 flex items-center justify-center size-9 sm:size-10 rounded-xl bg-[#f4e9dc] text-[#3b0924] border border-[#d8c2ab] hover:bg-[#eadfd4] active:scale-95 transition-all cursor-pointer shadow-2xs"
+            className="lg:hidden shrink-0 flex items-center justify-center size-9 sm:size-10 rounded-lg bg-[#f4e9dc] text-[#3b0924] border border-[#d8c2ab] hover:bg-[#eadfd4] transition-all cursor-pointer shadow-2xs"
             aria-label="Toggle navigation menu"
           >
             {mobileMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}

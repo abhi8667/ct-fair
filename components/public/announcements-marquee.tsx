@@ -87,7 +87,7 @@ export function AnnouncementsMarquee({ items = DEFAULT_ANNOUNCEMENTS }: { items?
             >
               {/* Category / Urgency Tag */}
               <span
-                className={`px-2.5 py-0.5 rounded-full text-[9px] font-bold tracking-wider uppercase border ${
+                className={`px-2.5 py-0.5 rounded-md text-[10px] font-bold tracking-wider uppercase border ${
                   item.badgeVariant === 'urgent'
                     ? 'bg-[#801b3b] text-[#fff8ef] border-[#a82b52]'
                     : item.badgeVariant === 'sand'
@@ -105,7 +105,7 @@ export function AnnouncementsMarquee({ items = DEFAULT_ANNOUNCEMENTS }: { items?
 
               {/* Supporting Detail */}
               <span className="text-[#eadfd4]/75 hidden sm:inline">
-                · {item.detail}
+                — {item.detail}
               </span>
 
               {/* Action Link (if provided) */}
@@ -121,7 +121,7 @@ export function AnnouncementsMarquee({ items = DEFAULT_ANNOUNCEMENTS }: { items?
 
               {/* Separator between announcements */}
               <span className="text-[#75435c] pl-3" aria-hidden="true">
-                ◆
+                ■
               </span>
             </div>
           ))}

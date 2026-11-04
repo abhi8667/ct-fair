@@ -44,7 +44,7 @@ export default function PublicEventsPage() {
       link: '/events',
       category: 'Technical',
       code: 'CF-02',
-      description: 'Design with purpose. Build with precision. Transform structural concepts into reality through paper drafting and physical arch construction.',
+      description: 'Arch & Truss Quiz followed by physical arch construction for the top 5 qualifying teams. 4 participants per team.',
       date: '30 Nov 2026',
       time: '11:00 AM',
       venue: 'Structural Fabrication Yard, RVCE',
@@ -155,7 +155,7 @@ export default function PublicEventsPage() {
                 placeholder="Search event name, code (e.g. CF-01), keyword..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full h-10 border border-[#eadfd4] bg-[#fff8ef]/50 rounded-xl pl-9 pr-4 text-xs font-sans placeholder:text-[#77666a] focus:border-[#3b0924] focus:outline-none"
+                className="w-full h-10 border border-[#eadfd4] bg-white rounded-lg pl-9 pr-4 text-xs font-sans placeholder:text-[#77666a] focus:border-[#3b0924] focus:outline-none shadow-2xs"
               />
             </div>
 
@@ -166,9 +166,9 @@ export default function PublicEventsPage() {
                   key={cat}
                   type="button"
                   onClick={() => setSelectedCategory(cat)}
-                  className={`px-4 py-2 font-mono text-[11px] uppercase tracking-wider rounded-full transition-all cursor-pointer border ${
+                  className={`px-3.5 py-1.5 font-sans text-xs font-semibold rounded-lg transition-all cursor-pointer border ${
                     selectedCategory === cat
-                      ? 'bg-[#3b0924] text-white font-semibold border-[#3b0924] shadow-xs'
+                      ? 'bg-[#3b0924] text-white border-[#3b0924] shadow-xs'
                       : 'bg-white text-[#77666a] hover:text-[#34252b] border-[#eadfd4]'
                   }`}
                 >
@@ -201,20 +201,20 @@ export default function PublicEventsPage() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#1d0411]/85 via-transparent to-transparent" />
                       
-                      <div className="absolute top-4 left-4 bg-[#3b0924]/90 backdrop-blur-sm text-white px-3 py-1 rounded-full font-mono text-[10px] font-bold border border-white/20">
+                      <div className="absolute top-4 left-4 bg-[#3b0924]/90 backdrop-blur-sm text-white px-2.5 py-1 rounded-md font-sans text-[10px] font-bold border border-white/20 uppercase tracking-wide">
                         {e.code} · {e.day}
                       </div>
 
-                      <div className="absolute top-4 right-4 bg-white/95 text-[#3b0924] px-3 py-1 rounded-full font-mono text-[10px] font-bold uppercase border border-[#eadfd4]">
+                      <div className="absolute top-4 right-4 bg-white/95 text-[#3b0924] px-2.5 py-1 rounded-md font-sans text-[10px] font-bold uppercase border border-[#eadfd4] tracking-wide">
                         {e.category}
                       </div>
 
-                      <div className="absolute bottom-4 left-4 right-4 text-white flex items-center justify-between font-mono text-xs">
+                      <div className="absolute bottom-4 left-4 right-4 text-white flex items-center justify-between text-xs">
                         <span className="flex items-center gap-1.5 truncate max-w-[280px]">
                           <MapPin className="size-3.5 text-[#d8c2ab]" />
                           <span>{e.venue}</span>
                         </span>
-                        <span className="text-[#d8c2ab] font-bold">{e.time}</span>
+                        <span className="text-[#d8c2ab] font-bold font-mono">{e.time}</span>
                       </div>
                     </div>
 
@@ -248,19 +248,19 @@ export default function PublicEventsPage() {
                       {/* Specs tags & Register CTA */}
                       <div className="pt-4 border-t border-[#eadfd4] space-y-3">
                         {e.prizeBreakdown && (
-                          <div className="p-3 rounded-2xl bg-[#fff8ef] border border-[#eadfd4] flex flex-wrap items-center justify-between gap-2 font-mono text-[11px]">
+                          <div className="p-3 rounded-lg bg-[#fff8ef] border border-[#eadfd4] flex flex-wrap items-center justify-between gap-2 text-xs">
                             <div className="flex items-center gap-1.5 text-[#3b0924] font-bold">
                               <Trophy className="size-3.5 text-[#a98b78]" />
                               <span>Prize Pool: {e.prizePool || e.prizes}</span>
                             </div>
-                            <div className="flex items-center gap-1.5 text-[10px]">
-                              <span className="px-2 py-0.5 rounded-full bg-[#f4e9dc] text-[#34252b]">
+                            <div className="flex items-center gap-1.5 text-[11px]">
+                              <span className="px-2 py-0.5 rounded-md bg-[#f4e9dc] text-[#34252b]">
                                 1st: <strong className="text-[#3b0924]">{e.prizeBreakdown.first}</strong>
                               </span>
-                              <span className="px-2 py-0.5 rounded-full bg-[#f4e9dc] text-[#34252b]">
+                              <span className="px-2 py-0.5 rounded-md bg-[#f4e9dc] text-[#34252b]">
                                 2nd: <strong className="text-[#3b0924]">{e.prizeBreakdown.second}</strong>
                               </span>
-                              <span className="px-2 py-0.5 rounded-full bg-[#f4e9dc] text-[#34252b]">
+                              <span className="px-2 py-0.5 rounded-md bg-[#f4e9dc] text-[#34252b]">
                                 3rd: <strong className="text-[#3b0924]">{e.prizeBreakdown.third}</strong>
                               </span>
                             </div>
@@ -268,7 +268,7 @@ export default function PublicEventsPage() {
                         )}
 
                         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                          <div className="flex items-center gap-2 font-mono text-xs text-[#34252b]">
+                          <div className="flex items-center gap-2 text-xs text-[#34252b]">
                             <Users className="size-4 text-[#3b0924]" />
                             <span className="font-bold">Team:</span>
                             <span className="text-[#77666a]">{e.teamSize}</span>
@@ -276,7 +276,7 @@ export default function PublicEventsPage() {
 
                           <Link
                             href="/register"
-                            className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] rounded-full font-sans text-xs font-semibold tracking-wide transition-all shadow-2xs hover:shadow-sm"
+                            className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] rounded-lg font-sans text-xs font-semibold tracking-wide transition-all shadow-xs"
                           >
                             <span>Register via Form</span>
                             <ArrowRight className="size-3.5" />

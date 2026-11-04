@@ -46,9 +46,9 @@ const scheduleItems: ScheduleItem[] = [
     code: 'CF-02',
     title: 'CONarch: Arch Design & Build',
     venue: 'Structural Fabrication Yard, RVCE',
-    description: 'Design with purpose. Build with precision. Transform structural concepts into reality through paper drafting and physical arch construction.',
-    teamSize: '4–5 participants',
-    rounds: 'Round 1 (Drafting on paper) + Round 2 (Build arch/bridge)',
+    description: 'Transform structural concepts into reality through arch & truss quiz fundamentals and physical arch construction.',
+    teamSize: '4 participants per team',
+    rounds: 'Round 1 (20-min Quiz / 25 marks) + Round 2 (Physical Arch Build / 50 marks)',
   },
   {
     day: 'day1',
@@ -153,33 +153,33 @@ export function ScheduleTabs() {
           <button
             type="button"
             onClick={() => setActiveDay('day1')}
-            className={`px-6 py-3 rounded-2xl font-mono text-xs uppercase tracking-wider transition-all cursor-pointer border ${
+            className={`px-5 py-2.5 rounded-lg font-sans text-xs uppercase tracking-wider transition-all cursor-pointer border ${
               activeDay === 'day1'
                 ? 'bg-[#3b0924] text-white font-bold border-[#3b0924] shadow-xs'
                 : 'bg-white text-[#77666a] hover:text-[#34252b] border-[#eadfd4]'
             }`}
           >
             Day 1 — 30 Nov 2026
-            <span className="block text-[10px] normal-case opacity-80">Design, test, plan and build</span>
+            <span className="block text-[10px] normal-case opacity-80 font-normal">Design, test, plan and build</span>
           </button>
 
           <button
             type="button"
             onClick={() => setActiveDay('day2')}
-            className={`px-6 py-3 rounded-2xl font-mono text-xs uppercase tracking-wider transition-all cursor-pointer border ${
+            className={`px-5 py-2.5 rounded-lg font-sans text-xs uppercase tracking-wider transition-all cursor-pointer border ${
               activeDay === 'day2'
                 ? 'bg-[#3b0924] text-white font-bold border-[#3b0924] shadow-xs'
                 : 'bg-white text-[#77666a] hover:text-[#34252b] border-[#eadfd4]'
             }`}
           >
             Day 2 — 01 Dec 2026
-            <span className="block text-[10px] normal-case opacity-80">Explore, escape, express &amp; excel</span>
+            <span className="block text-[10px] normal-case opacity-80 font-normal">Explore, escape, express &amp; excel</span>
           </button>
         </div>
 
         <Link
           href="/register"
-          className="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 bg-[#f4e9dc] hover:bg-[#3b0924] text-[#3b0924] hover:text-white rounded-full font-sans text-xs font-semibold tracking-wide transition-all border border-[#d8c2ab]"
+          className="inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-[#f4e9dc] hover:bg-[#3b0924] text-[#3b0924] hover:text-white rounded-lg font-sans text-xs font-semibold tracking-wide transition-all border border-[#d8c2ab]"
         >
           <span>Register for Events (Google Form)</span>
           <ArrowUpRight className="size-3.5" />
@@ -191,20 +191,20 @@ export function ScheduleTabs() {
         {items.map((item, index) => (
           <div
             key={index}
-            className="p-6 bg-white border border-[#eadfd4] rounded-2xl shadow-2xs hover:border-[#3b0924]/40 transition-all space-y-3"
+            className="p-5 sm:p-6 bg-white border border-[#eadfd4] rounded-xl shadow-xs hover:border-[#3b0924]/40 transition-all space-y-3"
           >
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#eadfd4] pb-3">
               <div className="flex items-center gap-2">
-                <span className="px-2.5 py-0.5 rounded-full font-mono text-[10px] font-bold uppercase bg-[#f4e9dc] text-[#3b0924]">
+                <span className="px-2.5 py-0.5 rounded-md font-sans text-[10px] font-bold uppercase bg-[#f4e9dc] text-[#3b0924] tracking-wide">
                   {item.code}
                 </span>
-                <span className="font-mono text-xs text-[#a98b78] font-bold uppercase">
+                <span className="font-sans text-xs text-[#a98b78] font-bold uppercase tracking-wider">
                   {item.track}
                 </span>
               </div>
 
-              <div className="flex items-center gap-4 text-xs font-mono text-[#34252b]">
-                <span className="flex items-center gap-1.5 font-bold text-[#3b0924]">
+              <div className="flex items-center gap-4 text-xs font-sans text-[#34252b]">
+                <span className="flex items-center gap-1.5 font-bold text-[#3b0924] font-mono">
                   <Clock className="size-3.5 text-[#a98b78]" />
                   {item.time}
                 </span>

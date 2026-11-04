@@ -297,9 +297,9 @@ export default function PublicHomePage() {
                 {/* Card 1 */}
                 <Link
                   href="/events?category=Technical"
-                  className="category-card group bg-[#f4e9dc]/70 hover:bg-white/95 border border-[#eadfd4] hover:border-[#3b0924]/40 rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 ease-out hover-float-3d shadow-2xs"
+                  className="category-card group bg-[#f4e9dc]/70 hover:bg-white border border-[#eadfd4] hover:border-[#3b0924]/40 rounded-xl p-3.5 flex flex-col justify-between transition-all duration-300 ease-out shadow-xs"
                 >
-                  <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-3 bg-white/70">
+                  <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden mb-3 bg-white/70">
                     <Image
                       src="/images/card-cubes.jpg"
                       alt="CONmix"
@@ -309,10 +309,10 @@ export default function PublicHomePage() {
                     />
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-[10px] font-bold tracking-tight uppercase text-[#34252b]">
-                      CONmix<br />MIX DESIGN
+                    <span className="font-sans text-[11px] font-bold tracking-tight uppercase text-[#34252b]">
+                      CONmix<br /><span className="text-[#77666a] font-medium text-[10px]">MIX DESIGN</span>
                     </span>
-                    <div className="size-6 rounded-full bg-white border border-[#eadfd4] grid place-items-center group-hover:bg-[#3b0924] group-hover:text-white transition-colors">
+                    <div className="size-6 rounded-md bg-white border border-[#eadfd4] grid place-items-center group-hover:bg-[#3b0924] group-hover:text-white transition-colors">
                       <ArrowRight className="size-3" />
                     </div>
                   </div>
@@ -321,9 +321,9 @@ export default function PublicHomePage() {
                 {/* Card 2 */}
                 <Link
                   href="/events?category=Technical"
-                  className="category-card group bg-[#f4e9dc]/70 hover:bg-white/95 border border-[#eadfd4] hover:border-[#3b0924]/40 rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 ease-out hover-float-3d shadow-2xs"
+                  className="category-card group bg-[#f4e9dc]/70 hover:bg-white border border-[#eadfd4] hover:border-[#3b0924]/40 rounded-xl p-3.5 flex flex-col justify-between transition-all duration-300 ease-out shadow-xs"
                 >
-                  <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-3 bg-white/70">
+                  <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden mb-3 bg-white/70">
                     <Image
                       src="/images/event-bridge.png"
                       alt="CONarch"
@@ -333,10 +333,10 @@ export default function PublicHomePage() {
                     />
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-[10px] font-bold tracking-tight uppercase text-[#34252b]">
-                      CONarch<br />ARCH DESIGN &amp; BUILD
+                    <span className="font-sans text-[11px] font-bold tracking-tight uppercase text-[#34252b]">
+                      CONarch<br /><span className="text-[#77666a] font-medium text-[10px]">ARCH DESIGN &amp; BUILD</span>
                     </span>
-                    <div className="size-6 rounded-full bg-white border border-[#eadfd4] grid place-items-center group-hover:bg-[#3b0924] group-hover:text-white transition-colors">
+                    <div className="size-6 rounded-md bg-white border border-[#eadfd4] grid place-items-center group-hover:bg-[#3b0924] group-hover:text-white transition-colors">
                       <ArrowRight className="size-3" />
                     </div>
                   </div>
@@ -345,9 +345,9 @@ export default function PublicHomePage() {
                 {/* Card 3 */}
                 <Link
                   href="/events?category=Technical"
-                  className="category-card group bg-[#f4e9dc]/70 hover:bg-white/95 border border-[#eadfd4] hover:border-[#3b0924]/40 rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 ease-out hover-float-3d shadow-2xs"
+                  className="category-card group bg-[#f4e9dc]/70 hover:bg-white border border-[#eadfd4] hover:border-[#3b0924]/40 rounded-xl p-3.5 flex flex-col justify-between transition-all duration-300 ease-out shadow-xs"
                 >
-                  <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-3 bg-white/70">
+                  <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden mb-3 bg-white/70">
                     <Image
                       src="/images/event-blueprint.png"
                       alt="CONzine"
@@ -357,10 +357,10 @@ export default function PublicHomePage() {
                     />
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-[10px] font-bold tracking-tight uppercase text-[#34252b]">
-                      CONzine<br />SMART CITY DESIGN
+                    <span className="font-sans text-[11px] font-bold tracking-tight uppercase text-[#34252b]">
+                      CONzine<br /><span className="text-[#77666a] font-medium text-[10px]">SMART CITY DESIGN</span>
                     </span>
-                    <div className="size-6 rounded-full bg-white border border-[#eadfd4] grid place-items-center group-hover:bg-[#3b0924] group-hover:text-white transition-colors">
+                    <div className="size-6 rounded-md bg-white border border-[#eadfd4] grid place-items-center group-hover:bg-[#3b0924] group-hover:text-white transition-colors">
                       <ArrowRight className="size-3" />
                     </div>
                   </div>
@@ -369,9 +369,9 @@ export default function PublicHomePage() {
                 {/* Card 4 */}
                 <Link
                   href="/events?category=Technical"
-                  className="category-card group bg-[#f4e9dc]/70 hover:bg-white/95 border border-[#eadfd4] hover:border-[#3b0924]/40 rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 ease-out hover-float-3d shadow-2xs"
+                  className="category-card group bg-[#f4e9dc]/70 hover:bg-white border border-[#eadfd4] hover:border-[#3b0924]/40 rounded-xl p-3.5 flex flex-col justify-between transition-all duration-300 ease-out shadow-xs"
                 >
-                  <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-3 bg-white/70">
+                  <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden mb-3 bg-white/70">
                     <Image
                       src="/images/card-sprout.jpg"
                       alt="CONmake"
@@ -381,10 +381,10 @@ export default function PublicHomePage() {
                     />
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-[10px] font-bold tracking-tight uppercase text-[#34252b]">
-                      CONmake<br />MODEL MAKING
+                    <span className="font-sans text-[11px] font-bold tracking-tight uppercase text-[#34252b]">
+                      CONmake<br /><span className="text-[#77666a] font-medium text-[10px]">MODEL MAKING</span>
                     </span>
-                    <div className="size-6 rounded-full bg-white border border-[#eadfd4] grid place-items-center group-hover:bg-[#3b0924] group-hover:text-white transition-colors">
+                    <div className="size-6 rounded-md bg-white border border-[#eadfd4] grid place-items-center group-hover:bg-[#3b0924] group-hover:text-white transition-colors">
                       <ArrowRight className="size-3" />
                     </div>
                   </div>
@@ -393,9 +393,9 @@ export default function PublicHomePage() {
                 {/* Card 5 */}
                 <Link
                   href="/about"
-                  className="category-card group bg-[#f4e9dc]/70 hover:bg-white/95 border border-[#eadfd4] hover:border-[#3b0924]/40 rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 ease-out hover-float-3d shadow-2xs"
+                  className="category-card group bg-[#f4e9dc]/70 hover:bg-white border border-[#eadfd4] hover:border-[#3b0924]/40 rounded-xl p-3.5 flex flex-col justify-between transition-all duration-300 ease-out shadow-xs"
                 >
-                  <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-3 bg-white/70">
+                  <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden mb-3 bg-white/70">
                     <Image
                       src="/images/event-brutalist.png"
                       alt="13th Edition Legacy"
@@ -405,19 +405,19 @@ export default function PublicHomePage() {
                     />
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-[10px] font-bold tracking-tight uppercase text-[#34252b]">
-                      13TH EDITION<br />LEGACY
+                    <span className="font-sans text-[11px] font-bold tracking-tight uppercase text-[#34252b]">
+                      13TH EDITION<br /><span className="text-[#77666a] font-medium text-[10px]">LEGACY</span>
                     </span>
-                    <div className="size-6 rounded-full bg-white border border-[#eadfd4] grid place-items-center group-hover:bg-[#3b0924] group-hover:text-white transition-colors">
+                    <div className="size-6 rounded-md bg-white border border-[#eadfd4] grid place-items-center group-hover:bg-[#3b0924] group-hover:text-white transition-colors">
                       <ArrowRight className="size-3" />
                     </div>
                   </div>
                 </Link>
 
                 {/* Card 6: Wine Burgundy Countdown Card */}
-                <div className="category-card bg-[#3b0924] text-white rounded-2xl p-4 flex flex-col justify-between relative overflow-hidden shadow-sm border border-[#75435c] hover-float-3d">
+                <div className="category-card bg-[#3b0924] text-white rounded-xl p-3.5 flex flex-col justify-between relative overflow-hidden shadow-sm border border-[#75435c]">
                   <div className="relative z-10 flex items-center justify-between border-b border-[#75435c] pb-2">
-                    <span className="font-mono text-[9px] uppercase tracking-wider text-[#d8c2ab]">
+                    <span className="text-[10px] uppercase tracking-wider text-[#d8c2ab] font-bold">
                       EVENT STARTS IN
                     </span>
                     <span className="size-2 rounded-full bg-[#d8c2ab] animate-pulse" aria-hidden="true" />
@@ -425,7 +425,7 @@ export default function PublicHomePage() {
 
                   <CountdownTimer targetDate="2026-11-30T09:00:00+05:30" variant="card" />
 
-                  <div className="relative z-10 text-[9px] font-mono text-[#eadfd4] border-t border-[#75435c] pt-2 flex items-center justify-between">
+                  <div className="relative z-10 text-[10px] text-[#eadfd4] border-t border-[#75435c] pt-2 flex items-center justify-between font-medium">
                     <span className="tabular-nums">NOV 30, 2026</span>
                     <Link href="/register" className="text-[#d8c2ab] hover:text-white transition-colors font-semibold">
                       Register →
@@ -509,11 +509,11 @@ export default function PublicHomePage() {
             <StaggerEntrance selector=".event-card-stagger" stagger={0.08}>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 perspective-1000">
                 {filteredFeatured.slice(0, 4).map((item) => (
-                  <AntigravityTilt key={item.id} maxTilt={5} scale={1.02} glare className="event-card-stagger h-full">
-                    <div className="group bg-white hover:bg-[#fff8ef] border border-[#eadfd4] hover:border-[#3b0924]/40 rounded-2xl p-5 flex flex-col justify-between transition-all duration-300 ease-out hover-float-3d shadow-2xs h-full">
+                  <AntigravityTilt key={item.id} maxTilt={4} scale={1.01} glare className="event-card-stagger h-full">
+                    <div className="group bg-white hover:bg-[#fff8ef] border border-[#eadfd4] hover:border-[#3b0924]/40 rounded-xl p-4 flex flex-col justify-between transition-all duration-300 ease-out shadow-xs h-full">
                       <div>
                         {/* Image */}
-                        <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden mb-4 bg-[#f4e9dc] border border-[#eadfd4]">
+                        <div className="relative w-full aspect-[16/10] rounded-lg overflow-hidden mb-3.5 bg-[#f4e9dc] border border-[#eadfd4]">
                           <Image
                             src={item.image}
                             alt={item.name}
@@ -524,7 +524,7 @@ export default function PublicHomePage() {
                         </div>
 
                         {/* Tag */}
-                        <span className="inline-block px-2.5 py-0.5 rounded-full bg-[#f4e9dc] text-[#3b0924] font-mono text-[9px] font-bold uppercase tracking-wider mb-2 border border-[#eadfd4]">
+                        <span className="inline-block px-2.5 py-0.5 rounded-md bg-[#f4e9dc] text-[#3b0924] font-sans text-[10px] font-bold uppercase tracking-wider mb-2 border border-[#eadfd4]">
                           {item.category} · {item.day}
                         </span>
 
@@ -535,7 +535,7 @@ export default function PublicHomePage() {
                           </h3>
                           <Link
                             href="/events"
-                            className="size-7 rounded-full bg-white border border-[#eadfd4] shrink-0 grid place-items-center group-hover:bg-[#3b0924] group-hover:text-white transition-colors duration-200 shadow-2xs"
+                            className="size-7 rounded-md bg-white border border-[#eadfd4] shrink-0 grid place-items-center group-hover:bg-[#3b0924] group-hover:text-white transition-colors duration-200 shadow-2xs"
                             aria-label={`View details for ${item.name}`}
                           >
                             <ArrowRight className="size-3.5" aria-hidden="true" />
@@ -548,7 +548,7 @@ export default function PublicHomePage() {
                       </div>
 
                       {/* Card footer meta */}
-                      <div className="pt-4 border-t border-[#eadfd4] mt-4 flex items-center justify-between font-mono text-[11px] text-[#77666a]">
+                      <div className="pt-3.5 border-t border-[#eadfd4] mt-4 flex items-center justify-between text-xs text-[#77666a]">
                         <span className="flex items-center gap-1.5">
                           <Users className="size-3 text-[#3b0924]" aria-hidden="true" />
                           <span>{item.teamSize}</span>
@@ -665,7 +665,7 @@ export default function PublicHomePage() {
 
             {/* Department Dossier from Brochure */}
             <div className="pt-8 border-t border-[#eadfd4]">
-              <div className="bg-[#f4e9dc]/60 border border-[#eadfd4] rounded-3xl p-6 sm:p-8 shadow-2xs">
+              <div className="bg-[#f4e9dc]/60 border border-[#eadfd4] rounded-2xl p-6 sm:p-8 shadow-xs">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-6 border-b border-[#3b0924]/15">
                   <div>
                     <div className="flex items-center gap-2">
@@ -681,7 +681,7 @@ export default function PublicHomePage() {
 
                   <Link
                     href="/about"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] text-xs font-mono font-semibold tracking-wider transition-all shadow-2xs shrink-0"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#3b0924] hover:bg-[#521331] text-[#fff8ef] text-xs font-sans font-semibold tracking-wide transition-all shadow-xs shrink-0"
                   >
                     <span>Read Department Profile</span>
                     <ArrowUpRight className="size-3.5" aria-hidden="true" />
