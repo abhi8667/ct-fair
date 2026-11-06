@@ -163,7 +163,7 @@ footer{position:absolute;left:0;right:0;bottom:0;
 /* over the scene but under the type, so a strike lights the sky without
    washing out the page it is printed on */
 .flash{position:absolute;inset:0;pointer-events:none;opacity:0;
-  background:#dce6ff;mix-blend-mode:screen;}
+  background:#fce7f3;mix-blend-mode:screen;}
 
 /* ---------- phones ---------- */
 /* the desktop layout is absolutely placed on a 1512x856 grid, so the small
@@ -2399,36 +2399,36 @@ function buildScaffolds(spec){
 }
 
 /* lights — driven by the time-of-day preset */
-const hemi=new T.HemisphereLight(0xcbd5e1,0x1e293b,0.32);scene.add(hemi);
-const amb=new T.AmbientLight(0x64748b,0.08);scene.add(amb);
-const key=new T.DirectionalLight(0xd4dce4,1.15);
+const hemi=new T.HemisphereLight(0xd8c2ab,0x3b0924,0.48);scene.add(hemi);
+const amb=new T.AmbientLight(0x75435c,0.22);scene.add(amb);
+const key=new T.DirectionalLight(0xfff1dc,1.35);
 key.castShadow=true;
 key.shadow.mapSize.set(3072,3072);
 key.shadow.camera.near=8;key.shadow.camera.far=110;
 key.shadow.bias=-0.0009;key.shadow.normalBias=0.024;
 key.target.position.set(0,4.2,0);
 scene.add(key);scene.add(key.target);
-const fill=new T.DirectionalLight(0xe6e2d6,0.17);fill.position.set(26,9,15);scene.add(fill);
-const rim=new T.DirectionalLight(0xfff6ea,0.09);rim.position.set(4,12,-26);scene.add(rim);
+const fill=new T.DirectionalLight(0xd8c2ab,0.32);fill.position.set(26,9,15);scene.add(fill);
+const rim=new T.DirectionalLight(0xffeedb,0.24);rim.position.set(4,12,-26);scene.add(rim);
 
 /* ------------------------------------------------------------------ *
  * 7b.  time of day
  * ------------------------------------------------------------------ */
 const THEMES=[
  {id:'SUNSET',
-  css:{paper:'#141920',w0:'#232b36',w1:'#1a2028',w2:'#12161c',
-       ink:'#f8fafc',ink2:'#94a3b8',ink3:'#cbd5e1',accent:'#b88e3e',
-       line:'#334155',rule2:'#475569',divider:'rgba(255,255,255,.12)',hairline:'rgba(255,255,255,.16)',grid:'rgba(255,255,255,.05)',
-       'pl-a':'#1e2530','pl-b':'#141920','pl-br':'#334155','pl-fg':'#f8fafc',
-       track:'#334155',fillc:'#b88e3e',btn:'#0f172a','btn-fg':'#f8fafc'},
-  ring:'rgba(255,255,255,.08)',stars:0.05,
-  sky:[0x1e293b,0x334155,0x475569,0x64748b,0x94a3b8,0xcbd5e1],
-  fog:0x64748b,fogN:60,fogF:560,ground:0x475569,grass:0x64748b,
-  ridge:[0x1e293b,0x334155,0x475569],
-  sun:{az:0.92,el:0.22,color:0xd4dce4,int:1.15},
-  hemiC:[0x94a3b8,0x1e293b,0.32],ambC:[0x64748b,0.10],
-  fillC:[0x94a3b8,0.12],rimC:[0xe2e8f0,0.15],
-  shadow:0.40,blob:0.60,glow:0.05},
+  css:{paper:'#1d0411',w0:'#3b0924',w1:'#2a0418',w2:'#1d0411',
+       ink:'#fff8ef',ink2:'#d8c2ab',ink3:'#eadfd4',accent:'#b88e3e',
+       line:'#75435c',rule2:'#a98b78',divider:'rgba(216,194,171,.22)',hairline:'rgba(216,194,171,.30)',grid:'rgba(216,194,171,.08)',
+       'pl-a':'#2a0418','pl-b':'#1d0411','pl-br':'#75435c','pl-fg':'#fff8ef',
+       track:'#75435c',fillc:'#b88e3e',btn:'#3b0924','btn-fg':'#fff8ef'},
+  ring:'rgba(216,194,171,.12)',stars:0.05,
+  sky:[0x1d0411,0x2a0418,0x3b0924,0x521331,0x75435c,0x9e6a7c],
+  fog:0x2a0418,fogN:60,fogF:560,ground:0x3b0924,grass:0x521331,
+  ridge:[0x1d0411,0x2a0418,0x3b0924],
+  sun:{az:0.92,el:0.22,color:0xfff1dc,int:1.35},
+  hemiC:[0xd8c2ab,0x2a0418,0.48],ambC:[0x75435c,0.22],
+  fillC:[0xd8c2ab,0.32],rimC:[0xffeedb,0.24],
+  shadow:0.35,blob:0.55,glow:0.12},
  {id:'NOON',
   css:{paper:'#e8ecef',w0:'#ffffff',w1:'#f1f5f9',w2:'#e2e8f0',
        ink:'#0f172a',ink2:'#64748b',ink3:'#1e293b',accent:'#b88e3e',
@@ -2473,16 +2473,16 @@ const THEMES=[
   shadow:0.52,blob:0.42,glow:0.95}
 ];
 const WEATHER=[
- {id:'STORM',fogK:0.38,fogC:0x64748b,fogM:0.75,sunK:0.18,hemiK:1.00,ambK:1.30,
-  skyC:0x334155,skyM:0.75,groundC:0x475569,groundM:0.65,starK:0,
+ {id:'STORM',fogK:0.42,fogC:0x3b0924,fogM:0.65,sunK:0.35,hemiK:1.15,ambK:1.45,
+  skyC:0x2a0418,skyM:0.65,groundC:0x3b0924,groundM:0.55,starK:0,
   rain:1,rainN:1.00,rainV:1.42,snow:0,snowN:0,wet:1,dust:0,
   amb:'storm_amb',ambV:0.66,bolt:1},
  {id:'CLEAR',fogK:1.00,fogC:null,fogM:0,   sunK:1.00,hemiK:1.00,ambK:1.00,
   skyC:null,skyM:0,   groundC:null,groundM:0, starK:1.00,
   rain:0,rainN:0,rainV:1,snow:0,snowN:0,wet:0,dust:0,
   amb:null,ambV:0,bolt:0},
- {id:'RAIN' ,fogK:0.52,fogC:0x6a7480,fogM:0.55,sunK:0.30,hemiK:1.15,ambK:1.55,
-  skyC:0x717c88,skyM:0.52,groundC:0x59594e,groundM:0.52,starK:0,
+ {id:'RAIN' ,fogK:0.52,fogC:0x4d1933,fogM:0.55,sunK:0.45,hemiK:1.20,ambK:1.55,
+  skyC:0x3b0924,skyM:0.52,groundC:0x2a0418,groundM:0.52,starK:0,
   rain:1,rainN:0.60,rainV:1.00,snow:0,snowN:0,wet:1,dust:0,
   amb:'rain_amb',ambV:0.46,bolt:0},
  {id:'SNOW' ,fogK:0.58,fogC:0xdfe4ea,fogM:0.60,sunK:0.52,hemiK:1.30,ambK:1.45,
