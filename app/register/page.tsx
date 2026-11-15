@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowUpRight, ExternalLink, Mail, Phone, Calendar, Users, Info } from 'lucide-react'
+import { ArrowUpRight, ExternalLink, Mail, Phone, Calendar, Users, Info, CreditCard, Home, CheckCircle2 } from 'lucide-react'
 import { PublicHeader } from '@/components/public/public-header'
 import { PublicFooter } from '@/components/public/public-footer'
 import { GOOGLE_FORM_URL, GOOGLE_FORM_EMBED_URL, events, conclaveInfo } from '@/lib/data'
@@ -30,9 +30,9 @@ export default function RegisterPage() {
           </div>
 
           {/* Quick Info Bar */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div className="bg-white/80 border border-[#eadfd4] p-4 rounded-2xl flex items-center gap-3 shadow-2xs">
-              <div className="size-10 rounded-xl bg-[#f4e9dc] grid place-items-center shrink-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="bg-white/80 border border-[#eadfd4] p-4 rounded-xl flex items-center gap-3 shadow-2xs">
+              <div className="size-10 rounded-lg bg-[#f4e9dc] grid place-items-center shrink-0">
                 <Calendar className="size-5 text-[#3b0924]" />
               </div>
               <div>
@@ -41,23 +41,77 @@ export default function RegisterPage() {
               </div>
             </div>
 
-            <div className="bg-white/80 border border-[#eadfd4] p-4 rounded-2xl flex items-center gap-3 shadow-2xs">
-              <div className="size-10 rounded-xl bg-[#f4e9dc] grid place-items-center shrink-0">
-                <Users className="size-5 text-[#3b0924]" />
+            <div className="bg-white/80 border border-[#eadfd4] p-4 rounded-xl flex items-center gap-3 shadow-2xs">
+              <div className="size-10 rounded-lg bg-[#f4e9dc] grid place-items-center shrink-0">
+                <CreditCard className="size-5 text-[#3b0924]" />
               </div>
               <div>
-                <span className="font-mono text-[10px] uppercase text-[#77666a] block">Expected Participants</span>
-                <span className="font-bold text-xs text-[#34252b]">{conclaveInfo.participantsExpected} from across India</span>
+                <span className="font-mono text-[10px] uppercase text-[#77666a] block">Registration Fee</span>
+                <span className="font-bold text-xs text-[#3b0924]">{conclaveInfo.registrationFee}</span>
               </div>
             </div>
 
-            <div className="bg-white/80 border border-[#eadfd4] p-4 rounded-2xl flex items-center gap-3 shadow-2xs">
-              <div className="size-10 rounded-xl bg-[#f4e9dc] grid place-items-center shrink-0">
+            <div className="bg-white/80 border border-[#eadfd4] p-4 rounded-xl flex items-center gap-3 shadow-2xs">
+              <div className="size-10 rounded-lg bg-[#f4e9dc] grid place-items-center shrink-0">
+                <Home className="size-5 text-[#3b0924]" />
+              </div>
+              <div>
+                <span className="font-mono text-[10px] uppercase text-[#77666a] block">Accommodation</span>
+                <span className="font-bold text-xs text-[#34252b]">Around {conclaveInfo.accommodationFee}</span>
+              </div>
+            </div>
+
+            <div className="bg-white/80 border border-[#eadfd4] p-4 rounded-xl flex items-center gap-3 shadow-2xs">
+              <div className="size-10 rounded-lg bg-[#f4e9dc] grid place-items-center shrink-0">
                 <Mail className="size-5 text-[#3b0924]" />
               </div>
               <div>
                 <span className="font-mono text-[10px] uppercase text-[#77666a] block">Helpdesk / Queries</span>
                 <span className="font-bold text-xs text-[#34252b]">{conclaveInfo.email}</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Fee & Accommodation Advisory Card */}
+          <div className="bg-[#fff8ef] border border-[#d8c2ab] rounded-2xl p-6 sm:p-7 shadow-2xs space-y-4">
+            <div className="flex items-center gap-2 pb-3 border-b border-[#eadfd4]">
+              <span className="w-4 h-0.5 bg-[#3b0924]" />
+              <span className="font-sans text-xs uppercase tracking-wider text-[#3b0924] font-bold">
+                PARTICIPATION FEES &amp; DELEGATE ACCOMMODATION
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              {/* Fee card */}
+              <div className="bg-white border border-[#eadfd4] rounded-xl p-5 space-y-2 shadow-2xs">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-bold text-[#77666a] uppercase tracking-wider">Official Registration Fee</span>
+                  <span className="px-2.5 py-0.5 rounded-md bg-[#3b0924] text-white font-mono font-bold text-xs">
+                    ₹ 118
+                  </span>
+                </div>
+                <h3 className="font-serif text-2xl font-bold text-[#34252b]">
+                  ₹ 118 <span className="font-sans text-xs font-normal text-[#77666a]">/ registration</span>
+                </h3>
+                <p className="text-xs text-[#77666a] leading-relaxed">
+                  Grants entry to registered competitions, technical sessions, participant kit, event access, and evaluation. Pay through the designated mode detailed in the Google Form below.
+                </p>
+              </div>
+
+              {/* Accommodation card */}
+              <div className="bg-white border border-[#eadfd4] rounded-xl p-5 space-y-2 shadow-2xs">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-bold text-[#77666a] uppercase tracking-wider">Outstation Stay</span>
+                  <span className="px-2.5 py-0.5 rounded-md bg-[#d8c2ab]/30 text-[#3b0924] border border-[#d8c2ab] font-mono font-bold text-xs">
+                    Around ₹ 350
+                  </span>
+                </div>
+                <h3 className="font-serif text-2xl font-bold text-[#34252b]">
+                  ~ ₹ 350 <span className="font-sans text-xs font-normal text-[#77666a]">/ person</span>
+                </h3>
+                <p className="text-xs text-[#77666a] leading-relaxed">
+                  Budget hostel / dormitory accommodation arranged for outstation student delegates around ₹ 350. Please indicate requirement in the form or contact our hospitality coordinators.
+                </p>
               </div>
             </div>
           </div>

@@ -43,11 +43,11 @@ const DEFAULT_ANNOUNCEMENTS: MarqueeAnnouncement[] = [
   },
   {
     id: 'general-reg',
-    badge: 'GENERAL ADMISSION',
+    badge: 'REGISTRATION · ₹ 118',
     badgeVariant: 'wine',
-    title: 'All 8 Technical & Non-Technical Competitions Now Open',
-    detail: '₹ 1,30,000 Total Prize Pool · RV College of Engineering, Bengaluru.',
-    linkText: 'Google Form',
+    title: 'Registration Fee ₹ 118 · Accommodation around ₹ 350',
+    detail: '₹ 1,30,000 Total Prize Pool · 8 Flagship Events · RVCE Bengaluru.',
+    linkText: 'Register Now',
     href: '/register',
   },
 ]

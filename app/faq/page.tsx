@@ -35,10 +35,10 @@ export default function PublicFAQPage() {
             <Info className="size-5 text-[#3b0924] shrink-0 mt-0.5" />
             <div className="space-y-1">
               <h4 className="font-serif text-lg text-[#34252b] font-medium">
-                Official Registration via Google Form
+                Official Registration via Google Form (Fee: ₹ 118)
               </h4>
               <p className="text-xs text-[#77666a] leading-relaxed">
-                Registrations for all 8 events are managed centrally via our official Google Form without any ticketing fees. Please check the individual team sizes and event details before submitting.
+                Registrations for all 8 events are managed centrally via our official Google Form at ₹ 118 per registration. Accommodation for outstation participants is available around ₹ 350. Please check individual event team compositions before submitting.
               </p>
             </div>
           </div>

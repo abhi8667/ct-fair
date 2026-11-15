@@ -34,10 +34,10 @@ const faqs: FAQItem[] = [
   },
   {
     id: 'f4',
-    code: 'REGISTRATION',
-    question: 'How do participants register for events?',
+    code: 'REGISTRATION & FEES',
+    question: 'How do participants register and what are the fees?',
     answer:
-      'All registrations are handled centrally via the official Google Form embedded on our Registration page. Teams can submit their details directly online without any ticket booking fees. Please note for CONflix (Short Film): Registration closes on 20 November 2026, and the short-film submission deadline is 26 November 2026.',
+      'All registrations are handled centrally via the official Google Form embedded on our Registration page. The registration fee is ₹ 118 per registration. For outstation participants requiring lodging, accommodation is arranged around ₹ 350 per person. Please note for CONflix (Short Film): Registration closes on 20 November 2026, and the short-film submission deadline is 26 November 2026.',
   },
   {
     id: 'f5',
