@@ -289,6 +289,55 @@
     box-shadow: 0 0 0 1px rgba(184, 142, 62, 0.4), 0 8px 24px -4px rgba(59, 9, 36, 0.15);
     animation: border-breathe 4s ease-in-out infinite;
   }
+
+  /* Conclave Animated Border Ray */
+  .border-conic-beam {
+    position: relative;
+    border-radius: 0.75rem;
+    overflow: hidden;
+  }
+
+  .border-conic-beam::before {
+    content: '';
+    position: absolute;
+    inset: -150%;
+    background: conic-gradient(
+      from 0deg,
+      transparent 0 300deg,
+      #b88e3e 330deg,
+      #f5d58f 350deg,
+      #fff8ef 360deg
+    );
+    animation: conic-spin 3.5s linear infinite;
+    z-index: 0;
+  }
+
+  /* Gradient Text Flow Animation */
+  .text-gradient-flow {
+    background: linear-gradient(90deg, #3b0924 0%, #b88e3e 40%, #521331 70%, #3b0924 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-flow 3.5s linear infinite;
+  }
+}
+
+@keyframes conic-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes text-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
 }
 
 @keyframes shimmer-swipe {

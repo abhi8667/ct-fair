@@ -62,35 +62,37 @@ export default function RegisterPage() {
               </div>
             </div>
 
-            {/* Creative Highlighted Deadline Card */}
-            <div className="relative overflow-hidden bg-white/95 rounded-xl p-4 flex items-center gap-3 border-glow-amber transition-all duration-300 group">
-              {/* Subtle architectural hatching background */}
-              <div className="absolute inset-0 hatch-wine opacity-5 pointer-events-none" />
+            {/* High-Impact Animated Beam Deadline Card */}
+            <div className="border-conic-beam p-[1.5px] rounded-xl shadow-md transition-all duration-300 hover:scale-[1.02]">
+              <div className="relative z-10 bg-[#fffdfa] rounded-[11px] p-4 flex items-center gap-3.5 overflow-hidden">
+                {/* Dynamic linear sweep */}
+                <div className="absolute inset-0 shimmer-badge-beam opacity-30 pointer-events-none" />
 
-              {/* Shimmer light beam swipe */}
-              <div className="absolute inset-0 shimmer-badge-beam opacity-40 pointer-events-none" />
+                {/* Wine hatch texture */}
+                <div className="absolute inset-0 hatch-wine opacity-5 pointer-events-none" />
 
-              {/* Icon Container with glowing ring */}
-              <div className="relative size-10 rounded-lg bg-[#3b0924] grid place-items-center shrink-0 shadow-xs border border-[#75435c]">
-                <Calendar className="size-5 text-[#f5d58f]" />
-                <span className="absolute -top-1 -right-1 size-2.5 rounded-full bg-[#f5d58f] border-2 border-white animate-pulse" />
-              </div>
-
-              {/* Content */}
-              <div className="relative min-w-0">
-                <div className="flex items-center gap-1.5">
-                  <span className="font-mono text-[9px] uppercase tracking-wider text-[#b88e3e] font-extrabold">
-                    FINAL DEADLINE
-                  </span>
-                  <span className="size-1 rounded-full bg-[#b88e3e] animate-ping" />
+                {/* Pulsing Beacon Icon */}
+                <div className="relative size-10 rounded-lg bg-[#3b0924] grid place-items-center shrink-0 shadow-sm border border-[#75435c]">
+                  <Calendar className="size-5 text-[#f5d58f]" />
+                  <span className="absolute -top-1 -right-1 size-2.5 rounded-full bg-[#f5d58f] border-2 border-white animate-pulse" />
                 </div>
-                <div className="flex items-baseline gap-1.5 mt-0.5">
-                  <span className="font-sans font-black text-sm text-[#3b0924] tracking-tight">
-                    28 NOV 2026
-                  </span>
-                  <span className="font-mono text-[9px] text-[#77666a] font-semibold">
-                    (CLOSING)
-                  </span>
+
+                {/* Animated Typography */}
+                <div className="relative min-w-0 flex-1">
+                  <div className="flex items-center gap-1.5">
+                    <span className="inline-flex items-center px-1.5 py-0.2 rounded bg-[#3b0924] text-[#f5d58f] font-mono text-[8px] font-black uppercase tracking-wider">
+                      CLOSING SOON
+                    </span>
+                    <span className="size-1 rounded-full bg-[#b88e3e] animate-ping" />
+                  </div>
+                  <div className="flex items-baseline gap-1.5 mt-0.5">
+                    <span className="font-sans font-black text-base text-gradient-flow tracking-tight">
+                      28 NOV 2026
+                    </span>
+                    <span className="font-mono text-[9px] text-[#b88e3e] font-extrabold tracking-wider">
+                      LAST DATE
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
