@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Archivo, Cormorant_Garamond, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
+import { MobileStickyBar } from '@/components/public/mobile-sticky-bar'
 
 const archivo = Archivo({ subsets: ['latin'], variable: '--font-archivo' })
 const cormorant = Cormorant_Garamond({
@@ -46,6 +47,7 @@ export default function RootLayout({
     <html lang="en" className={`${archivo.variable} ${cormorant.variable} ${jetbrains.variable} bg-background`}>
       <body className="antialiased" suppressHydrationWarning>
         {children}
+        <MobileStickyBar />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
