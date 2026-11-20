@@ -62,37 +62,13 @@ export default function RegisterPage() {
               </div>
             </div>
 
-            {/* Architectural Beacon Highlight Card */}
-            <div className="architectural-beacon-card p-4 rounded-xl flex items-center gap-3 overflow-hidden group">
-              {/* Subtle architectural hatching background */}
-              <div className="absolute inset-0 hatch-wine opacity-20 pointer-events-none" />
-
-              {/* Pulsing Beacon Icon */}
-              <div className="relative size-10 rounded-lg bg-[#3b0924] border border-[#75435c] grid place-items-center shrink-0 z-10 shadow-xs">
+            <div className="bg-[#240616] text-[#fff8ef] border border-[#75435c] p-4 rounded-xl flex items-center gap-3 shadow-2xs">
+              <div className="size-10 rounded-lg bg-[#3b0924] grid place-items-center shrink-0">
                 <Calendar className="size-5 text-[#d8c2ab]" />
-                <span className="absolute -top-1 -right-1 size-2 rounded-full bg-[#f5d58f]" />
-                <span className="absolute -top-1 -right-1 size-2 rounded-full bg-[#f5d58f] radar-pulse-ring" />
               </div>
-
-              {/* Label & Date */}
-              <div className="relative z-10 min-w-0">
-                <div className="flex items-center gap-1.5">
-                  <span className="font-mono text-[9px] uppercase tracking-widest text-[#d8c2ab] font-bold">
-                    FINAL CALL
-                  </span>
-                  <span className="text-[#75435c]">·</span>
-                  <span className="font-mono text-[9px] uppercase text-[#eadfd4]/70">
-                    REGISTRATION
-                  </span>
-                </div>
-                <div className="flex items-baseline gap-1.5 mt-0.5">
-                  <span className="font-sans font-black text-sm text-[#f5d58f] tracking-wide">
-                    28 NOV 2026
-                  </span>
-                  <span className="font-mono text-[9px] text-[#eadfd4]/80 font-bold">
-                    [CLOSING]
-                  </span>
-                </div>
+              <div>
+                <span className="font-mono text-[10px] uppercase text-[#eadfd4] block font-bold">LAST DATE TO REGISTER</span>
+                <span className="font-sans font-black text-sm text-[#f5d58f] tracking-wide">28 NOV 2026</span>
               </div>
             </div>
           </div>
