@@ -117,59 +117,6 @@ export default function RegisterPage() {
             </div>
           </div>
 
-          {/* 3-Step Registration Process Roadmap */}
-          <div className="bg-white border border-[#eadfd4] rounded-2xl p-5 sm:p-6 shadow-2xs space-y-4">
-            <div className="flex items-center justify-between border-b border-[#eadfd4] pb-3">
-              <span className="text-xs uppercase tracking-widest text-[#3b0924] font-bold">
-                HOW TO REGISTER · 3 SIMPLE STEPS
-              </span>
-              <span className="font-mono text-[11px] text-[#77666a] hidden sm:inline">
-                Takes ~2 minutes to submit
-              </span>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="p-4 rounded-xl bg-[#f4e9dc]/50 border border-[#eadfd4] space-y-1.5 relative">
-                <div className="flex items-center justify-between">
-                  <span className="size-6 rounded-full bg-[#3b0924] text-white font-mono font-bold text-xs grid place-items-center">
-                    1
-                  </span>
-                  <span className="font-mono text-[10px] uppercase text-[#77666a] font-semibold">Step 01</span>
-                </div>
-                <h4 className="font-sans font-bold text-sm text-[#34252b] pt-1">Select Event &amp; Team</h4>
-                <p className="text-xs text-[#77666a] leading-relaxed">
-                  Choose your events and fill in lead delegate details, college USN, email, and member names.
-                </p>
-              </div>
-
-              <div className="p-4 rounded-xl bg-[#f4e9dc]/50 border border-[#eadfd4] space-y-1.5 relative">
-                <div className="flex items-center justify-between">
-                  <span className="size-6 rounded-full bg-[#3b0924] text-white font-mono font-bold text-xs grid place-items-center">
-                    2
-                  </span>
-                  <span className="font-mono text-[10px] uppercase text-[#77666a] font-semibold">Step 02</span>
-                </div>
-                <h4 className="font-sans font-bold text-sm text-[#34252b] pt-1">Pay ₹ 118 &amp; Attach Proof</h4>
-                <p className="text-xs text-[#77666a] leading-relaxed">
-                  Transfer the nominal ₹ 118 registration fee via UPI QR inside the form and upload your payment screenshot.
-                </p>
-              </div>
-
-              <div className="p-4 rounded-xl bg-[#f4e9dc]/50 border border-[#eadfd4] space-y-1.5 relative">
-                <div className="flex items-center justify-between">
-                  <span className="size-6 rounded-full bg-[#3b0924] text-white font-mono font-bold text-xs grid place-items-center">
-                    3
-                  </span>
-                  <span className="font-mono text-[10px] uppercase text-[#77666a] font-semibold">Step 03</span>
-                </div>
-                <h4 className="font-sans font-bold text-sm text-[#34252b] pt-1">Confirmation &amp; ID</h4>
-                <p className="text-xs text-[#77666a] leading-relaxed">
-                  Receive instant coordinator verification, event rulebooks, and your official Conclave entry pass.
-                </p>
-              </div>
-            </div>
-          </div>
-
           {/* Official Google Form Guidelines & Schedule Compatibility Matrix */}
           <div className="bg-[#240616] text-[#fff8ef] border border-[#75435c] rounded-2xl p-6 sm:p-7 shadow-sm space-y-5">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#75435c]/70 pb-3">
