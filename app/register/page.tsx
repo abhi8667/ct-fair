@@ -1,7 +1,8 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowUpRight, ExternalLink, Mail, Phone, Calendar, Users, Info, CreditCard, Home, CheckCircle2 } from 'lucide-react'
+import { ArrowUpRight, ExternalLink, Mail, Phone, Calendar, Users, Info, CreditCard, Home, CheckCircle2, QrCode, AlertCircle, Sparkles } from 'lucide-react'
 import { PublicHeader } from '@/components/public/public-header'
 import { PublicFooter } from '@/components/public/public-footer'
 import { GOOGLE_FORM_URL, GOOGLE_FORM_EMBED_URL, events, conclaveInfo } from '@/lib/data'
@@ -166,6 +167,125 @@ export default function RegisterPage() {
                   Receive instant coordinator verification, event rulebooks, and your official Conclave entry pass.
                 </p>
               </div>
+            </div>
+          </div>
+
+          {/* Official Google Form Guidelines & Schedule Compatibility Matrix */}
+          <div className="bg-[#240616] text-[#fff8ef] border border-[#75435c] rounded-2xl p-6 sm:p-7 shadow-sm space-y-5">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#75435c]/70 pb-3">
+              <div className="flex items-center gap-2">
+                <span className="size-2 rounded-full bg-[#d8c2ab] animate-pulse" />
+                <span className="font-mono text-xs uppercase tracking-widest text-[#d8c2ab] font-bold">
+                  OFFICIAL FORM GUIDELINES · EVENT SELECTION RULES
+                </span>
+              </div>
+              <span className="font-mono text-[10px] text-[#eadfd4]/70 uppercase tracking-wider">
+                Avoid Schedule Clashes
+              </span>
+            </div>
+
+            <p className="text-xs text-[#eadfd4]/90 leading-relaxed font-sans">
+              Participation in each event group is optional. You may skip any group if you do not wish to participate. Due to overlapping on-ground judging and lab schedules, please note the official event selection rules:
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Day 1 Selection Rules */}
+              <div className="bg-[#3b0924]/80 border border-[#75435c] p-4 rounded-xl space-y-3">
+                <div className="flex items-center justify-between border-b border-[#75435c]/60 pb-1.5">
+                  <span className="font-mono text-xs font-bold text-[#d8c2ab] uppercase">Day 1 (30 Nov 2026)</span>
+                  <span className="text-[10px] text-[#eadfd4]/70">Max 2 events</span>
+                </div>
+                <ul className="text-xs space-y-2 text-[#eadfd4]">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#d8c2ab] font-bold shrink-0">·</span>
+                    <span><strong>Event Group 1:</strong> Choose either <strong>CONmix</strong> (Mix Design) <em>OR</em> <strong>CONarch</strong> (Arch Design).</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#d8c2ab] font-bold shrink-0">·</span>
+                    <span><strong>Event Group 2:</strong> Choose either <strong>CONmake</strong> (Model Making) <em>OR</em> <strong>CONzine</strong> (Smart City Drafting).</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Day 2 Selection Rules */}
+              <div className="bg-[#3b0924]/80 border border-[#75435c] p-4 rounded-xl space-y-3">
+                <div className="flex items-center justify-between border-b border-[#75435c]/60 pb-1.5">
+                  <span className="font-mono text-xs font-bold text-[#d8c2ab] uppercase">Day 2 (01 Dec 2026)</span>
+                  <span className="text-[10px] text-[#eadfd4]/70">Flexible selection</span>
+                </div>
+                <ul className="text-xs space-y-2 text-[#eadfd4]">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#d8c2ab] font-bold shrink-0">·</span>
+                    <span><strong>Parallel Allowed:</strong> You may participate in <strong>both CONflix</strong> (Short Film) and <strong>CONscape</strong> (Surveying &amp; Escape Room).</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#d8c2ab] font-bold shrink-0">·</span>
+                    <span><strong>Event Group 3:</strong> Choose either <strong>CONfight</strong> (Debate) <em>OR</em> <strong>CONquest</strong> (Quiz).</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Crucial CONflix Deadlines Banner */}
+            <div className="bg-[#521331]/90 border border-[#d8c2ab]/40 p-4 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div className="space-y-1">
+                <div className="flex items-center gap-1.5">
+                  <span className="size-1.5 rounded-full bg-[#f5d58f]" />
+                  <span className="font-mono text-[10px] uppercase text-[#f5d58f] font-bold tracking-wider">
+                    IMPORTANT CONFLIX DEADLINES
+                  </span>
+                </div>
+                <p className="text-xs text-[#fff8ef]">
+                  Registration extended till <strong>24 Nov 2026</strong>. Final short film upload deadline is strictly <strong>26 Nov 2026</strong>.
+                </p>
+              </div>
+              <div className="shrink-0 flex items-center gap-2">
+                <a
+                  href="https://wa.me/919590793555"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 rounded-lg bg-[#3b0924] hover:bg-[#240616] text-[#d8c2ab] border border-[#75435c] text-[11px] font-semibold transition-colors"
+                >
+                  Contact Prateek (95907 93555)
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Quick UPI QR Payment Companion Box */}
+          <div className="bg-white border border-[#eadfd4] rounded-2xl p-6 sm:p-7 shadow-2xs flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="space-y-2 max-w-lg">
+              <div className="flex items-center gap-2">
+                <QrCode className="size-4 text-[#3b0924]" />
+                <span className="text-xs uppercase tracking-wider text-[#3b0924] font-bold">
+                  DIRECT UPI PAYMENT (₹ 118)
+                </span>
+              </div>
+              <h3 className="font-serif text-2xl font-bold text-[#34252b]">
+                Scan &amp; Pay Before Submitting Form
+              </h3>
+              <p className="text-xs text-[#77666a] leading-relaxed">
+                If the QR code takes long to load inside the Google Form embed, scan this official QR code directly using GPay, PhonePe, Paytm or BHIM UPI to pay ₹ 118, take a screenshot of the transaction ID, and attach it in the form below.
+              </p>
+              <div className="pt-2 flex flex-wrap items-center gap-3 font-mono text-[11px] text-[#34252b]">
+                <span className="px-2.5 py-1 bg-[#f4e9dc] rounded-md font-bold">Fee: ₹ 118</span>
+                <span className="text-[#77666a]">·</span>
+                <span className="text-[#77666a]">Accepted: All UPI Apps</span>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center gap-2 p-3 bg-[#fff8ef] border border-[#d8c2ab] rounded-xl shrink-0 shadow-2xs">
+              <div className="relative size-40 sm:size-44 bg-white rounded-lg p-1.5 border border-[#eadfd4] overflow-hidden">
+                <Image
+                  src="/images/registration-qr.jpg"
+                  alt="Concrete Fair 2026 Official Registration UPI QR Code"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <span className="font-mono text-[9px] uppercase tracking-wider text-[#77666a] font-bold">
+                Scan via any UPI App
+              </span>
             </div>
           </div>
 
