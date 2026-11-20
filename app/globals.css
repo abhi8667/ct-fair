@@ -272,6 +272,90 @@
   .animate-marquee:active {
     animation-play-state: paused;
   }
+
+  /* Shimmer beam & beacon breathing for urgent cards */
+  .shimmer-badge-beam {
+    background: linear-gradient(
+      90deg,
+      rgba(245, 213, 143, 0) 0%,
+      rgba(245, 213, 143, 0.45) 50%,
+      rgba(245, 213, 143, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer-swipe 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  .border-glow-amber {
+    box-shadow: 0 0 0 1px rgba(184, 142, 62, 0.4), 0 8px 24px -4px rgba(59, 9, 36, 0.15);
+    animation: border-breathe 4s ease-in-out infinite;
+  }
+
+  /* Conclave Animated Border Ray */
+  .border-conic-beam {
+    position: relative;
+    border-radius: 0.75rem;
+    overflow: hidden;
+  }
+
+  .border-conic-beam::before {
+    content: '';
+    position: absolute;
+    inset: -150%;
+    background: conic-gradient(
+      from 0deg,
+      transparent 0 300deg,
+      #b88e3e 330deg,
+      #f5d58f 350deg,
+      #fff8ef 360deg
+    );
+    animation: conic-spin 3.5s linear infinite;
+    z-index: 0;
+  }
+
+  /* Gradient Text Flow Animation */
+  .text-gradient-flow {
+    background: linear-gradient(90deg, #3b0924 0%, #b88e3e 40%, #521331 70%, #3b0924 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-flow 3.5s linear infinite;
+  }
+}
+
+@keyframes conic-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes text-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes shimmer-swipe {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes border-breathe {
+  0%, 100% {
+    box-shadow: 0 0 0 1px rgba(184, 142, 62, 0.35), 0 4px 16px -2px rgba(59, 9, 36, 0.12);
+  }
+  50% {
+    box-shadow: 0 0 0 1.5px rgba(245, 213, 143, 0.7), 0 8px 28px rgba(184, 142, 62, 0.25);
+  }
 }
 
 @keyframes marquee-scroll {
