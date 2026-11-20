@@ -62,13 +62,13 @@ export default function RegisterPage() {
               </div>
             </div>
 
-            <div className="bg-white/80 border border-[#eadfd4] p-4 rounded-xl flex items-center gap-3 shadow-2xs">
-              <div className="size-10 rounded-lg bg-[#f4e9dc] grid place-items-center shrink-0">
-                <Mail className="size-5 text-[#3b0924]" />
+            <div className="bg-[#240616] text-[#fff8ef] border border-[#75435c] p-4 rounded-xl flex items-center gap-3 shadow-2xs">
+              <div className="size-10 rounded-lg bg-[#3b0924] grid place-items-center shrink-0">
+                <Calendar className="size-5 text-[#d8c2ab]" />
               </div>
               <div>
-                <span className="font-mono text-[10px] uppercase text-[#77666a] block">Helpdesk / Queries</span>
-                <span className="font-bold text-xs text-[#34252b]">{conclaveInfo.email}</span>
+                <span className="font-mono text-[10px] uppercase text-[#eadfd4] block font-bold">LAST DATE TO REGISTER</span>
+                <span className="font-sans font-black text-sm text-[#f5d58f] tracking-wide">28 NOV 2026</span>
               </div>
             </div>
           </div>

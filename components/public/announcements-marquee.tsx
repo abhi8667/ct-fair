@@ -15,6 +15,15 @@ export interface MarqueeAnnouncement {
 
 const DEFAULT_ANNOUNCEMENTS: MarqueeAnnouncement[] = [
   {
+    id: 'registration-deadline',
+    badge: 'LAST DATE · 28 NOV',
+    badgeVariant: 'urgent',
+    title: 'Registration Closes on 28 Nov 2026',
+    detail: 'Final call to register teams for all 8 national challenges (Registration: ₹ 118).',
+    linkText: 'Register Now',
+    href: '/register',
+  },
+  {
     id: 'conflix-deadline',
     badge: 'DEADLINE · CONFLIX',
     badgeVariant: 'urgent',

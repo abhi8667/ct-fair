@@ -32,9 +32,9 @@ export function MobileStickyBar() {
       <div className="bg-[#240616]/95 backdrop-blur-md border border-[#75435c] text-[#fff8ef] px-3.5 py-2.5 rounded-2xl shadow-[0_12px_36px_rgba(36,6,22,0.65)] flex items-center justify-between gap-2.5">
         <div className="flex flex-col min-w-0 leading-tight">
           <div className="flex items-center gap-1.5">
-            <span className="size-1.5 rounded-full bg-[#d8c2ab] animate-pulse" />
+            <span className="size-1.5 rounded-full bg-[#f5d58f] animate-pulse" />
             <span className="font-mono text-[9px] uppercase tracking-wider text-[#eadfd4] font-bold">
-              REGISTRATION OPEN
+              LAST DATE: <strong className="text-[#f5d58f] font-black">28 NOV</strong>
             </span>
           </div>
           <span className="text-xs font-bold text-white truncate">
