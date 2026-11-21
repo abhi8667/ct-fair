@@ -38,7 +38,7 @@ export function MobileStickyBar() {
             </span>
           </div>
           <span className="text-xs font-bold text-white truncate">
-            ₹ 118 <span className="text-[10px] text-[#eadfd4]/80 font-normal">/ team · Stay ~₹350</span>
+            ₹ 118 <span className="text-[10px] text-[#eadfd4]/80 font-normal">/ person · Stay ~₹350</span>
           </span>
         </div>
 

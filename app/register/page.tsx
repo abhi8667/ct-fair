@@ -117,7 +117,7 @@ export default function RegisterPage() {
                   </span>
                 </div>
                 <h3 className="font-serif text-2xl font-bold text-[#34252b]">
-                  ₹ 118 <span className="font-sans text-xs font-normal text-[#77666a]">/ registration</span>
+                  ₹ 118 <span className="font-sans text-xs font-normal text-[#77666a]">/ person</span>
                 </h3>
                 <p className="text-xs text-[#77666a] leading-relaxed">
                   Grants entry to registered competitions, technical sessions, participant kit, event access, and evaluation. Pay through the designated mode detailed in the Google Form below.

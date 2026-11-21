@@ -334,7 +334,7 @@ export const conclaveInfo = {
   dates: '30 NOV & 1 DEC 2026',
   datesFormatted: '30 November & 1 December 2026',
   registrationFee: '₹ 118',
-  registrationFeeNote: '₹ 118 per registration',
+  registrationFeeNote: '₹ 118 per person',
   accommodationFee: '₹ 350',
   accommodationNote: 'Around ₹ 350 per person (available upon request)',
   venue: 'RV College of Engineering',
